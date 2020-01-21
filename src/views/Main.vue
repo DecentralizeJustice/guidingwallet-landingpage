@@ -46,7 +46,7 @@
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline text-center">{{card.title}}</div>
                   </v-card-title>
-                  <v-card-text>
+                  <v-card-text class="subtitle-1">
                     {{card.text}}
                   </v-card-text>
                 </v-card>
