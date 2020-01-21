@@ -26,17 +26,17 @@
           class="my-12"
           align-center
         >
-          <v-flex xs12 sm4 class="my-4">
+          <v-flex xs12 sm4 class="">
             <div class="text-center">
-              <h2 class="headline">The Guiding Wallet for The Decentralized World</h2>
+              <h2 class="display-1">The Guiding Wallet for The Decentralized World</h2>
             </div>
           </v-flex>
-          <v-flex xs12>
-            <v-container>
               <v-row
+              justify="space-around"
               >
                 <v-col
                   v-for="(card, index) in minicards" :key="`card-${index}`"
+                  cols="3"
                 >
                 <v-card flat class="transparent">
                   <v-card-text class="text-center">
@@ -52,8 +52,6 @@
                 </v-card>
                 </v-col>
               </v-row>
-            </v-container>
-          </v-flex>
         </v-layout>
       </section>
     </div>
@@ -66,22 +64,23 @@ export default {
   data: () => ({
     minicards: [
       {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579594980/landingpage/select.png',
-        title: 'Customized For You',
-        text: `Guide wallet is specialized to your needs and wants. It allows you to accomplish your goals
-        using the best technology that the complicated and vast cryptocurrency ecosystem has to offer.`
+        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579630770/landingpage/undraw_winners_ao2o.png',
+        title: 'Only The Best of The Best',
+        text: `Instead of hundreds of coins, Guide Wallet only supports the best coins that have a
+        proven track record, vast community support and specialized use cases.`
       },
       {
         img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579595188/landingpage/undraw_reading_list_4boi.png',
-        title: "Verify Don't Trust",
-        text: `Guide Wallat has a revolutionary curriculmn that allows you to learn
-        about crypto and your needs instead of navigating the large but dangerous cryoto ecosystem.`
+        title: 'A High Return Investment',
+        text: `Guide Wallet has a revolutionary curriculmn that allows you to learn
+        about crypto. This curriculum helps you make a long lasting investment in yourself that will
+        reward you for the rest of your life.`
       },
       {
         img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579594794/landingpage/undraw_conversation_h12g.png',
-        title: 'Expert Help',
-        text: `Guide wallet offers you one-on-one help with experts in
-        cryptocurrency that allow you to use cryptocurrency most effectively.`
+        title: 'Expert Guidance',
+        text: `Guide Wallet offers you one-on-one help from a expert in
+        cryptocurrency that allow you to fully explore and utlize the crypto-ecosystem.`
       }
     ]
   })
