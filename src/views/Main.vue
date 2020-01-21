@@ -67,21 +67,21 @@ export default {
     minicards: [
       {
         img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579594980/landingpage/select.png',
-        title: 'Customized',
+        title: 'Customized For You',
         text: `Guide wallet is specialized to your needs and wants. It allows you to accomplish your goals
-        using the best technology that the cryptocurrency ecosystem has to offer.`
+        using the best technology that the complicated and vast cryptocurrency ecosystem has to offer.`
       },
       {
         img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579595188/landingpage/undraw_reading_list_4boi.png',
         title: "Verify Don't Trust",
-        text: `Guide wallat has a revolutionary curriculmn that allows you to learn
-        about crypto and your needs instead of simply trusting in other people.`
+        text: `Guide Wallat has a revolutionary curriculmn that allows you to learn
+        about crypto and your needs instead of navigating the large but dangerous cryoto ecosystem.`
       },
       {
         img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579594794/landingpage/undraw_conversation_h12g.png',
         title: 'Expert Help',
-        text: `We offer you one-on-one help with experts in
-        cryptocurrency that allow you to use cryptocurrencymost effectively.`
+        text: `Guide wallet offers you one-on-one help with experts in
+        cryptocurrency that allow you to use cryptocurrency most effectively.`
       }
     ]
   })
