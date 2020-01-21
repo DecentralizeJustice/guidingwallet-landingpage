@@ -11,7 +11,6 @@
           >
             <img src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" alt="Vuetify.js" height="200">
             <h1 class="white--text mb-2 display-1 text-center">Parallax Template</h1>
-            <div class="subheading mb-4 text-center">Powered by Vuetify</div>
             <v-btn
               class="mt-12"
               color="blue lighten-2"
@@ -34,7 +33,7 @@
         >
           <v-flex xs12 sm4 class="my-4">
             <div class="text-center">
-              <h2 class="headline">The best way to start developing</h2>
+              <h2 class="headline">The Guiding Wallet for The Decentralized world</h2>
               <span class="subheading">
                 Cras facilisis mi vitae nunc
               </span>
