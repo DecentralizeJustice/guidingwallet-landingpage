@@ -7,20 +7,18 @@
         align="center"
         justify="center"
         class=""
-        style="height: 75vh;background-color:transparent"
+        style="height:75vh;background-color:transparent"
       >
         <v-card
           class="transparent"
           outlined
           tile
         >
-        <v-card-title primary-title class="layout justify-start">
-          <div
-          class="display-3 font-weight-medium text-center white--text
-          grey darken-3 pa-4"
-          style="border-radius: 25px;">
-            Find The Right Crypto For You</div>
-        </v-card-title>
+        <div
+        class="display-3 font-weight-medium text-center white--text
+        grey darken-3 pa-4 text-wrap"
+        style="border-radius: 25px;overflow-wrap: break-word">
+          Find The Right Crypto For You</div>
         </v-card>
       </v-row>
     </v-col>
