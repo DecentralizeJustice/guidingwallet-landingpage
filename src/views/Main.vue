@@ -1,21 +1,32 @@
 <template>
     <v-container fluid class="pa-0">
-        <v-parallax src="https://res.cloudinary.com/dylevfpbl/image/upload/v1579594531/landingpage/fit.jpg"
-         height="600">
-          <v-layout
-            column
-            align-center
-            justify-center
-            class="white--text"
-          >
-          <v-card flat class="transparent pt-10">
-            <v-card-title primary-title class="layout justify-start">
-              <div class="display-3 font-weight-medium text-center white--text" style="line-height: 140%">
-                Everybody Needs A Guide<br> In New Places</div>
-            </v-card-title>
-          </v-card>
-          </v-layout>
-        </v-parallax>
+        <v-img  :src="mainImg" height='75vh' >
+  <v-row class="ma-0">
+    <v-col cols="12" height='75vh'>
+      <v-row
+        align="center"
+        justify="center"
+        class=""
+        style="height: 75vh;background-color:transparent"
+      >
+        <v-card
+          class="transparent"
+          outlined
+          tile
+        >
+        <v-card-title primary-title class="layout justify-start">
+          <div
+          class="display-3 font-weight-medium text-center white--text
+          grey darken-3 pa-4"
+          style="border-radius: 25px;">
+            Find The Right Crypto For You</div>
+        </v-card-title>
+        </v-card>
+      </v-row>
+    </v-col>
+  </v-row>
+        </v-img>
+
         <v-row
         class="pt-8 pb-8"
           >
@@ -23,7 +34,7 @@
             cols="12"
             >
             <div class="text-center">
-              <h2 class="display-1">The Guiding Wallet for The Decentralized World</h2>
+              <h2 class="display-1">A Wallet That Guides You To Crypto Success</h2>
             </div>
             </v-col>
           </v-row>
@@ -54,17 +65,18 @@ export default {
     noButtonGroup
   },
   data: () => ({
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
     valueProps: [
       {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579632794/landingpage/undraw_winners_ao2o.svg',
-        title: 'Only The Best of The Best',
-        text: `Instead of hundreds of coins, Guide Wallet only supports the best coins that have a
-        proven track record, vast community support, and specialized use cases.`
+        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978562/landingpage/undraw_preferences_uuo2.svg',
+        title: 'The Best Crypto For You',
+        text: `Instead of you scavanging the internet for the best cryptos, we collect all of the most
+        usefull cryptos and help you pick which ones are best for you.`
       },
       {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579632829/landingpage/undraw_reading_list_4boi.svg',
+        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579980495/landingpage/undraw_investing_7u74.svg',
         title: 'A High Return Investment',
-        text: `Guide Wallet has a revolutionary curriculmn that allows you to learn
+        text: `Guide Wallet has a innovative curriculmn that allows you to learn
         about crypto. This curriculum helps you make a long lasting investment in yourself that will
         reward you for the rest of your life.`
       },
@@ -85,12 +97,12 @@ export default {
         img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579664858/landingpage/monero-xmr-logo.svg',
         title: 'Monero for Privacy',
         text: ''
-      },
-      {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579664863/landingpage/dai-dai-logo.svg',
-        title: 'Dai for Stability and Loans',
-        text: ''
       }
+      // {
+      //   img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579664863/landingpage/dai-dai-logo.svg',
+      //   title: 'Dai for Stability and Loans',
+      //   text: ''
+      // }
     ]
   })
 }
