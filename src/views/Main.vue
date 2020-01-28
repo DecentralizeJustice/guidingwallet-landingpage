@@ -24,7 +24,7 @@
     </v-col>
   </v-row>
         </v-img>
-
+        <div class="">
         <v-row
         class="pt-8 pb-8"
           >
@@ -38,6 +38,7 @@
           </v-row>
           <noButtonGroup
           v-bind:cards='valueProps'/>
+        </div>
           <v-row
           class="pt-5"
             >

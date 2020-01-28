@@ -4,7 +4,7 @@
   >
     <v-col
       v-for="(card, index) in cards" :key="`card-${index}`"
-      cols="12" md='6' sm='12' xm='12' lg='4'
+      cols="12" md='6'  lg='4'
     >
     <v-card flat class="transparent">
       <v-card-text class="text-center">
