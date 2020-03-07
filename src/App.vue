@@ -2,6 +2,7 @@
   <v-app dark>
     <v-app-bar
       dark
+      app
     >
       <div class="d-flex align-center">
         <v-img
