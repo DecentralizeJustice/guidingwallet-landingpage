@@ -3,6 +3,7 @@
     <v-app-bar
       dark
       app
+      absolute
     >
       <div class="d-flex align-center">
         <v-img
