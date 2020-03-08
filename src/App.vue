@@ -14,20 +14,26 @@
           width="50"
         />
         <div class=" display-4 title">
-        Guide Wallet
+        Guiding Wallet
       </div>
       </div>
 
       <v-spacer></v-spacer>
-
+      <div>
       <v-btn
-        href="https://github.com/DecentralizeJustice/GuideWallet-DesktopApp"
-        target="_blank"
+        depressed color="grey darken-2"
+      >
+        <span class="mr-2">Home</span>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+      <v-btn
+        href="https://guidingwallet.app/blog"
         text
       >
-        <span class="mr-2">Github</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Blog</span>
+        <v-icon>mdi-book-open-outline</v-icon>
       </v-btn>
+    </div>
     </v-app-bar>
       <Main/>
   </v-app>

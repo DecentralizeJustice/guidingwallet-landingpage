@@ -18,7 +18,7 @@
         class="display-3 font-weight-medium text-center white--text pa-4 text-wrap"
         style="overflow-wrap: break-word">
          Crypto Made Simple
-       <p style="" class="headline mt-5">Your Cryptocurrency Wallet to Find, Store, and Use
+       <p style="" class="headline mt-5">The Cryptocurrency Wallet to Find, Store, and Use
          Cryptos with Expert Guidance.</p></div>
         </v-card>
       </v-row>
@@ -125,10 +125,10 @@
           </v-col>
         </v-row>
 
-        <noButtonGroup
-        v-bind:cards='valueProps'/>
+        <!-- <noButtonGroup
+        v-bind:cards='valueProps'/> -->
 
-          <v-row
+          <!-- <v-row
           class="pt-5"
             >
               <v-col
@@ -140,17 +140,16 @@
               </v-col>
             </v-row>
           <noButtonGroup
-          v-bind:cards='tokens'/>
+          v-bind:cards='tokens'/> -->
 
     </v-container>
 </template>
 
 <script>
-import noButtonGroup from '@/components/noButtonGroup.vue'
+// import noButtonGroup from '@/components/noButtonGroup.vue'
 export default {
   name: 'Main',
   components: {
-    noButtonGroup
   },
   data: () => ({
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
