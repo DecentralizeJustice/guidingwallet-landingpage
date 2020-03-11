@@ -1,81 +1,71 @@
 <template>
-    <v-container fluid class="pa-0">
+    <v-container fluid class="pa-0" style="font-size: 100%;">
         <v-img  :src="mainImg" height='75vh' gradient='to top right, rgba(30, 102, 102, .9), rgba(46, 49, 49, .9)'>
-  <v-row class="ma-0">
-    <v-col cols="12" height='75vh'>
-      <v-row
-        align="center"
-        justify="center"
-        class=""
-        style="height:75vh;background-color:transparent"
-      >
-        <v-card
-          class="transparent"
-          outlined
-          tile
-        >
-        <div
-        class="display-3 font-weight-medium text-center white--text pa-4 text-wrap"
-        style="overflow-wrap: break-word">
-         Crypto Made Simple
-       <p style="" class="headline mt-5">The Cryptocurrency Wallet to Find, Store, and Use
-         Cryptos with Expert Guidance.</p></div>
-        </v-card>
-      </v-row>
-    </v-col>
-  </v-row>
-        </v-img>
-        <!-- <div class="">
-        <v-row
-        class="pt-8 pb-8"
-        style="background:#B8BDB5;"
-          >
-            <v-col
-            cols="8"
-            offset='2'
-            >
-            <div class="text-center">
-              <h2 class="display-1" >A Cryptocurrency Wallet to Find, Store ,and Use Cryptos with Expert Guidance.</h2>
-            </div>
+          <v-row class="ma-0">
+            <v-col cols="12" height='75vh'>
+              <v-row
+                align="center"
+                justify="center"
+                class=""
+                style="height:75vh;background-color:transparent"
+              >
+                <v-card
+                  class="transparent"
+                  outlined
+                  tile
+                >
+                <div
+                class="display-3 font-weight-medium text-center white--text pa-4 text-wrap"
+                style="overflow-wrap: break-word">
+                 Crypto Made Simple
+               <p style="" class="headline mt-5">The Cryptocurrency Wallet to Find, Store, and Use
+                 Cryptos with Expert Guidance.</p></div>
+                </v-card>
+              </v-row>
             </v-col>
           </v-row>
-        </div>  -->
+        </v-img>
         <v-row
         class=""
           >
           <v-col
           cols="12"
-          class="pa-5"
-          style="background: #E0E2DB;"
+          :class="{'pa-0': $vuetify.breakpoint.smAndDown}"
+          style="background: #77D5D5;"
           >
             <v-row
             class=""
-
+            align="center"
               >
               <v-col
-                cols="5"
+                cols="12"
+                class="pa-0"
+                :class="{'pa-0': $vuetify.breakpoint.smAndDown}"
+                md="5"
+                style="height:100%"
                 >
                 <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581394176/landingpage/man-wearing-black-and-white-stripe-shirt-looking-at-white-212286.jpg"/>
               </v-col>
               <v-col
-              cols="7"
-              class="pa-7"
-              style=""
+              cols="12"
+              :class="{'ml-10': $vuetify.breakpoint.mdAndUp, 'pa-10': $vuetify.breakpoint.smAndDown}"
+              md='6'
+              offset-md="0"
               >
-              <div class="text-center">
-                <h2 class="display-1">Cryptopcurrencies Are Complicated</h2>
+              <div class="text-center mb-4">
+                <h2 class="head">Cryptos Are Complex</h2>
               </div>
               <div class="text-left">
-                <p class="headline">
+                <p class="sectionText">
                   Cryptos are complicated and risky. If you try to use them
                   without expert guidance you risk losing your money to:</p>
-                  <ul>
+                  <ul class="list mb-5">
                     <li>Scam Cryptocurrencies</li>
                     <li>Insecure Software</li>
                     <li>Exchange Hacks</li>
                   </ul>
-                  <p class="headline">
-                    Without guidance you can lose all of your money in crypto. Guide Wallet
+                  <p class="sectionText">
+                    Without guidance you can lose all of your money in crypto. Guiding Wallet
                     provides you with much-needed guidance from experts.</p>
               </div>
               </v-col>
@@ -83,13 +73,13 @@
           </v-col>
         </v-row>
 
-        <v-row
+        <!-- <v-row
         class=""
           >
           <v-col
           cols="12"
           class="pa-5"
-          style="background:#D2D4C8;"
+          style="background:#ACEDED;"
           >
             <v-row
             class=""
@@ -103,7 +93,7 @@
               </div>
               <div class="text-left">
                 <p class="headline">
-                  Guide Wallet provides you with secure software, comprehensive
+                  Guiding Wallet provides you with secure software, comprehensive
                   curriculum, and engaging lessons that help you:</p>
                   <ul>
                     <li>Pick Cryptos with Confidence</li>
@@ -123,30 +113,11 @@
               </v-col>
             </v-row>
           </v-col>
-        </v-row>
-
-        <!-- <noButtonGroup
-        v-bind:cards='valueProps'/> -->
-
-          <!-- <v-row
-          class="pt-5"
-            >
-              <v-col
-              cols="12"
-              >
-              <div class="text-center">
-                <h2 class="display-1">We Only Support Usefull Cryptos</h2>
-              </div>
-              </v-col>
-            </v-row>
-          <noButtonGroup
-          v-bind:cards='tokens'/> -->
-
+        </v-row> -->
     </v-container>
 </template>
 
 <script>
-// import noButtonGroup from '@/components/noButtonGroup.vue'
 export default {
   name: 'Main',
   components: {
@@ -177,22 +148,20 @@ export default {
       }
     ],
     tokens: [
-      {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579664861/landingpage/bitcoin-btc-logo.svg',
-        title: 'Bitcoin for Savings',
-        text: ''
-      },
-      {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579664858/landingpage/monero-xmr-logo.svg',
-        title: 'Monero for Privacy',
-        text: ''
-      }
-      // {
-      //   img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579664863/landingpage/dai-dai-logo.svg',
-      //   title: 'Dai for Stability and Loans',
-      //   text: ''
-      // }
     ]
   })
 }
 </script>
+<style scoped>
+.head {
+  font-size: 4em;
+  font-weight: normal;
+}
+.list {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.sectionText {
+  font-size: 1.5em;
+}
+</style>
