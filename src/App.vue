@@ -24,15 +24,23 @@
         depressed color="grey darken-2"
       >
         <span class="">Home</span>
-        <v-icon>mdi-home</v-icon>
+        <v-icon right>mdi-home</v-icon>
       </v-btn>
       <v-btn
         href="https://guidingwallet.app/blog"
         text
       >
         <span class="">Blog</span>
-        <v-icon>mdi-book-open-outline</v-icon>
+        <v-icon right>mdi-book-open-outline</v-icon>
       </v-btn>
+      <v-btn
+        href="#Download"
+        text
+      >
+        <span class="">Download</span>
+        <v-icon right>mdi-download</v-icon>
+      </v-btn>
+
     </v-app-bar>
       <Main/>
   </v-app>
