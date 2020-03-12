@@ -1,13 +1,13 @@
 <template>
-    <v-container fluid class="pa-0" style="font-size: 100%;">
-        <v-img  :src="mainImg" height='75vh' gradient='to top right, rgba(30, 102, 102, .9), rgba(46, 49, 49, .9)'>
+    <v-container fluid class="pa-0 mainGrad" style="font-size: 100%;">
+        <v-img  :src="mainImg" height='75vh' class="heroImg">
           <v-row class="ma-0">
             <v-col cols="12" height='75vh'>
               <v-row
                 align="center"
                 justify="center"
-                class=""
-                style="height:75vh;background-color:transparent"
+                class="heroImg"
+                style="height:75vh;"
               >
                 <v-card
                   class="transparent"
@@ -25,15 +25,15 @@
           </v-row>
         </v-img>
         <v-row
-        class=""
+        class="pa-10"
         align="center"
-        style="background: #ACEDED;"
+        style=""
           >
           <v-col
           cols="12"
           md='6'
-          class="pa-10"
-          style="height:100%"
+          class="pa-5"
+          style="height:100%;background: white;border-radius: 2em;"
           >
           <div class="text-center mb-4">
             <h2 class="head">Simplify Crypto</h2>
@@ -64,7 +64,7 @@
         <v-row
         class=""
         align="center"
-        style="background: #009999;"
+        style=""
         id="Download"
           >
           <v-col
@@ -78,8 +78,8 @@
           <v-col
             cols="8"
             md="4"
-            style="background: white;border-radius: 25px;"
-            class="pa-3"
+            style="background: white;"
+            class="pa-3 textBox"
             align='center'
             offset-md='1'
             offset='2'
@@ -90,7 +90,7 @@
             </div>
             <v-btn
               :href='downloadLink' target="_blank"
-              color='#17F0F0'
+              :color='buttonColor'
             >
               <span class="">Download For MAC OS</span>
               <v-icon right>mdi-download</v-icon>
@@ -102,10 +102,12 @@
 
 <script>
 export default {
+  // pallet: https://coolors.co/c4c5d1-8386a8-515577-353751-2e3044
   name: 'Main',
   components: {
   },
   data: () => ({
+    buttonColor: '#C4C5D1',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
     downloadLink: 'https://github.com/DecentralizeJustice/GuidingWallet-DesktopApp/releases/download/v0.1.0/Mac-Demo-GuidingWallet.dmg'
   })
@@ -122,5 +124,14 @@ export default {
 }
 .sectionText {
   font-size: 1.5em;
+}
+.textBox{
+  border-radius: 2em;
+}
+.mainGrad{
+  background-image: linear-gradient(to top right, #C4C5D1, #2E3044);
+}
+.heroImg{
+  background: rgba(39, 39, 39, .9)
 }
 </style>
