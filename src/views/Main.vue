@@ -15,7 +15,7 @@
                   tile
                 >
                 <div
-                class="display-4 font-weight-bold text-center white--text pa-4 text-wrap"
+                class="display-4 font-weight-medium text-center white--text pa-4 text-wrap"
                 style="overflow-wrap: break-word">
                  Guiding Wallet
                <p style="" class="headline mt-5">The Cryptocurrency Wallet with Expert Guidance</p></div>
@@ -27,7 +27,7 @@
         <v-row
         class=""
         align="center"
-        style="background: #77D5D5;"
+        style="background: #ACEDED;"
           >
           <v-col
           cols="12"
@@ -56,9 +56,44 @@
             cols="12"
             md="6"
             style="height:100%"
-            class="pa-0"
+            class="pa-10"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581391886/landingpage/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
+          </v-col>
+        </v-row>
+        <v-row
+        class=""
+        align="center"
+        style="background: #009999;"
+          >
+          <v-col
+            cols="12"
+            md="6"
+            style="height:100%"
+            class="pa-10"
+            >
+            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1583995864/landingpage/Screen_Shot_2020-03-12_at_2.49.54_AM.png"/>
+          </v-col>
+          <v-col
+            cols="8"
+            md="4"
+            style="background: white;border-radius: 25px;"
+            class="pa-3"
+            align='center'
+            offset-md='1'
+            offset='2'
+            :class="{'mb-5': $vuetify.breakpoint.smAndDown}"
+            >
+            <div class="text-center mb-4">
+              <h2 class="head">Try Guiding Wallet</h2>
+            </div>
+            <v-btn
+              :href='downloadLink' target="_blank"
+              color='#17F0F0'
+            >
+              <span class="">Download For MAC OS</span>
+              <v-icon right>mdi-download</v-icon>
+            </v-btn>
           </v-col>
         </v-row>
     </v-container>
@@ -70,7 +105,8 @@ export default {
   components: {
   },
   data: () => ({
-    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg'
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
+    downloadLink: 'https://github.com/DecentralizeJustice/GuidingWallet-DesktopApp/releases/download/v0.1.0/Mac-Demo-GuidingWallet.dmg'
   })
 }
 </script>
