@@ -61,48 +61,6 @@
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581391886/landingpage/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
           </v-col>
         </v-row>
-
-        <!-- <v-row
-        class=""
-          >
-          <v-col
-          cols="12"
-          class="pa-5"
-          style="background:#ACEDED;"
-          >
-            <v-row
-            class=""
-              >
-              <v-col
-              cols="7"
-              class="pa-7"
-              >
-              <div class="text-center">
-                <h2 class="display-1">Simplify Crypto</h2>
-              </div>
-              <div class="text-left">
-                <p class="headline">
-                  Guiding Wallet provides you with secure software, comprehensive
-                  curriculum, and engaging lessons that help you:</p>
-                  <ul>
-                    <li>Pick Cryptos with Confidence</li>
-                    <li>Secure Your Cryptos</li>
-                    <li>Use Cryptos Appropriately</li>
-                  </ul>
-                  <p class="headline">
-                    Guide Wallet is like having experts in the room
-                   guiding you through every step of using Crypto.
-                    </p>
-              </div>
-              </v-col>
-              <v-col
-                cols="5"
-                >
-                <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581391886/landingpage/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row> -->
     </v-container>
 </template>
 
@@ -113,31 +71,6 @@ export default {
   },
   data: () => ({
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
-    valueProps: [
-      {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1581400743/landingpage/undraw_winners_ao2o.svg',
-        title: 'Only The Best Cryptos',
-        text: `The cryptos we support are based upon specifc uses cases, such as security and privacy.
-        This ensures that you are always using the best crypto for your use case and never wasting time or money
-        due to being inefficient.`
-      },
-      {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1581399859/landingpage/undraw_security_o890.svg',
-        title: 'Security',
-        text: `We offer multi-signature, hardware wallets,
-        and local nodes for several cryptos that we offer. We are the only wallet to offer this level of security for
-        multiple Cryptocurrencies. We also offer mobile app guideance for small and convient sums of money.`
-      },
-      {
-        img: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579632829/landingpage/undraw_reading_list_4boi.svg',
-        title: 'Education',
-        text: `We provide you with videos, quizes, and tutorials that allow you to fully educate yourself on all that cryptos
-        have to offer. This education ensures that you are always informed about your cryptos and in control of
-        financial future.`
-      }
-    ],
-    tokens: [
-    ]
   })
 }
 </script>
