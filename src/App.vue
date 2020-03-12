@@ -52,3 +52,11 @@ export default {
   })
 }
 </script>
+<style >
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+#app {
+  font-family: 'Hind', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style>

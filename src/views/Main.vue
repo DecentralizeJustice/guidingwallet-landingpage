@@ -70,7 +70,7 @@ export default {
   components: {
   },
   data: () => ({
-    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg'
   })
 }
 </script>
