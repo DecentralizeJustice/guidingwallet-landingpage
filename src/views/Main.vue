@@ -56,7 +56,7 @@
             cols="12"
             md="6"
             style="height:100%"
-            class="pa-0"
+            class="pa-10"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581391886/landingpage/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
           </v-col>
@@ -64,22 +64,25 @@
         <v-row
         class=""
         align="center"
-        justify='center'
         style="background: #009999;"
           >
           <v-col
             cols="12"
-            md="4"
+            md="6"
             style="height:100%"
-            class="pa-0"
+            class="pa-10"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1583995864/landingpage/Screen_Shot_2020-03-12_at_2.49.54_AM.png"/>
           </v-col>
           <v-col
-            cols="12"
-            md="5"
-            style="height:100%"
-            class="pa-0"
+            cols="8"
+            md="4"
+            style="background: white;border-radius: 25px;"
+            class="pa-3"
+            align='center'
+            offset-md='1'
+            offset='2'
+            :class="{'mb-5': $vuetify.breakpoint.smAndDown}"
             >
             <div class="text-center mb-4">
               <h2 class="head">Try Guiding Wallet</h2>
@@ -88,7 +91,7 @@
               :href='downloadLink' target="_blank"
               color='#17F0F0'
             >
-              <span class="">Download For MAC</span>
+              <span class="">Download For MAC OS</span>
               <v-icon right>mdi-download</v-icon>
             </v-btn>
           </v-col>
