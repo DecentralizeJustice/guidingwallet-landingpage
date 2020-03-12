@@ -20,21 +20,19 @@
       </div>
 
       <v-spacer></v-spacer>
-      <div>
       <v-btn
         depressed color="grey darken-2"
       >
-        <span class="mr-2">Home</span>
+        <span class="">Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-btn
         href="https://guidingwallet.app/blog"
         text
       >
-        <span class="mr-2">Blog</span>
+        <span class="">Blog</span>
         <v-icon>mdi-book-open-outline</v-icon>
       </v-btn>
-    </div>
     </v-app-bar>
       <Main/>
   </v-app>

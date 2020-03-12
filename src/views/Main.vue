@@ -17,9 +17,8 @@
                 <div
                 class="display-3 font-weight-medium text-center white--text pa-4 text-wrap"
                 style="overflow-wrap: break-word">
-                 Crypto Made Simple
-               <p style="" class="headline mt-5">The Cryptocurrency Wallet to Find, Store, and Use
-                 Cryptos with Expert Guidance.</p></div>
+                 Guiding Wallet
+               <p style="" class="headline mt-5">The Cryptocurrency Wallet with Expert Guidance</p></div>
                 </v-card>
               </v-row>
             </v-col>
@@ -27,49 +26,39 @@
         </v-img>
         <v-row
         class=""
+        align="center"
+        style="background: #77D5D5;"
           >
           <v-col
           cols="12"
-          :class="{'pa-0': $vuetify.breakpoint.smAndDown}"
-          style="background: #77D5D5;"
+          md='6'
+          class="pa-10"
+          style="height:100%"
           >
-            <v-row
-            class=""
-            align="center"
-              >
-              <v-col
-                cols="12"
-                class="pa-0"
-                :class="{'pa-0': $vuetify.breakpoint.smAndDown}"
-                md="5"
-                style="height:100%"
-                >
-                <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581394176/landingpage/man-wearing-black-and-white-stripe-shirt-looking-at-white-212286.jpg"/>
-              </v-col>
-              <v-col
-              cols="12"
-              :class="{'ml-10': $vuetify.breakpoint.mdAndUp, 'pa-10': $vuetify.breakpoint.smAndDown}"
-              md='6'
-              offset-md="0"
-              >
-              <div class="text-center mb-4">
-                <h2 class="head">Cryptos Are Complex</h2>
-              </div>
-              <div class="text-left">
-                <p class="sectionText">
-                  Cryptos are complicated and risky. If you try to use them
-                  without expert guidance you risk losing your money to:</p>
-                  <ul class="list mb-5">
-                    <li>Scam Cryptocurrencies</li>
-                    <li>Insecure Software</li>
-                    <li>Exchange Hacks</li>
-                  </ul>
-                  <p class="sectionText">
-                    Without guidance you can lose all of your money in crypto. Guiding Wallet
-                    provides you with much-needed guidance from experts.</p>
-              </div>
-              </v-col>
-            </v-row>
+          <div class="text-center mb-4">
+            <h2 class="head">Simplify Crypto</h2>
+          </div>
+          <div class="text-left">
+            <p class="sectionText">
+              Guiding Wallet provides you with secure software, comprehensive
+              curriculum, and engaging lessons that help you:</p>
+              <ul class="list mb-5">
+                <li>Pick Cryptos with Confidence</li>
+                <li>Secure Your Cryptos</li>
+                <li>Use Cryptos Appropriately</li>
+              </ul>
+              <p class="sectionText">
+                Guide Wallet is like having experts in the room
+               guiding you through every step of using Crypto.</p>
+          </div>
+          </v-col>
+          <v-col
+            cols="12"
+            md="6"
+            style="height:100%"
+            class="pa-0"
+            >
+            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581391886/landingpage/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
           </v-col>
         </v-row>
 
