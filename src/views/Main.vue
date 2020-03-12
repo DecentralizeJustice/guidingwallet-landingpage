@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="pa-0 mainGrad" style="font-size: 100%;">
+    <v-container fluid class="pa-0" style="font-size: 100%;">
         <v-img  :src="mainImg" height='75vh' class="heroImg">
           <v-row class="ma-0">
             <v-col cols="12" height='75vh'>
@@ -24,6 +24,7 @@
             </v-col>
           </v-row>
         </v-img>
+        <div class="mainGrad ma-0 pa-0">
         <v-row
         class="pa-10"
         align="center"
@@ -97,6 +98,7 @@
             </v-btn>
           </v-col>
         </v-row>
+      </div>
     </v-container>
 </template>
 
@@ -129,7 +131,7 @@ export default {
   border-radius: 2em;
 }
 .mainGrad{
-  background-image: linear-gradient(to top right, #C4C5D1, #2E3044);
+  background-image: linear-gradient(to top, #C4C5D1, #2E3044);
 }
 .heroImg{
   background: rgba(39, 39, 39, .9)
