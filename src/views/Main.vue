@@ -43,9 +43,9 @@
               Guiding Wallet provides you with secure software, comprehensive
               curriculum, and engaging lessons that help you:</p>
               <ul class="list mb-5">
-                <li>Pick Cryptos with Confidence</li>
+                <li>Pick The Right Cryptos</li>
                 <li>Secure Your Cryptos</li>
-                <li>Use Cryptos Appropriately</li>
+                <li>Use Cryptos Correctly</li>
               </ul>
               <p class="sectionText">
                 Guide Wallet is like having experts in the room
