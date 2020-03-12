@@ -15,7 +15,7 @@
                   tile
                 >
                 <div
-                class="display-3 font-weight-medium text-center white--text pa-4 text-wrap"
+                class="display-4 font-weight-bold text-center white--text pa-4 text-wrap"
                 style="overflow-wrap: break-word">
                  Guiding Wallet
                <p style="" class="headline mt-5">The Cryptocurrency Wallet with Expert Guidance</p></div>
