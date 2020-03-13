@@ -20,28 +20,55 @@
       </div>
 
       <v-spacer></v-spacer>
+      <v-app-bar-nav-icon class="hidden-md-and-up"
+      @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+
       <v-btn
-        depressed color="grey darken-2"
+        :color='item.color'
+        v-bind:class="[buttonObject]"
+        v-for="item in opts"
+          :key="`${item.title}`"
+        :href='item.link'
       >
-        <span class="">Home</span>
-        <v-icon right>mdi-home</v-icon>
-      </v-btn>
-      <v-btn
-        href="https://guidingwallet.app/blog"
-        text
-      >
-        <span class="">Blog</span>
-        <v-icon right>mdi-book-open-outline</v-icon>
-      </v-btn>
-      <v-btn
-        href="#Download"
-        text
-      >
-        <span class="">Download</span>
-        <v-icon right>mdi-download</v-icon>
+        <span class="">{{item.title}}</span>
+        <v-icon right>mdi-{{item.icon}}</v-icon>
       </v-btn>
 
     </v-app-bar>
+    <v-navigation-drawer
+      app
+      v-model="drawer"
+      absolute
+      temporary
+      dark
+    >
+      <template v-slot:prepend >
+        <v-list>
+          <v-list-item
+            one-line
+          >
+            <v-list-item-content>
+              <v-list-item-title class="title">Guiding Wallet</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </template>
+      <v-divider></v-divider>
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item link v-for="item in opts"
+          :key="`${item.icon}`"
+          :href='item.link'
+        >
+          <v-list-item-icon >
+            <v-icon>mdi-{{item.icon}}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{item.title}}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
       <Main/>
   </v-app>
 </template>
@@ -56,8 +83,19 @@ export default {
   },
 
   data: () => ({
-    //
-  })
+    buttonObject: 'hidden-sm-and-down',
+    drawer: null,
+    opts: [
+      { title: 'Home', icon: 'home', color: 'grey darken-2', link: '' },
+      { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },
+      { title: 'Download', icon: 'download', link: '#Download' }
+    ]
+  }),
+  methods: {
+    navigate: function (enlargeAmount) {
+      console.log(enlargeAmount)
+    }
+  }
 }
 </script>
 <style >
