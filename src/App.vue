@@ -92,9 +92,6 @@ export default {
     ]
   }),
   methods: {
-    navigate: function (enlargeAmount) {
-      console.log(enlargeAmount)
-    }
   }
 }
 </script>
