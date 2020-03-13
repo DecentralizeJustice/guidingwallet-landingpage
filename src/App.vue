@@ -92,8 +92,6 @@ export default {
     ]
   }),
   methods: {
-    navigate: function (enlargeAmount) {
-    }
   }
 }
 </script>
