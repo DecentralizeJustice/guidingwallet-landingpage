@@ -81,9 +81,8 @@ export default {
   components: {
     Main
   },
-
   data: () => ({
-    buttonObject: 'hidden-sm-and-down',
+    buttonObject: 'hidden-sm-and-down mr-2',
     drawer: null,
     opts: [
       { title: 'Home', icon: 'home', color: 'grey darken-2', link: '' },
