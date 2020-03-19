@@ -64,7 +64,7 @@
         </v-row>
         <v-row
         align="center"
-        justify='space-around'
+        justify='center'
         id="Download"
           >
           <v-col
@@ -76,6 +76,7 @@
           <v-col
             cols="10"
             md="4"
+            offset-md='1'
             style="background: white;"
             class="pa-3 textBox"
             align='center'
