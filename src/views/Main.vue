@@ -20,7 +20,7 @@
                 class="display-4 font-weight-medium text-center white--text pa-4 text-wrap"
                 style="overflow-wrap: break-word;">
                  Guiding Wallet
-               <p style="" class="headline mt-5">{{heroSubtext}}</p></div>
+               <p style="" class="display-1 mt-5">{{heroSubtext}}</p></div>
                 </v-card>
               </v-row>
             </v-col>
@@ -28,7 +28,7 @@
         </v-img>
         <v-container fluid class="mainGrad">
         <v-row
-        class="pa-10"
+        class="pa-3"
         align="center"
         justify='space-around'
           >
@@ -126,7 +126,7 @@ export default {
 </script>
 <style scoped>
 .head {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: normal;
 }
 .list {
