@@ -38,8 +38,8 @@
           class="pa-5 white--text"
           style="height:100%;"
           >
-          <div class="text-center mb-4 font-weight-medium">
-            <h2 class="head">Simplify Crypto</h2>
+          <div class="text-center mb-4 font-weight-bold">
+            <h2 class="display-2 font-weight-bold">Simplify Crypto</h2>
           </div>
           <div class="text-left">
             <p class="sectionText">
@@ -126,10 +126,6 @@ export default {
 }
 </script>
 <style scoped>
-.head {
-  font-size: 3em;
-  font-weight: normal;
-}
 .list {
   font-size: 1.8em;
   font-weight: bold;
