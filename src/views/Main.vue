@@ -82,8 +82,8 @@
             align='center'
             :class="{'mb-5': $vuetify.breakpoint.smAndDown}"
             >
-            <div class="text-center mb-4">
-              <h2 class="head">Download Guiding Wallet</h2>
+            <div class="title mb-4">
+              <h2 class="">Download Guiding Wallet</h2>
             </div>
             <v-btn
               :href='downloadLink' target="_blank"
