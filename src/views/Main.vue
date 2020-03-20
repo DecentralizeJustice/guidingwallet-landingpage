@@ -51,7 +51,7 @@
                 <li>Use Cryptos Correctly</li>
               </ul>
               <p class="sectionText">
-                Guide Wallet is like having experts in the room
+                Guiding Wallet is like having experts in the room with you
                guiding you through every step of using Crypto.</p>
           </div>
           </v-col>
@@ -83,7 +83,7 @@
             :class="{'mb-5': $vuetify.breakpoint.smAndDown}"
             >
             <div class="text-center mb-4">
-              <h2 class="head">Try Guiding Wallet</h2>
+              <h2 class="head">Download Guiding Wallet</h2>
             </div>
             <v-btn
               :href='downloadLink' target="_blank"
