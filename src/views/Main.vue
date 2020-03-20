@@ -35,10 +35,10 @@
           <v-col
           cols="12"
           md='6'
-          class="pa-5 textBox"
-          style="height:100%;background: white;"
+          class="pa-5 white--text"
+          style="height:100%;"
           >
-          <div class="text-center mb-4">
+          <div class="text-center mb-4 font-weight-medium">
             <h2 class="head">Simplify Crypto</h2>
           </div>
           <div class="text-left">
