@@ -131,11 +131,11 @@ export default {
   font-weight: normal;
 }
 .list {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bold;
 }
 .sectionText {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 .textBox {
   border-radius: 2em;
