@@ -10,7 +10,7 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://res.cloudinary.com/dylevfpbl/image/upload/v1579591613/landingpage/croppedCoin.png"
+          src="https://res.cloudinary.com/dylevfpbl/image/upload/v1585333867/croppedCoin.png"
           transition="scale-transition"
           width="50"
         />
