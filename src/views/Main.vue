@@ -51,7 +51,7 @@
                 <li>Use Cryptos Correctly</li>
               </ul>
               <p class="sectionText">
-                Guiding Wallet is like having experts in the room with you
+                Using Guiding Wallet is like having experts
                guiding you through every step of using Crypto.</p>
           </div>
           </v-col>
