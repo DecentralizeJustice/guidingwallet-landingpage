@@ -99,7 +99,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Guiding Wallet</strong>
+        {{ new Date().getFullYear() }} — <strong>Decentralize Justice</strong>
       </v-card-text>
     </v-card>
   </v-footer>
