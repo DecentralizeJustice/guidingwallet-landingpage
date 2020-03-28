@@ -59,7 +59,7 @@
             cols="12"
             md="5"
             >
-            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1581391886/landingpage/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
+            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1585423249/guidingLanding/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
           </v-col>
         </v-row>
         <v-row
@@ -71,7 +71,7 @@
             cols="12"
             md="6"
             >
-            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1583995864/landingpage/Screen_Shot_2020-03-12_at_2.49.54_AM.png"/>
+            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1585423849/guidingLanding/Screen_Shot_2020-03-28_at_3.29.48_PM.png"/>
           </v-col>
           <v-col
             cols="10"
@@ -120,7 +120,7 @@ export default {
   data: () => ({
     heroSubtext: 'The Cryptocurrency Wallet with Expert Guidance',
     buttonColor: 'rgb(29, 66, 76)',
-    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1579978238/landingpage/med1.jpg',
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1585423370/guidingLanding/person-using-macbook-1181258.jpg',
     downloadLink: 'https://github.com/DecentralizeJustice/GuidingWallet-DesktopApp/releases/download/v0.1.0/Mac-Demo-GuidingWallet.dmg'
   })
 }
