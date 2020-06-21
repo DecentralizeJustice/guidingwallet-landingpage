@@ -86,10 +86,18 @@
               <h2 class="">Download Guiding Wallet</h2>
             </div>
             <v-btn
-              :href='downloadLink' target="_blank"
+              :href='macDownloadLink' target="_blank"
               :color='buttonColor'
+              class="mb-3"
             >
               <span class="white--text">Download For MAC OS</span>
+              <v-icon right class="white--text">mdi-download</v-icon>
+            </v-btn>
+            <v-btn
+              :href='winDownloadLink' target="_blank"
+              :color='buttonColor'
+            >
+              <span class="white--text">Download For Windows 10</span>
               <v-icon right class="white--text">mdi-download</v-icon>
             </v-btn>
           </v-col>
@@ -121,7 +129,8 @@ export default {
     heroSubtext: 'The Cryptocurrency Wallet with Expert Guidance',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1585423370/guidingLanding/person-using-macbook-1181258.jpg',
-    downloadLink: 'https://github.com/DecentralizeJustice/GuidingWallet-DesktopApp/releases/download/v0.1.0/Mac-Demo-GuidingWallet.dmg'
+    macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
+    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
   })
 }
 </script>
