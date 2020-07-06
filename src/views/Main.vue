@@ -15,12 +15,21 @@
                   tile
                   :flat='flatOnMobile'
                   :color='textColor'
+                  class="text-center"
                 >
                 <div
                 class="display-4 font-weight-medium text-center white--text pa-4 text-wrap"
                 style="overflow-wrap: break-word;">
                  Guiding Wallet
                <p style="" class="display-1 mt-5">{{heroSubtext}}</p></div>
+               <v-btn
+                 href="#Download"
+                 color='#486E70'
+                 class="mb-5"
+               >
+                 <div class="white--text">Download Wallet</div>
+                 <v-icon right class="white--text">mdi-download</v-icon>
+               </v-btn>
                 </v-card>
               </v-row>
             </v-col>
