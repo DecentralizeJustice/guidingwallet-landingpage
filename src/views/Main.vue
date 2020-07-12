@@ -71,6 +71,8 @@
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1585423249/guidingLanding/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
           </v-col>
         </v-row>
+        <videoPlayer v-bind:vidInfo='landingVidInfo'
+        v-bind:backgroundColor='buttonColor'/>
         <v-row
         align="center"
         justify='center'
@@ -116,9 +118,12 @@
 </template>
 
 <script>
+import videoPlayer from '@/components/vid.vue'
+import landingVidInfo from '@/assets/landingVid.js'
 export default {
   name: 'Main',
   components: {
+    videoPlayer
   },
   computed: {
     textColor: function () {
@@ -139,7 +144,8 @@ export default {
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1585423370/guidingLanding/person-using-macbook-1181258.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
-    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
+    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe',
+    landingVidInfo: landingVidInfo
   })
 }
 </script>

@@ -88,7 +88,7 @@
           :key="icon"
           class="mx-4 white--text"
           icon
-          href='https://twitter.com/GuidingWallet' link=true
+          href='https://twitter.com/GuidingWallet' link
         >
           <v-icon size="24px">
             {{ icon }}
