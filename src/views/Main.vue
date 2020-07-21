@@ -56,8 +56,8 @@
               curriculum and engaging video courses that help you:</p>
               <ul class="list mb-5">
                 <li>Pick The Right Cryptos</li>
-                <li>Secure Your Cryptos</li>
                 <li>Use Cryptos Correctly</li>
+                <li>Secure Your Cryptos</li>
               </ul>
               <p class="sectionText">
                 Using Guiding Wallet is like having experts
