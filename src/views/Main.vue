@@ -18,7 +18,7 @@
                   class="text-center"
                 >
                 <div
-                class="display-4 font-weight-medium text-center white--text pa-4 text-wrap"
+                class="display-4 font-weight-medium text-center white--text ma-4 text-wrap"
                 style="overflow-wrap: break-word;">
                  Guiding Wallet
                <p style="" class="display-1 mt-5">{{heroSubtext}}</p></div>
@@ -48,12 +48,12 @@
           style="height:100%;"
           >
           <div class="text-center mb-4 font-weight-bold">
-            <h2 class="display-2 font-weight-bold">Simplify Crypto</h2>
+            <h2 class="display-2 font-weight-bold">Your Guide To Crypto</h2>
           </div>
           <div class="text-left">
             <p class="sectionText">
-              Guiding Wallet provides you with secure software, comprehensive
-              curriculum, and engaging video courses that help you:</p>
+              Guiding Wallet provides you with comprehensive
+              curriculum and engaging video courses that help you:</p>
               <ul class="list mb-5">
                 <li>Pick The Right Cryptos</li>
                 <li>Secure Your Cryptos</li>
