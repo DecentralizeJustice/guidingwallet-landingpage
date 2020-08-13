@@ -18,8 +18,8 @@
                   class="text-center"
                 >
                 <div
-                class="display-4 font-weight-medium text-center white--text ma-4 text-wrap"
-                style="overflow-wrap: break-word;">
+                class="font-weight-medium text-center white--text ma-4 text-wrap"
+                style="overflow-wrap: break-word;" v-bind:class="[heroTextSize]">
                  Guiding Wallet
                <p style="" class="display-1 mt-5">{{heroSubtext}}</p></div>
                <v-btn
@@ -126,6 +126,12 @@ export default {
     videoPlayer
   },
   computed: {
+    heroTextSize: function () {
+      if (this.$vuetify.breakpoint.mdAndUp) {
+        return 'display-4'
+      }
+      return 'display-3'
+    },
     textColor: function () {
       if (this.$vuetify.breakpoint.mdAndUp) {
         return 'rgba(39, 39, 39, .9)'
