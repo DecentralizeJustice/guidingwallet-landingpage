@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="pa-0" style="font-size: 100%;">
+    <v-container fluid class="pa-0 ma-0" style="font-size: 100%;">
         <v-img  :src="mainImg" height='75vh'>
           <v-row class="ma-0">
             <v-col cols="12" height='75vh'
@@ -35,9 +35,9 @@
             </v-col>
           </v-row>
         </v-img>
-        <v-container fluid class="mainGrad">
+        <v-container fluid class="mainGrad pa-0 ma-0">
         <v-row
-        class="pa-3"
+        class="pa-3 ma-0"
         align="center"
         justify='space-around'
           >
@@ -71,11 +71,10 @@
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1585423249/guidingLanding/woman-sharing-her-presentation-with-her-colleagues-3153198.jpg"/>
           </v-col>
         </v-row>
-        <videoPlayer v-bind:vidInfo='landingVidInfo'
-        v-bind:backgroundColor='buttonColor'/>
         <v-row
         align="center"
         justify='center'
+        class="ma-0"
         id="Download"
           >
           <v-col
@@ -118,12 +117,12 @@
 </template>
 
 <script>
-import videoPlayer from '@/components/vid.vue'
+// import videoPlayer from '@/components/vid.vue'
 import landingVidInfo from '@/assets/landingVid.js'
 export default {
   name: 'Main',
   components: {
-    videoPlayer
+    // videoPlayer
   },
   computed: {
     heroTextSize: function () {
