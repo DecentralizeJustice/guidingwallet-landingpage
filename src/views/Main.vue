@@ -215,7 +215,7 @@
                 <li>The Ability to Ask Experts Questions</li>
               </ul>
               <p class="sectionText">
-              Guiding Wallet is a neccesstiy for every crypto user, even to thsoe who are not new to crypto.
+              Guiding Wallet will grow with you as you build more experience with Cryptos.
               </p>
           </div>
           </v-col>
