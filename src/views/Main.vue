@@ -277,7 +277,6 @@
 
 <script>
 // import videoPlayer from '@/components/vid.vue'
-import landingVidInfo from '@/assets/landingVid.js'
 export default {
   name: 'Main',
   components: {
@@ -308,8 +307,7 @@ export default {
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1585423370/guidingLanding/person-using-macbook-1181258.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
-    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe',
-    landingVidInfo: landingVidInfo
+    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
   })
 }
 </script>
