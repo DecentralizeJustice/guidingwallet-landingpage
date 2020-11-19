@@ -78,20 +78,26 @@
     <v-card
       flat
       tile
-      color='rgb(29, 66, 76)'
       class="white--text text-center"
-      style="width:100%;"
+      style="background-color: #0B5563;width:100%;"
     >
       <v-card-text>
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
           class="mx-4 white--text"
           icon
           href='https://twitter.com/GuidingWallet' link
         >
           <v-icon size="24px">
-            {{ icon }}
+            mdi-twitter
+          </v-icon>
+        </v-btn>
+        <v-btn
+          class="mx-4 white--text"
+          icon
+          href='https://github.com/DecentralizeJustice/GWDesk' link
+        >
+          <v-icon size="24px">
+            mdi-github
           </v-icon>
         </v-btn>
       </v-card-text>
@@ -107,6 +113,7 @@
 </template>
 
 <script>
+// current theme https://coolors.co/beb8eb-5299d3-0b5563-a2bce0-5e5c6c
 import Main from './views/Main.vue'
 export default {
   name: 'App',
@@ -118,7 +125,8 @@ export default {
     drawer: null,
     opts: [
       { title: 'Home', icon: 'home', color: 'grey darken-2', link: '' },
-      { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },
+      // { title: 'About', icon: 'download', link: '#Download' },
+      // { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },
       { title: 'Download', icon: 'download', link: '#Download' }
     ],
     icons: [
