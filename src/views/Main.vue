@@ -18,18 +18,11 @@
                   class="text-center"
                 >
                 <div
-<<<<<<< Updated upstream
-                class="font-weight-medium text-center white--text ma-4 text-wrap"
-                style="overflow-wrap: break-word;" v-bind:class="[heroTextSize]">
-                 Guiding Wallet
-               <p style="" class="display-1 mt-5">{{heroSubtext}}</p></div>
-=======
                 class="display-3 font-weight-medium text-center white--text ma-8 text-wrap"
                 style="overflow-wrap: break-word;">
                  {{heroSubtext}}
                <!-- <p style="" class="display-1 mt-5"></p>-->
                 </div>
->>>>>>> Stashed changes
                <v-btn
                  href="#Download"
                  color='#0B5563'
@@ -43,11 +36,7 @@
             </v-col>
           </v-row>
         </v-img>
-<<<<<<< Updated upstream
-        <v-container fluid class="mainGrad pa-0 ma-0">
-=======
         <v-container fluid style="background-color: #546E7A;">
->>>>>>> Stashed changes
         <v-row
         class="pa-3 ma-0"
         align="center"
@@ -84,24 +73,18 @@
           </v-col>
           <v-btn
             href="#Download"
-            color='blue-grey lighten-3'
+            color='#0B5563'
             class="mb-5"
           >
-            <div class="black--text">Get Guiding Wallet</div>
-            <v-icon right class="black--text">mdi-download</v-icon>
+            <div class="white--text">Get Guiding Wallet</div>
+            <v-icon right class="white--text">mdi-download</v-icon>
           </v-btn>
         </v-row>
         <v-row
         class="pa-3"
         align="center"
-<<<<<<< Updated upstream
-        justify='center'
-        class="ma-0"
-        id="Download"
-=======
         justify='space-around'
         style="background-color: #0B5563;"
->>>>>>> Stashed changes
           >
           <v-col
             cols="12"
