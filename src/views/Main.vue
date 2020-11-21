@@ -37,6 +37,21 @@
           </v-row>
         </v-img>
         <v-container fluid style="background-color: #546E7A;">
+          <v-row
+          class="pa-3"
+          align="center"
+          justify='space-around'
+          style="background-color: #546E7A;"
+            >
+            <v-col
+              cols="12"
+              >
+              <div class="text-center">
+                <h2 class="display-3 font-weight-bold white--text">Cryptos Are Hard To Use,</h2>
+                <h2 class="display-3 font-weight-bold white--text mt-3">They shouldn't be.</h2>
+              </div>
+            </v-col>
+        </v-row>
         <v-row
         class="pa-3 ma-0"
         align="center"
@@ -48,19 +63,16 @@
           class="pa-5 white--text"
           style="height:100%;"
           >
-          <div class="text-center mb-4">
-            <h2 class="display-3 font-weight-bold">Cryptos Are Hard To Use</h2>
-          </div>
           <div class="text-left">
             <p class="sectionText">
-              Guiding Wallet makes Cryptos easier and simpler with an All-in-One wallet that:</p>
+              Guiding Wallet makes using Cryptos easier with an All-in-One wallet that:</p>
               <ul class="list mb-5">
                 <li>Guides You with Crypto Courses</li>
                 <li>Helps You Use and Store Cryptos Securely</li>
                 <li>Answers Your Specific Questions about Crypto</li>
               </ul>
               <p class="sectionText">
-              Cryptos are hard. Don't make them harder by not getting help and attempting a D.I.Y. Solution.
+              Cryptos are hard. Don't make them harder by not getting help and going alone.
               </p>
 
           </div>
@@ -89,7 +101,7 @@
           <v-col
             cols="12"
             >
-            <div class="text-center mb-7">
+            <div class="text-center">
               <h2 class="display-3 font-weight-bold white--text">Steps To Using Guiding Wallet:</h2>
             </div>
           </v-col>
@@ -109,7 +121,7 @@
           <v-col
           cols="12"
           md='6'
-          class="pa-5 white--text"
+          class=" white--text"
           style="height:100%;"
           color='black'
           >
@@ -127,7 +139,7 @@
               </ul>
               <p class="sectionText">
               These courses consolidate decades of crypto knowldege into simple lessons and quizes.
-              These Courses save you months of research and ensure that you learn the right things.
+              This save you months of research and ensures that you learn the right things.
               </p>
           </div>
           </v-col>
@@ -157,14 +169,14 @@
           </div>
           <div class="text-left">
             <p class="sectionText">
-              Guiding Wallet is designed as a easy and safe way to store crypto. Using crypto safely is easy becuase we:</p>
+              Guiding Wallet is designed as an easy and safe way to store Crypto. We do this by:</p>
               <ul class="list mb-5">
-                <li>Support Hardware Wallets</li>
-                <li>Guide You On How to Use Other Software Wallets</li>
-                <li>Help you avoid common crypto pitfalls such as exchange hacks and computer hacks</li>
+                <li>Supporting Hardware Wallets</li>
+                <li>Guiding You On How to Use Other Software Wallets</li>
+                <li>Helping you avoid common Crypto pitfalls such as exchange hacks and scams</li>
               </ul>
               <p class="sectionText">
-              Guiding Wallet lest you store cryptos with hardware wallets and is 100% open source, both necessities for crypto security.
+              Guiding Wallet lets you store Cryptos with hardware wallets and is 100% open source, both necessities for crypto security.
               </p>
           </div>
           </v-col>
@@ -207,9 +219,9 @@
           </div>
           <div class="text-left">
             <p class="sectionText">
-              As You Build more crypto experience, Guiding Wallet offers You:</p>
+              As You Build more Crypto experience, Guiding Wallet offers You:</p>
               <ul class="list mb-5">
-                <li>Advanced Crypto Course</li>
+                <li>Advanced Crypto Courses</li>
                 <li>More Secure ways to store Crypto</li>
                 <li>Advanced Lessons on Privacy and Security</li>
                 <li>The Ability to Ask Experts Questions</li>
