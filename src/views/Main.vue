@@ -271,7 +271,7 @@
               color='#0B5563'
               class="mb-3"
             >
-              <span class="white--text">Download For MAC OS(No Big Sur)</span>
+              <span class="white--text">Download For MAC (No Big Sur)</span>
               <v-icon right class="white--text">mdi-download</v-icon>
             </v-btn>
             <v-btn
