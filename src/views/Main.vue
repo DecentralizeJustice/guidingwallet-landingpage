@@ -37,7 +37,7 @@
           </v-row>
         </v-img>
         <v-container fluid style="background-color: #546E7A;" class="ma-0 pa-0">
-          <v-row
+          <!-- <v-row
           class="pa-3"
           align="center"
           justify='space-around'
@@ -52,7 +52,7 @@
                 <h2 class="display-3 font-weight-regular white--text mt-3">Experience them Today</h2>
               </div>
             </v-col>
-        </v-row>
+        </v-row> -->
         <v-row no-gutters style="">
           <v-col
             cols="12"
@@ -123,7 +123,7 @@
           </v-col>
         </v-row>
         <v-row
-        class="py-5"
+        no-gutters
         align="center"
         justify='space-around'
         style="background-color: #424242;"
@@ -164,6 +164,7 @@
           </v-btn>
         </v-row>
         <v-row
+        no-gutters
         class="pa-3"
         align="center"
         justify='space-around'
@@ -178,6 +179,7 @@
           </v-col>
       </v-row>
         <v-row
+        no-gutters
         class="pa-3"
         align="center"
         justify='space-around'
@@ -197,7 +199,7 @@
           color='black'
           >
           <div class="text-center mb-4">
-            <h2 class="display-3 font-weight-medium">1. Cryptos are About Freedom</h2>
+            <h2 class="display-2 font-weight-medium">1. Cryptos are About Freedom</h2>
           </div>
           <div class="text-left">
             <p class="text-h5 font-weight-regular">
@@ -217,6 +219,7 @@
           </v-btn>
         </v-row>
         <v-row
+        no-gutters
         class="pa-3"
         align="center"
         justify='space-around'
@@ -229,7 +232,7 @@
           style="height:100%;"
           >
           <div class="text-center mb-4">
-            <h2 class="display-3 font-weight-medium">2. Freedom Requires Responsibility</h2>
+            <h2 class="display-2 font-weight-medium">2. Freedom Requires Responsibility</h2>
           </div>
           <div class="text-left">
               <p class="text-h5 font-weight-regular">
@@ -255,16 +258,16 @@
             <v-icon right class="white--text">mdi-download</v-icon>
           </v-btn>
         </v-row>
-        <!-- <videoPlayer v-bind:vidInfo='landingVidInfo'
-        v-bind:backgroundColor='buttonColor'/> -->
         <v-row
+                    no-gutters
         align="center"
-        justify='center'
-        class="pt-3"
+        justify='space-around'
+        class=""
         style="background-color: #546E7A;"
           >
           <v-col
             cols="6"
+            class="pa-4"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607637870/Screen_Shot_2020-12-10_at_5.04.16_PM.png"/>
           </v-col>
@@ -299,6 +302,7 @@
           </v-col>
         </v-row>
         <v-row
+        no-gutters
         class="pa-3"
         align="center"
         justify='space-around'
@@ -321,7 +325,6 @@
             Behind Guiding Wallet</h2>
           </div>
           <div class="text-left">
-            <!-- <p class="text-h4 text-center">Donely Gunn</p> -->
               <p class="text-h5">
               When I first learned about "magical internet money", I was confused but extremely intrigued.
               After studying Crypto more I became hooked, and
