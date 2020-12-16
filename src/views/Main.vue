@@ -18,7 +18,8 @@
                   class="text-center"
                 >
                 <div
-                class="text-h2 font-weight-medium text-center white--text ma-8 text-wrap"
+                :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
+                class="font-weight-medium text-center white--text ma-8 text-wrap"
                 style="overflow-wrap: break-word;">
                  {{heroSubtext}}
                <!-- <p style="" class="display-1 mt-5"></p>-->
@@ -37,7 +38,8 @@
           </v-row>
         </v-img>
         <v-container fluid style="background-color: #546E7A;" class="ma-0 pa-0">
-          <!-- <v-row
+          <v-row
+          no-gutters
           class="pa-3"
           align="center"
           justify='space-around'
@@ -47,12 +49,13 @@
               cols="12"
               class="my-4"
               >
-              <div class="text-center">
-                <h2 class="display-3 font-weight-regular white--text">Cryptos Offer New Freedoms;</h2>
-                <h2 class="display-3 font-weight-regular white--text mt-3">Experience them Today</h2>
+              <div class="text-center"
+              :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
+                <h2 class="font-weight-regular white--text mb-6">Cryptos Offer New Freedoms;</h2>
+                <h2 class="font-weight-regular white--text mt-6">Experience them Today</h2>
               </div>
             </v-col>
-        </v-row> -->
+        </v-row>
         <v-row no-gutters style="">
           <v-col
             cols="12"
@@ -73,37 +76,55 @@
                   <div class="text-center text-h5">
                   Next Trivia Show:
                   </div>
-                  <v-row no-gutters align-content='center' justify='space-around' class="">
+                  <v-row no-gutters align-content='center' justify='space-around' class=""
+                  :class="{'text-h5': $vuetify.breakpoint.mdAndUp,
+                  'text-h6': $vuetify.breakpoint.smAndDown}">
                     <v-col
                       cols="3"
                     >
-                  <div class="mt-2 text-center text-h5" style="font-size: large;">
-                    {{tillShowTime.days}} <br> Days
+                  <div class="mt-2 text-center" >
+                    {{tillShowTime.days}} <br>
+                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
+                    >
+                      Days
+                    </div>
                   </div>
                 </v-col>
                 <v-col
                   cols="3"
                 >
-                  <div class="mt-2 text-center text-h5" style="font-size: large;">
-                    {{tillShowTime.hours}} <br> Hours
+                  <div class="mt-2 text-center" >
+                    {{tillShowTime.hours}} <br>
+                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
+                    >
+                      Hours
+                    </div>
                   </div>
                 </v-col>
                 <v-col
                   cols="3"
                 >
-                  <div class="mt-2 text-center text-h5" style="font-size: large;">
-                    {{tillShowTime.minutes}} <br> Minutes
+                  <div class="mt-2 text-center">
+                    {{tillShowTime.minutes}} <br>
+                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
+                    >
+                      Minutes
+                    </div>
                   </div>
                 </v-col>
                 <v-col
                   cols="3"
                 >
-                  <div class="mt-2 text-center text-h5" style="font-size: large;">
-                    {{tillShowTime.seconds}} <br> Seconds
+                  <div class="mt-2 text-center" style="">
+                    {{tillShowTime.seconds}} <br>
+                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
+                    >
+                      Seconds
+                    </div>
                   </div>
                 </v-col>
                 </v-row>
-                <div class="text-center text-h5 mt-3">
+                <div class="text-center mt-3" :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Pot Size: <br> {{prizeAmount}} USD
                 </div>
                 <div class="text-center">
@@ -135,29 +156,30 @@
           style="height:100%;"
           >
           <div class="text-left pa-4">
-            <p class="text-h2 font-weight-regular">
-              Explore Cryptos with us. We explore Crypto with:</p>
-              <ul class="text-h4 font-weight-regular mt-3">
+            <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
+            'text-h3': $vuetify.breakpoint.smAndDown}">
+              Explore Cryptos with us! We have:</p>
+              <ul class="font-weight-regular mt-3"
+              :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
+              'text-h5': $vuetify.breakpoint.smAndDown}">
                 <li>Crypto Trivia with Crypto Rewards</li>
                 <li>Personalized Crypto Education</li>
                 <li>Hardware Wallet Based Security</li>
                 <li>Personal Support from a Crypto Expert</li>
               </ul>
-              <!-- <p class="sectionText">
-              You will loose money and waste time without proper Crypto Guidance.
-              </p> -->
           </div>
           </v-col>
           <v-col
             cols="12"
             md="5"
+            class="pa-3"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607644188/pexels-tima-miroshnichenko-5198239_1.jpg"/>
           </v-col>
           <v-btn
             href="#Download"
             color='#0B5563'
-            class="mb-5"
+            class="my-5"
           >
             <div class="white--text text-button">Explore Crypto</div>
             <v-icon right class="white--text">mdi-download</v-icon>
@@ -199,7 +221,8 @@
           color='black'
           >
           <div class="text-center mb-4">
-            <h2 class="display-2 font-weight-medium">1. Cryptos are About Freedom</h2>
+            <h2 class="display-2 font-weight-medium" :class="{
+            'mt-3': $vuetify.breakpoint.smAndDown}">1. Cryptos are About Freedom</h2>
           </div>
           <div class="text-left">
             <p class="text-h5 font-weight-regular">
@@ -212,7 +235,7 @@
           <v-btn
             href="#Download"
             color='#546E7A'
-            class="mb-5"
+            class="my-5"
           >
             <div class="white--text">Pursue Freedom</div>
             <v-icon right class="white--text">mdi-download</v-icon>
@@ -252,7 +275,7 @@
           <v-btn
             href="#Download"
             color='#0B5563'
-            class="mb-5"
+            class="my-5"
           >
             <div class="white--text">Start Working</div>
             <v-icon right class="white--text">mdi-download</v-icon>
@@ -266,8 +289,10 @@
         style="background-color: #546E7A;"
           >
           <v-col
-            cols="6"
-            class="pa-4"
+            cols="12" md='6'
+            class=""
+            :class="{'ma-3': $vuetify.breakpoint.mdAndUp,
+            'pa-1': $vuetify.breakpoint.smAndDown}"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607637870/Screen_Shot_2020-12-10_at_5.04.16_PM.png"/>
           </v-col>
@@ -278,7 +303,7 @@
             style="background: white;"
             class="pa-3 textBox"
             align='center'
-            :class="{'mb-5': $vuetify.breakpoint.smAndDown}"
+            :class="{'my-5': $vuetify.breakpoint.smAndDown}"
             >
             <div class="title mb-4">
               <h2 class="">Download Guiding Wallet</h2>
@@ -288,8 +313,11 @@
               :href='macDownloadLink' target="_blank"
               color='#0B5563'
               class="mb-3"
+              :class="{'button': $vuetify.breakpoint.mdAndUp,
+              'button': $vuetify.breakpoint.smAndDown}"
             >
-              <span class="white--text">Download For MAC (No Big Sur)</span>
+              <span class="white--text d-md-none">Download For MAC</span>
+              <span class="white--text hidden-sm-and-down">Download For MAC (No Big Sur)</span>
               <v-icon right class="white--text">mdi-download</v-icon>
             </v-btn>
             <v-btn
@@ -320,9 +348,9 @@
           class="pa-5 white--text"
           style="height:100%;"
           >
-          <div class="text-center mb-4">
-            <h2 class="display-3 font-weight-medium">
-            Behind Guiding Wallet</h2>
+          <div class="font-weight-medium text-center my-3" :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
+            'text-h4': $vuetify.breakpoint.smAndDown}">
+            Behind Guiding Wallet
           </div>
           <div class="text-left">
               <p class="text-h5">
