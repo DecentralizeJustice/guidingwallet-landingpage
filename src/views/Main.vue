@@ -431,7 +431,7 @@ export default {
   data: () => ({
     startTime: 1608861600,
     difference: 1000,
-    prizeAmount: 10,
+    prizeAmount: 20,
     heroSubtext: 'Guided Crypto Exploration',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1607474184/pexels-flo-maderebner-869258.jpg',
