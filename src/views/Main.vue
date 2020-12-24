@@ -255,14 +255,13 @@
           style="height:100%;"
           >
           <div class="text-center mb-4">
-            <h2 class="display-2 font-weight-medium">2. Freedom Requires Responsibility</h2>
+            <h2 class="display-2 font-weight-medium">2. Cryptos Should be Exciting</h2>
           </div>
           <div class="text-left">
               <p class="text-h5 font-weight-regular">
-              If your going to to be free, your going to have to make choices.
-              These choices can be as simple as Should You be using a hardware wallet? or
-              Which exchange you should use? All the way to picking your favorite monetary policy.
-              You shouldn't let other people make decisions about your money, so you have to be informed.
+              Cryptos are the most important inventions of the 21st century and you should feel that way.
+              If all you focud on is the price of crypto or what new crypto has an ICO you will miss out
+              on the really exciting parts of crypto. Join us as we explore the real exciting parts of Crypto.
               </p>
           </div>
           </v-col>
