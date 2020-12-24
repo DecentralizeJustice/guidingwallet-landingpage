@@ -227,8 +227,9 @@
           <div class="text-left">
             <p class="text-h5 font-weight-regular">
               The Crypto revolution isn't taking place on exchanges or waiting for institutional support.
-              It's a revolution that empowers individuals to take control of thier financial freedom.
-              This means we hold are own keys and make our own choices about our money.
+              It's a revolution that empowers you to take control of your financial freedom and
+              avoid abuse from centralized power. This means that you should control your keys and
+              make the important choices about your money.
             </p>
           </div>
           </v-col>
