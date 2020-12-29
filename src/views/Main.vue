@@ -161,7 +161,7 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              Don't get left behind. We explore all that Cryptos have to offer with:</p>
+              We explore all that Cryptos have to offer with:</p>
               <ul class="font-weight-regular mt-3"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
@@ -436,7 +436,7 @@ export default {
     startTime: 1610672400,
     difference: 1000,
     prizeAmount: 50,
-    heroSubtext: 'Crypto Means Something',
+    heroSubtext: 'A Guided Crypto Experience',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1607474184/pexels-flo-maderebner-869258.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
