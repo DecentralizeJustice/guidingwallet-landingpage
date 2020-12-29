@@ -429,7 +429,7 @@ export default {
     this.countDownTimer()
   },
   data: () => ({
-    startTime: 1609203600,
+    startTime: 1610067600,
     difference: 1000,
     prizeAmount: 20,
     heroSubtext: 'Guided Crypto Exploration',
