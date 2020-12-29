@@ -51,8 +51,8 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mb-6">Cryptos Offer New Freedoms;</h2>
-                <h2 class="font-weight-regular white--text mt-6">Experience them Today</h2>
+                <h2 class="font-weight-regular white--text mb-8">Cryptos stand for </h2>
+                <h2 class="font-weight-regular white--text mt-8">Freedom and Justice</h2>
               </div>
             </v-col>
         </v-row>
@@ -127,6 +127,9 @@
                 <div class="text-center mt-3" :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Pot Size: <br> {{prizeAmount}} USD
                 </div>
+                <div class="text-center mt-3" :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
+                Quiz Subject: <br> {{subject}}
+                </div>
                 <div class="text-center">
                 <v-btn
                   href="#Download"
@@ -158,7 +161,7 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              Explore Cryptos with us! We have:</p>
+              Don't get left behind. We explore all that Cryptos have to offer with:</p>
               <ul class="font-weight-regular mt-3"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
@@ -429,10 +432,11 @@ export default {
     this.countDownTimer()
   },
   data: () => ({
+    subject: 'Bitcoin',
     startTime: 1610672400,
     difference: 1000,
     prizeAmount: 50,
-    heroSubtext: 'Guided Crypto Exploration',
+    heroSubtext: 'Crypto Means Something',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1607474184/pexels-flo-maderebner-869258.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
