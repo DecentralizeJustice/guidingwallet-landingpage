@@ -18,7 +18,6 @@
         Guiding Wallet
       </div>
       </div>
-
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon class="hidden-md-and-up"
       @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -33,7 +32,6 @@
         <span class="">{{item.title}}</span>
         <v-icon right>mdi-{{item.icon}}</v-icon>
       </v-btn>
-
     </v-app-bar>
     <v-navigation-drawer
       app
@@ -69,7 +67,10 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-      <Main/>
+    <v-content>
+      <router-view>
+      </router-view>
+  </v-content>
 
       <v-footer
     dark
@@ -114,11 +115,9 @@
 
 <script>
 // current theme https://coolors.co/beb8eb-5299d3-0b5563-a2bce0-5e5c6c
-import Main from './views/Main.vue'
 export default {
   name: 'App',
   components: {
-    Main
   },
   data: () => ({
     buttonObject: 'hidden-sm-and-down mr-2',
@@ -127,13 +126,18 @@ export default {
       { title: 'Home', icon: 'home', color: 'grey darken-2', link: '' },
       // { title: 'About', icon: 'download', link: '#Download' },
       // { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },
-      { title: 'Download', icon: 'download', link: '#Download' }
+      { title: 'Download', icon: 'download', link: '/#Download' }
     ],
     icons: [
       'mdi-twitter'
     ]
   }),
   methods: {
+  },
+  watch: {
+    $route (to, from) {
+      console.log('changed')
+    }
   }
 }
 </script>
