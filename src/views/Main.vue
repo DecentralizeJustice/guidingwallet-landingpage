@@ -51,7 +51,7 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mt-8">A New Way to Learn About Cryptos</h2>
+                <h2 class="font-weight-regular white--text my-3" style="line-height: 120%;">A New Way to<br> Learn and Use Cryptos</h2>
               </div>
             </v-col>
         </v-row>
