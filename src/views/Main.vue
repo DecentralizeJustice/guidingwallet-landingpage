@@ -29,7 +29,7 @@
                  color='#0B5563'
                  class="mb-5"
                >
-                 <div class="white--text text-button">Explore Crypto</div>
+                 <div class="white--text text-button">Download Wallet</div>
                  <v-icon right class="white--text">mdi-download</v-icon>
                </v-btn>
                 </v-card>
@@ -43,7 +43,7 @@
           class="pa-3"
           align="center"
           justify='space-around'
-          style="background-color: #424242;"
+          style="background-color: #757575;"
             >
             <v-col
               cols="12"
@@ -51,8 +51,7 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mb-8">Cryptos stand for </h2>
-                <h2 class="font-weight-regular white--text mt-8">Freedom and Justice</h2>
+                <h2 class="font-weight-regular white--text mt-8">A New Way to Learn About Cryptos</h2>
               </div>
             </v-col>
         </v-row>
@@ -161,7 +160,7 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              We explore all that Cryptos have to offer with:</p>
+              We created a new way to learn about crypto with:</p>
               <ul class="font-weight-regular mt-3"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
@@ -290,6 +289,7 @@
         justify='space-around'
         class=""
         style="background-color: #546E7A;"
+                      id="Download"
           >
           <v-col
             cols="12" md='6'
@@ -312,7 +312,6 @@
               <h2 class="">Download Guiding Wallet</h2>
             </div>
             <v-btn
-              id="Download"
               :href='macDownloadLink' target="_blank"
               color='#0B5563'
               class="mb-3"
@@ -381,11 +380,10 @@
 </template>
 
 <script>
-// import videoPlayer from '@/components/vid.vue'
+const TIMEOUT = 1
 export default {
   name: 'Main',
   components: {
-    // videoPlayer
   },
   methods: {
     countDownTimer () {
@@ -396,6 +394,9 @@ export default {
           this.countDownTimer()
         }, 1000)
       }
+    },
+    scrollTo: function (hashtag) {
+      setTimeout(() => { location.href = hashtag }, TIMEOUT) // eslint-disable-line
     }
   },
   computed: {
@@ -430,6 +431,16 @@ export default {
   },
   mounted () {
     this.countDownTimer()
+    if (this.$route.hash) {
+      setTimeout(() => this.scrollTo(this.$route.hash), TIMEOUT)
+    }
+  },
+  watch: {
+    $route (to, from) {
+      if (this.$route.hash) {
+        setTimeout(() => this.scrollTo(this.$route.hash), TIMEOUT)
+      }
+    }
   },
   data: () => ({
     subject: 'Bitcoin',
@@ -438,7 +449,7 @@ export default {
     prizeAmount: 50,
     heroSubtext: 'A Guided Crypto Experience',
     buttonColor: 'rgb(29, 66, 76)',
-    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1607474184/pexels-flo-maderebner-869258.jpg',
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609471688/guidingLanding/pexels-flo-maderebner-869258_1.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
     winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
   })

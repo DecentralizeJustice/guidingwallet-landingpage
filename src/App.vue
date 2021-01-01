@@ -10,7 +10,7 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://res.cloudinary.com/dylevfpbl/image/upload/v1585333867/croppedCoin.png"
+          src="https://res.cloudinary.com/dylevfpbl/image/upload/v1609472198/guidingLanding/croppedCoin.png"
           transition="scale-transition"
           width="50"
         />
@@ -18,22 +18,21 @@
         Guiding Wallet
       </div>
       </div>
-
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon class="hidden-md-and-up"
       @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-
+      <router-link v-for="(item, index) in opts"
+        :key="`${item.title}`"
+      :to="{ path: item.link }">
       <v-btn
-        :color='item.color'
+        :color='getNaVColor(item, index)'
         v-bind:class="[buttonObject]"
-        v-for="item in opts"
-          :key="`${item.title}`"
-        :href='item.link'
+        Go to Bar
       >
         <span class="">{{item.title}}</span>
         <v-icon right>mdi-{{item.icon}}</v-icon>
       </v-btn>
-
+      </router-link>
     </v-app-bar>
     <v-navigation-drawer
       app
@@ -57,19 +56,23 @@
       <v-list
         nav
         dense
-      >
-        <v-list-item link v-for="item in opts"
-          :key="`${item.icon}`"
-          :href='item.link'
+      ><router-link v-for="item in opts"
+        :key="`${item.title}`"
+        :to="{ path: item.link }">
+        <v-list-item
         >
           <v-list-item-icon >
             <v-icon>mdi-{{item.icon}}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{item.title}}</v-list-item-title>
         </v-list-item>
+      </router-link>
       </v-list>
     </v-navigation-drawer>
-      <Main/>
+    <v-main>
+      <router-view>
+      </router-view>
+  </v-main>
 
       <v-footer
     dark
@@ -113,27 +116,58 @@
 </template>
 
 <script>
+const TIMEOUT = 1
 // current theme https://coolors.co/beb8eb-5299d3-0b5563-a2bce0-5e5c6c
-import Main from './views/Main.vue'
 export default {
   name: 'App',
   components: {
-    Main
   },
   data: () => ({
     buttonObject: 'hidden-sm-and-down mr-2',
     drawer: null,
+    currentRoute: 0,
+    linkObject: {
+      pastTrivia: 1,
+      home: 0
+    },
     opts: [
-      { title: 'Home', icon: 'home', color: 'grey darken-2', link: '' },
+      { title: 'Home', icon: 'home', link: '/' },
+      { title: 'Past Trivia', icon: 'calendar-clock', link: '/pastTrivia' }
       // { title: 'About', icon: 'download', link: '#Download' },
       // { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },
-      { title: 'Download', icon: 'download', link: '#Download' }
+      // { title: 'Download', icon: 'download', link: '/#Download' }
     ],
     icons: [
       'mdi-twitter'
     ]
   }),
+  mounted () {
+    // From testing, without a brief timeout, it won't work.
+    if (this.$route.hash) {
+      setTimeout(() => this.scrollTo(this.$route.hash), TIMEOUT)
+    }
+  },
   methods: {
+    getNaVColor: function (item, index) {
+      if (index === this.currentRoute) {
+        return 'grey darken-2'
+      } else {
+        return ''
+      }
+    },
+    scrollTo: function (hashtag) {
+      setTimeout(() => { location.href = hashtag }, TIMEOUT) // eslint-disable-line
+    },
+    goToPage: function (index) {
+      console.log(this.$route)
+      // this.route.push({ path: this.opts[index].link })
+    }
+  },
+  watch: {
+    $route (to, from) {
+      console.log(to)
+      this.currentRoute = this.linkObject[to.name]
+    }
   }
 }
 </script>
