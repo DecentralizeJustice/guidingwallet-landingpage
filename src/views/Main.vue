@@ -167,7 +167,7 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              We created a new way to learn about crypto with:</p>
+              I created a new way to learn about crypto with:</p>
               <ul class="font-weight-regular mt-3"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
@@ -205,7 +205,7 @@
             cols="12"
             >
             <div class="text-center">
-              <h2 class="display-3 font-weight-bold white--text">What We Believe:</h2>
+              <h2 class="display-3 font-weight-bold white--text">What I Believe:</h2>
             </div>
           </v-col>
       </v-row>
@@ -271,7 +271,7 @@
               <p class="text-h5 font-weight-regular">
               Cryptos are the most important inventions of the 21st century and you should feel that way.
               If all you focud on is the price of crypto or what new crypto has an ICO you will miss out
-              on the really exciting parts of crypto. Join us as we explore the real exciting parts of Crypto.
+              on the really exciting parts of crypto. Join me as I explore the real exciting parts of Crypto.
               </p>
           </div>
           </v-col>
