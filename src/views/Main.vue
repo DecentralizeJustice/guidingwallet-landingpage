@@ -43,7 +43,7 @@
           class="pa-3"
           align="center"
           justify='space-around'
-          style="background-color: #424242;"
+          style="background-color: #757575;"
             >
             <v-col
               cols="12"
@@ -51,8 +51,7 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mb-8">Cryptos stand for </h2>
-                <h2 class="font-weight-regular white--text mt-8">Freedom and Justice</h2>
+                <h2 class="font-weight-regular white--text mt-8">A New Way to Learn About Cryptos</h2>
               </div>
             </v-col>
         </v-row>
@@ -161,7 +160,7 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              We explore all that Cryptos have to offer with:</p>
+              We created a new way to learn about crypto with:</p>
               <ul class="font-weight-regular mt-3"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
