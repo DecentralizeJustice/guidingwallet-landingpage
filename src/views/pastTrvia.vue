@@ -117,7 +117,7 @@
             </v-card-text>
             <v-card-actions class="justify-center">
               <v-btn
-                color="green"
+                color="blue lighten-5"
                 @click="showAnswer(index)"
               >
                 Show Answer
