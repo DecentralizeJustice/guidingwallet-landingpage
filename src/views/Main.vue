@@ -10,8 +10,9 @@
                 class="heroImg"
                 style="height:85vh;"
               >
+              <v-col cols="12" md='7'>
                 <v-card
-                  :class="{'textBox': $vuetify.breakpoint.mdAndUp}"
+                  :class="{'textBox pa-1': $vuetify.breakpoint.mdAndUp}"
                   tile
                   :flat='flatOnMobile'
                   :color='textColor'
@@ -33,6 +34,12 @@
                  <v-icon right class="white--text">mdi-download</v-icon>
                </v-btn>
                 </v-card>
+                </v-col>
+                  <!-- <v-col cols="6">
+                      <v-img src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607637870/Screen_Shot_2020-12-10_at_5.04.16_PM.png"
+                      aspect-ratio="1.4">
+                    </v-img>
+                  </v-col> -->
               </v-row>
             </v-col>
           </v-row>
