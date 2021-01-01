@@ -1,7 +1,15 @@
 const info = {
   1609040898: {
     subject: 'Bitcoin',
-    summary: `This was our first show and we only had one contestant. The platform worked liked a beauty, we just have to get more contestants.
+    potSize: '20',
+    totalWinners: '0',
+    killerQuestion: '1',
+    potPerWinner: '20',
+    paymentMethod: 'Monero',
+    paymentMethodIcon: 'eye-off',
+    actualSlideLink: '',
+    notesLink: 'https://docs.google.com/presentation/d/1UOjb-m9Gg6We9UNn_RtMWSGi1IWhCNPAMD1mTbB2JDg/edit?usp=sharing',
+    summary: `This was our first show and we only had one contestant. The platform worked liked a beauty, but we just have to get more contestants.
     You can view the gameshow info below and see how you would have fared in this show. Well be sweetening the pot to 50 usd and comeback with some more great questions.`,
     questions: {
       hv: {
