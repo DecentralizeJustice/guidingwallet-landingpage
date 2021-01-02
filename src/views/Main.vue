@@ -58,7 +58,8 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text my-3" style="line-height: 120%;">A New Way to<br> Learn and Use Cryptos</h2>
+                <h2 class="font-weight-regular white--text mb-6" style="line-height: 90%;">Most Cryptos are Useless</h2>
+                <h2 class="font-weight-regular white--text mt-6" style="line-height: 90%;">We Explore the Useful Ones</h2>
               </div>
             </v-col>
         </v-row>
@@ -454,7 +455,7 @@ export default {
     startTime: 1610672400,
     difference: 1000,
     prizeAmount: 50,
-    heroSubtext: 'A Guided Crypto Experience',
+    heroSubtext: 'A Guided Crypto Journey',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609471688/guidingLanding/pexels-flo-maderebner-869258_1.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
