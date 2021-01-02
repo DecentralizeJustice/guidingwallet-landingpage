@@ -90,7 +90,7 @@
           icon
           href='https://twitter.com/GuidingWallet' link
         >
-          <v-icon size="24px">
+          <v-icon x-large>
             mdi-twitter
           </v-icon>
         </v-btn>
@@ -99,7 +99,7 @@
           icon
           href='https://github.com/DecentralizeJustice/GWDesk' link
         >
-          <v-icon size="24px">
+          <v-icon x-large>
             mdi-github
           </v-icon>
         </v-btn>
@@ -127,11 +127,13 @@ export default {
     drawer: null,
     currentRoute: 0,
     linkObject: {
-      pastTrivia: 1,
-      home: 0
+      pastTrivia: 2,
+      home: 0,
+      faq: 1
     },
     opts: [
       { title: 'Home', icon: 'home', link: '/' },
+      { title: 'FAQ', icon: 'help-circle', link: '/faq' },
       { title: 'Past Trivia', icon: 'calendar-clock', link: '/pastTrivia' }
       // { title: 'About', icon: 'download', link: '#Download' },
       // { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },

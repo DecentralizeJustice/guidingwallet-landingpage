@@ -14,6 +14,11 @@ const routes = [
     name: 'pastTrivia',
     component: () => import(/* webpackChunkName: "about" */ '../views/pastTrvia.vue')
   },
+  {
+    path: '/faq',
+    name: 'faq',
+    component: () => import(/* webpackChunkName: "about" */ '../views/faq.vue')
+  },
   { path: '*', component: Home }
   // {
   //   path: '/about',
