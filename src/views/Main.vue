@@ -68,7 +68,7 @@
             cols="12"
             >
             <v-parallax style="height:85vh;"
-            height="500"
+            height="700"
             src="https://res.cloudinary.com/dylevfpbl/image/upload/c_scale,w_1920/v1607490937/flipped.jpg">
             <v-row
                 align="center"
@@ -168,14 +168,15 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              I created a new way to learn about crypto with:</p>
+              Guidng Wallet lets you:</p>
               <ul class="font-weight-regular mt-3"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
-                <li>Crypto Trivia with Crypto Rewards</li>
-                <li>Personalized Crypto Education</li>
-                <li>Hardware Wallet Based Security</li>
-                <li>Personal Support from a Crypto Expert</li>
+                <li>Have Fun as You Learn</li>
+                <li>Explore The Best of Crypto</li>
+                <li>Avoid Scams and Wasted Time</li>
+                <li>Experience Cutting Edge Technology</li>
+
               </ul>
           </div>
           </v-col>
