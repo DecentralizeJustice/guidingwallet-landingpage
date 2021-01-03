@@ -58,8 +58,8 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mb-6" style="line-height: 90%;">Most Cryptos are Useless</h2>
-                <h2 class="font-weight-regular white--text mt-6" style="line-height: 90%;">We Explore the Useful Ones</h2>
+                <h2 class="font-weight-regular white--text mb-6" style="line-height: 90%;">Don't Get Lost On</h2>
+                <h2 class="font-weight-regular white--text mt-6" style="line-height: 90%;">Your Crypto Journey</h2>
               </div>
             </v-col>
         </v-row>
@@ -169,14 +169,13 @@
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
               Guidng Wallet lets you:</p>
-              <ul class="font-weight-regular mt-3"
+              <ul class="font-weight-regular mt-5"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <li>Have Fun as You Learn</li>
-                <li>Explore The Best of Crypto</li>
-                <li>Avoid Scams and Wasted Time</li>
-                <li>Experience Cutting Edge Technology</li>
-
+                <li>Store And Use Crypto Safely</li>
+                <li>Avoid Scams and Misinformation</li>
+                <li>Learn Crypto Fundamentals and Advanced Ideas</li>
               </ul>
           </div>
           </v-col>
@@ -187,16 +186,61 @@
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607644188/pexels-tima-miroshnichenko-5198239_1.jpg"/>
           </v-col>
-          <v-btn
+          <!-- <v-btn
             href="#Download"
             color='#0B5563'
             class="my-5"
           >
             <div class="white--text text-button">Explore Crypto</div>
             <v-icon right class="white--text">mdi-download</v-icon>
-          </v-btn>
+          </v-btn> -->
         </v-row>
         <v-row
+        no-gutters
+        class="pa-3"
+        align="center"
+        justify='space-around'
+        style="background-color: #546E7A;"
+          >
+          <v-col
+            cols="12"
+            md="5"
+            >
+            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607632279/test.jpg"/>
+          </v-col>
+          <v-col
+          cols="12"
+          md='6'
+          class="pa-5 white--text"
+          style="height:100%;"
+          >
+          <div class="font-weight-medium text-center my-3" :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
+            'text-h4': $vuetify.breakpoint.smAndDown}">
+            Why I Made Guiding Wallet
+          </div>
+          <div class="text-left">
+              <p class="text-h5">
+                Cryptos give me hope that we can have better payment systems, better governments and overall a better society.
+                After years in the crypto space I saw so people start out passionate about crypto, but overtime they lost thier
+                passion because of scams, misinformation, and some just plain greed.
+                I decided to create Guiding Wallet as a way to help people avoid common mistakes on thier crypto journey,
+                becuase in order for crypto to be successful we'll need many more passionate people.
+               <br> - Donely Gunn
+              </p>
+          </div>
+          <!-- <div class="text-center mt-3">
+            <v-btn
+              href="#Download"
+              color='#546E7A'
+              class="mb-5"
+            >
+              <div class="white--text">Join Me</div>
+              <v-icon right class="white--text">mdi-download</v-icon>
+            </v-btn>
+          </div> -->
+          </v-col>
+        </v-row>
+        <!-- <v-row
         no-gutters
         class="pa-3"
         align="center"
@@ -210,8 +254,8 @@
               <h2 class="display-3 font-weight-bold white--text">What I Believe:</h2>
             </div>
           </v-col>
-      </v-row>
-        <v-row
+      </v-row> -->
+        <!-- <v-row
         no-gutters
         class="pa-3"
         align="center"
@@ -291,13 +335,13 @@
             <div class="white--text">Start Working</div>
             <v-icon right class="white--text">mdi-download</v-icon>
           </v-btn>
-        </v-row>
+        </v-row> -->
         <v-row
                     no-gutters
         align="center"
         justify='space-around'
         class=""
-        style="background-color: #546E7A;"
+        style="background-color: #0B5563;"
                       id="Download"
           >
           <v-col
@@ -338,50 +382,6 @@
               <span class="white--text">Download For Windows 10</span>
               <v-icon right class="white--text">mdi-download</v-icon>
             </v-btn>
-          </v-col>
-        </v-row>
-        <v-row
-        no-gutters
-        class="pa-3"
-        align="center"
-        justify='space-around'
-        style="background-color: #0B5563;"
-          >
-          <v-col
-            cols="12"
-            md="5"
-            >
-            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607632279/test.jpg"/>
-          </v-col>
-          <v-col
-          cols="12"
-          md='6'
-          class="pa-5 white--text"
-          style="height:100%;"
-          >
-          <div class="font-weight-medium text-center my-3" :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
-            'text-h4': $vuetify.breakpoint.smAndDown}">
-            Behind Guiding Wallet
-          </div>
-          <div class="text-left">
-              <p class="text-h5">
-              When I first learned about "magical internet money", I was confused but extremely intrigued.
-              After studying Crypto more I became hooked, and
-              I decided to take the plunge and help fullfill what I saw as the Crypto Promise.
-              After years of studying and coding, I created Guiding Wallet as a way ensure that Crypto kept its Promise of freedom for all people.
-               - Donely Gunn
-              </p>
-          </div>
-          <div class="text-center mt-3">
-            <v-btn
-              href="#Download"
-              color='#546E7A'
-              class="mb-5"
-            >
-              <div class="white--text">Join Me</div>
-              <v-icon right class="white--text">mdi-download</v-icon>
-            </v-btn>
-          </div>
           </v-col>
         </v-row>
       </v-container>
