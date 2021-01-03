@@ -50,7 +50,7 @@
           class="pa-3"
           align="center"
           justify='space-around'
-          style="background-color: #757575;"
+          :class="{'big': $vuetify.breakpoint.mdAndUp, 'small': $vuetify.breakpoint.smAndDown}"
             >
             <v-col
               cols="12"
@@ -58,8 +58,7 @@
               >
               <div class="text-center"
               :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mb-6" style="line-height: 90%;">Don't Get Lost On</h2>
-                <h2 class="font-weight-regular white--text mt-6" style="line-height: 90%;">Your Crypto Journey</h2>
+                <h2 class="font-weight-regular white--text mb-6" style="line-height: 90%;">Don't Get Lost On Your Crypto Journey</h2>
               </div>
             </v-col>
         </v-row>
@@ -139,12 +138,12 @@
                 </div>
                 <div class="text-center">
                 <v-btn
-                  href="#Download"
+                  href="/trivia"
                   color='#0B5563'
                   class="mt-5"
                 >
-                  <div class="white--text text-button">Get Ready</div>
-                  <v-icon right class="white--text">mdi-download</v-icon>
+                  <div class="white--text text-button">Learn More</div>
+                  <!-- <v-icon right class="white--text">mdi-download</v-icon> -->
                 </v-btn>
               </div>
                   </v-card>
@@ -157,7 +156,7 @@
         no-gutters
         align="center"
         justify='space-around'
-        style="background-color: #424242;"
+        style="background-color: #0B5563;"
           >
           <v-col
           cols="12"
@@ -168,7 +167,7 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              Guidng Wallet lets you:</p>
+              Guiding Wallet lets you:</p>
               <ul class="font-weight-regular mt-5"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
@@ -220,15 +219,15 @@
           </div>
           <div class="text-left">
               <p class="text-h5">
-                Cryptos give me hope that we can have better payment systems, better governments and overall a better society.
-                After years in the crypto space I saw so people start out passionate about crypto, but overtime they lost thier
+                For years in the crypto space I saw so many people start out passionate about crypto.
+                Overtime a lot lost their
                 passion because of scams, misinformation, and some just plain greed.
-                I decided to create Guiding Wallet as a way to help people avoid common mistakes on thier crypto journey,
-                becuase in order for crypto to be successful we'll need many more passionate people.
+                I created Guiding Wallet as a way to help people avoid common mistakes in their crypto journey,
+                because in order for crypto to be successful we'll need many more passionate people.
                <br> - Donely Gunn
               </p>
           </div>
-          <!-- <div class="text-center mt-3">
+          <!-- <div class="text-center mt-3">                 Cryptos give me hope that we can have better payment systems, better governments and overall a better society.
             <v-btn
               href="#Download"
               color='#546E7A'
@@ -364,24 +363,30 @@
             <div class="title mb-4">
               <h2 class="">Download Guiding Wallet</h2>
             </div>
-            <v-btn
-              :href='macDownloadLink' target="_blank"
-              color='#0B5563'
-              class="mb-3"
-              :class="{'button': $vuetify.breakpoint.mdAndUp,
-              'button': $vuetify.breakpoint.smAndDown}"
-            >
-              <span class="white--text d-md-none">Download For MAC</span>
-              <span class="white--text hidden-sm-and-down">Download For MAC (No Big Sur)</span>
-              <v-icon right class="white--text">mdi-download</v-icon>
-            </v-btn>
+            <v-row>
+            <v-col cols='12' class="ma-0 pa-0">
+              <v-btn
+                :href='macDownloadLink' target="_blank"
+                color='#546E7A'
+                class="mb-3 mt-3"
+                :class="{'button': $vuetify.breakpoint.mdAndUp,
+                'button': $vuetify.breakpoint.smAndDown}"
+              >
+                <span class="white--text d-md-none">MAC</span>
+                <span class="white--text hidden-sm-and-down">MAC (No Big Sur)</span>
+                <v-icon right class="white--text">mdi-download</v-icon>
+              </v-btn>
+            </v-col>
+            <v-col cols='12' no-gutters class="ma-0 pa-0">
             <v-btn
               :href='winDownloadLink' target="_blank"
-              color='#0B5563'
+              color='#546E7A' class="mb-3"
             >
-              <span class="white--text">Download For Windows 10</span>
+              <span class="white--text">Windows 10</span>
               <v-icon right class="white--text">mdi-download</v-icon>
             </v-btn>
+          </v-col>
+          </v-row>
           </v-col>
         </v-row>
       </v-container>
@@ -389,6 +394,7 @@
 </template>
 
 <script>
+import triviaInfo from '@/assets/trivia.js'
 const TIMEOUT = 1
 export default {
   name: 'Main',
@@ -409,6 +415,15 @@ export default {
     }
   },
   computed: {
+    subject: function () {
+      return triviaInfo.default.subject
+    },
+    startTime: function () {
+      return triviaInfo.default.startTime
+    },
+    prizeAmount: function () {
+      return triviaInfo.default.prizeAmount
+    },
     tillShowTime: function () {
       const distance = this.difference
       const days = Math.floor(distance / (1000 * 60 * 60 * 24))
@@ -452,10 +467,7 @@ export default {
     }
   },
   data: () => ({
-    subject: 'Bitcoin',
-    startTime: 1610672400,
     difference: 1000,
-    prizeAmount: 50,
     heroSubtext: 'A Guided Crypto Journey',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609471688/guidingLanding/pexels-flo-maderebner-869258_1.jpg',
@@ -467,6 +479,12 @@ export default {
 <style scoped>
 .textBox {
   border-radius: 2em;
+}
+.big {
+  background-color: #424242;
+}
+.small {
+  background-color: #9E9E9E;
 }
 .mobileHero {
   background-color: rgba(39, 39, 39, .85)

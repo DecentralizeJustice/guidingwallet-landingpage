@@ -127,12 +127,16 @@ export default {
     drawer: null,
     currentRoute: 0,
     linkObject: {
-      pastTrivia: 2,
+      pastTrivia: 4,
       home: 0,
-      faq: 1
+      faq: 3,
+      trivia: 1,
+      lessons: 2
     },
     opts: [
       { title: 'Home', icon: 'home', link: '/' },
+      { title: 'Trivia', icon: 'gamepad-variant', link: '/trivia' },
+      { title: 'Lessons', icon: 'book', link: '/lessons' },
       { title: 'FAQ', icon: 'help-circle', link: '/faq' },
       { title: 'Past Trivia', icon: 'calendar-clock', link: '/pastTrivia' }
       // { title: 'About', icon: 'download', link: '#Download' },
