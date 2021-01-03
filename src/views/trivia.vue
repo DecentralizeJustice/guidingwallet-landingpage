@@ -64,7 +64,7 @@
         </v-row>
         <v-row justify="center"  no-gutters
          class="" style="background-color: #0B5563;height:100%;">
-          <v-col cols='10' md='8' class="text-h6 my-5 white--text rounded pa-2 text-left" style="background-color: grey;">
+          <v-col cols='10' md='8' class="text-subtitle-1 my-5 white--text rounded pa-2 text-left" style="background-color: grey;">
           {{howItWorks}}
           <v-row justify="center">
           <v-col cols='11' class="">
