@@ -45,7 +45,7 @@
           class="font-weight-medium text-left white--text ma-7 text-wrap"
           style="overflow-wrap: break-word;">
            Summary: <br>
-           <p class="text-subtitle-1">{{latestShow.summary}}</p>
+           <p class="text-subtitle-1 pa-3 mt-3" style="background-color: #616161;">{{latestShow.summary}}</p>
           </div>
           <div
           :class="{'text-h4': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
