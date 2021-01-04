@@ -26,7 +26,7 @@ Highs 😎
 3. Installed [plausible] and it was a great
 experience and beautiful product.
 
-Things To Do Better 🤠
+Things To Do Better 💪
 -------------------
 
 1. Make more specific content

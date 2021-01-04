@@ -1,5 +1,5 @@
 const info = {
-  subject: 'Bitcoin',
+  subject: 'Bitcoin Security',
   startTime: 1610672400,
   prizeAmount: 100,
   paymentMethod: 'Monero',
