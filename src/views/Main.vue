@@ -57,8 +57,10 @@
               class="my-4"
               >
               <div class="text-center"
-              :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text mb-6" style="line-height: 90%;">You Deserve a Better Crypto Experience</h2>
+              :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
+              'text-h4': $vuetify.breakpoint.smAndDown}">
+                <h2 class="font-weight-regular white--text " style="line-height: 90%;">
+                  Explore Useful Cryptos With Me</h2>
               </div>
             </v-col>
         </v-row>
@@ -130,10 +132,12 @@
                   </div>
                 </v-col>
                 </v-row>
-                <div class="text-center mt-3" :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
+                <div class="text-center mt-3"
+                :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Pot Size: <br> {{prizeAmount}} USD
                 </div>
-                <div class="text-center mt-3" :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
+                <div class="text-center mt-3"
+                :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Quiz Subject: <br> {{subject}}
                 </div>
                 <div class="text-center">
