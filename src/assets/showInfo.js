@@ -10,7 +10,7 @@ const info = {
     actualSlideLink: '',
     notesLink: 'https://docs.google.com/presentation/d/1UOjb-m9Gg6We9UNn_RtMWSGi1IWhCNPAMD1mTbB2JDg/edit?usp=sharing',
     summary: `This was my first show and I only had one contestant. The platform worked liked a beauty, but I just have to get more contestants.
-    You can view the gameshow info below and see how you would have fared in this show. I will be sweetening the pot to 50 usd and coming with some more great questions.`,
+    You can view the gameshow info below and see how you would have fared in this show. I will be sweetening the pot to 100 usd and coming with some more great questions.`,
     questions: {
       hv: {
         question: 'What Crypto Subject would you want to learn about?'
