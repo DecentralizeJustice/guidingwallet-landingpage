@@ -13,11 +13,10 @@
                 no-gutters
               >
                 <v-card
-                  :class="{'textBox': $vuetify.breakpoint.mdAndUp}"
                   tile
                   :flat='flatOnMobile'
                   :color='textColor'
-                  class="text-center"
+                  class="text-center rounded"
                 >
                 <div
                 :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
@@ -202,9 +201,6 @@ export default {
 }
 </script>
 <style scoped>
-.textBox {
-  border-radius: 2em;
-}
 .mobileHero {
   background-color: rgba(39, 39, 39, .85)
 }

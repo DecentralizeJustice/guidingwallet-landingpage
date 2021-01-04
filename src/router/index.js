@@ -12,22 +12,27 @@ const routes = [
   {
     path: '/pastTrivia',
     name: 'pastTrivia',
-    component: () => import(/* webpackChunkName: "about" */ '../views/pastTrvia.vue')
+    component: () => import('../views/pastTrvia.vue')
   },
   {
     path: '/faq',
     name: 'faq',
-    component: () => import(/* webpackChunkName: "about" */ '../views/faq.vue')
+    component: () => import('../views/faq.vue')
   },
   {
     path: '/trivia',
     name: 'trivia',
-    component: () => import(/* webpackChunkName: "about" */ '../views/trivia.vue')
+    component: () => import('../views/trivia.vue')
   },
   {
     path: '/lessons',
     name: 'lessons',
-    component: () => import(/* webpackChunkName: "about" */ '../views/lessons.vue')
+    component: () => import('../views/lessons.vue')
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: () => import('../views/blog.vue')
   },
   { path: '*', component: Home }
   // {

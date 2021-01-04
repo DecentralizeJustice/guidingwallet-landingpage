@@ -127,18 +127,21 @@ export default {
     drawer: null,
     currentRoute: 0,
     linkObject: {
-      pastTrivia: 4,
       home: 0,
-      faq: 3,
       trivia: 1,
-      lessons: 2
+      lessons: 2,
+      blog: 3,
+      pastTrivia: 4,
+      faq: 5
     },
     opts: [
       { title: 'Home', icon: 'home', link: '/' },
       { title: 'Trivia', icon: 'gamepad-variant', link: '/trivia' },
       { title: 'Lessons', icon: 'book', link: '/lessons' },
-      { title: 'FAQ', icon: 'help-circle', link: '/faq' },
-      { title: 'Past Trivia', icon: 'calendar-clock', link: '/pastTrivia' }
+      { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
+      { title: 'Past Trivia', icon: 'calendar-clock', link: '/pastTrivia' },
+      { title: 'FAQ', icon: 'help-circle', link: '/faq' }
+
       // { title: 'About', icon: 'download', link: '#Download' },
       // { title: 'Blog', icon: 'book-open-outline', link: 'https://guidingwallet.app/blog' },
       // { title: 'Download', icon: 'download', link: '/#Download' }
@@ -171,7 +174,6 @@ export default {
   },
   watch: {
     $route (to, from) {
-      console.log(to)
       this.currentRoute = this.linkObject[to.name]
     }
   }
