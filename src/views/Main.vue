@@ -60,7 +60,7 @@
               :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
               'text-h4': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text " style="line-height: 90%;">
-                  Explore Useful Cryptos With Me</h2>
+                  Explore Useful Cryptos With Us</h2>
               </div>
             </v-col>
         </v-row>
