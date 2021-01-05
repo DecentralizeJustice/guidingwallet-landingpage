@@ -86,7 +86,8 @@ export default {
     The pot will be divided by the number of winners. For example, if 5 people answer all the questions
     correctly and the potsize is 50 USD, each winner
     will receive around 10 USD in crypto. I will send payments as soon as I process all the trivia show data;
-    I am aiming to get them out the next day.`,
+    I am aiming to get them out the next day. We also cap the amount that a player can win by
+    30 usd as a way to cut down on cheating and keep our focus on education. More detailed info can be in wallet`,
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609688189/guidingLanding/pexels-katerina-holmes-5905434.jpg'
   }),
   components: {
@@ -102,6 +103,7 @@ export default {
       info.push([this.triviaInfo.timeToAnswer, 'To Answer Each One', 'clock-time-eight'])
       info.push([this.nextShowDate, 'Next Show', 'calendar-month'])
       info.push([this.triviaInfo.paymentMethod, 'Payment Crypto', 'eye-off'])
+      info.push([this.triviaInfo.maxWinsPerPlayer, 'Max Amount You Can Win', 'currency-usd-off'])
       return info
     },
     triviaInfo: function () {
