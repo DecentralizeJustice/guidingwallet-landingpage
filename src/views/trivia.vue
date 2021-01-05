@@ -80,7 +80,7 @@ export default {
   name: 'trivia',
   data: () => ({
     buttonColor: 'rgb(29, 66, 76)',
-    intro: `We have bi-weekly trivia shows where you can win real crypto.
+    intro: `We have trivia shows where you can win real crypto.
     You can view our past trivia shows to see how you would have fared and I'll catch you at the next one.`,
     howItWorks: ` The trivia will be held in our wallet. In order to win our trivia show you must answer all questions correctly.
     The pot will be divided by the number of winners. For example, if 5 people answer all the questions
