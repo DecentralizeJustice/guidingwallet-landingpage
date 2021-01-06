@@ -56,11 +56,13 @@
               cols="12"
               class="my-4"
               >
-              <div class="text-center"
+              <div class="text-left"
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text " style="line-height: 100%;">
-                  If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney</h2>
+                  Everyone knows about cryptos price. Does everyone know about its core beliefs and principles?
+                  <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
+                </h2>
               </div>
             </v-col>
         </v-row>
