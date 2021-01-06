@@ -56,12 +56,15 @@
               cols="12"
               class="my-4"
               >
-              <div class="text-left"
+              <div class="text-center"
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text " style="line-height: 100%;">
-                  Everyone knows about cryptos price. Does everyone know about its core beliefs and principles?
+                <h2 class="font-weight-regular white--text" style="line-height: 100%;">
+                  Everyone knows about cryptos price;
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
+                </h2>
+                <h2 class="font-weight-regular white--text mt-5" style="line-height: 100%;">
+                  What about its core beliefs and principles?
                 </h2>
               </div>
             </v-col>
