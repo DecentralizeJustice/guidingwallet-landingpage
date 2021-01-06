@@ -487,7 +487,7 @@ export default {
   },
   data: () => ({
     difference: 1000,
-    heroSubtext: 'Keeping The Crypto Promise',
+    heroSubtext: 'Keeping Crypto Free',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
