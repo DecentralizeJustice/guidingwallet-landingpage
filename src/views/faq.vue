@@ -41,7 +41,7 @@
             class="my-2"
             >
               <v-expansion-panel-header class="text-h6">{{question.q}}</v-expansion-panel-header>
-                <v-expansion-panel-content class="my-2 text-body-1">
+                <v-expansion-panel-content class="my-2 text-body-1 text-left">
                   {{question.a}}
                 </v-expansion-panel-content>
               </v-expansion-panel>

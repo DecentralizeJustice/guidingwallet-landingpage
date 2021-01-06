@@ -87,7 +87,7 @@ export default {
     correctly and the potsize is 50 USD, each winner
     will receive around 10 USD in crypto. I will send payments as soon as I process all the trivia show data;
     I am aiming to get them out the next day. We also cap the amount that a player can win by
-    30 usd as a way to cut down on cheating and keep our focus on education. More detailed info can be in wallet`,
+    30 usd as a way to cut down on cheating and keep our focus on education. More detailed info can be in wallet.`,
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609688189/guidingLanding/pexels-katerina-holmes-5905434.jpg'
   }),
   components: {

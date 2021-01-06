@@ -10,7 +10,7 @@
                 class="heroImg"
                 style="height:85vh;"
               >
-              <v-col cols="12" md='7'>
+              <v-col cols="12" md='6'>
                 <v-card
                   :class="{'textBox pa-1': $vuetify.breakpoint.mdAndUp}"
                   tile
@@ -26,11 +26,11 @@
                <!-- <p style="" class="display-1 mt-5"></p>-->
                 </div>
                <v-btn
-                 href="#Download"
+                 href="#About"
                  color='#0B5563'
                  class="mb-5"
                >
-                 <div class="white--text text-button">Download Wallet</div>
+                 <div class="white--text text-button">Learn More</div>
                  <v-icon right class="white--text">mdi-download</v-icon>
                </v-btn>
                 </v-card>
@@ -57,10 +57,10 @@
               class="my-4"
               >
               <div class="text-center"
-              :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
+              :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h4': $vuetify.breakpoint.smAndDown}">
-                <h2 class="font-weight-regular white--text " style="line-height: 90%;">
-                  Explore Useful Cryptos With Us</h2>
+                <h2 class="font-weight-regular white--text " style="line-height: 100%;">
+                  Most Cryptos are useless; <br>Explore the useful ones with me</h2>
               </div>
             </v-col>
         </v-row>
@@ -81,7 +81,11 @@
                   <v-card
                     class="pa-2"
                   >
-                  <div class="text-center text-h5">
+                  <div class="text-center text-h5 pa-3 rounded mx-auto white--text"
+                  style="background-color: #424242; width:75%;">
+                  Get Paid To Explore Crypto
+                  </div>
+                  <div class="text-center text-h5 mt-3">
                   Next Trivia Show:
                   </div>
                   <v-row no-gutters align-content='center' justify='space-around' class=""
@@ -138,7 +142,7 @@
                 </div>
                 <div class="text-center mt-3"
                 :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                Quiz Subject: <br> {{subject}}
+                Subject: <br> {{subject}}
                 </div>
                 <div class="text-center">
                 <v-btn
@@ -171,14 +175,14 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              Guiding Wallet lets you:</p>
+              Guiding Wallet Offers:</p>
               <ul class="font-weight-regular mt-5"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
-                <li>Have Fun as You Learn</li>
-                <li>Store And Use Crypto Safely</li>
-                <li>Avoid Scams and Misinformation</li>
-                <li>Learn Crypto Fundamentals and Advanced Ideas</li>
+                <li>Engaging and Informative Trivia</li>
+                <li>Open and Secure Ways To Use Crypto</li>
+                <li>Well Researched and Curated Courses</li>
+                <li>Direct Support from the Person Who Built it</li>
               </ul>
           </div>
           </v-col>
@@ -212,6 +216,7 @@
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607632279/test.jpg"/>
           </v-col>
           <v-col
+          id='About'
           cols="12"
           md='6'
           class="pa-5 white--text"
@@ -223,14 +228,24 @@
           </div>
           <div class="text-left">
               <p class="text-h5">
-                For years in the crypto space I saw so many people start out passionate about crypto.
-                Overtime a lot lost their
-                passion because of scams, misinformation, and some just plain greed.
-                I created Guiding Wallet as a way to help people avoid common mistakes in their crypto journey,
-                because in order for crypto to be successful we'll need many more passionate people.
+                Cryptos were built on a promise of financial freedom and privacy for those willing to use them.
+                Although its a good thing that crypto has grown and seen more use,  this fundamental
+                promise has been weakened. I made Guiding Wallet as a way for people
+                to use different crypto currencies, but without compromising on fundamental
+                promise of financial freedom and privacy that was at the core of their foundation.
                <br> - Donely Gunn
               </p>
           </div>
+          <div class="text-center">
+          <v-btn
+            href="/faq"
+            color='#0B5563'
+            class="mt-5"
+          >
+            <div class="white--text text-button">Explore More</div>
+            <!-- <v-icon right class="white--text">mdi-download</v-icon> -->
+          </v-btn>
+        </div>
           <!-- <div class="text-center mt-3">                 Cryptos give me hope that we can have better payment systems, better governments and overall a better society.
             <v-btn
               href="#Download"
@@ -472,7 +487,7 @@ export default {
   },
   data: () => ({
     difference: 1000,
-    heroSubtext: 'A Guided Crypto Experience',
+    heroSubtext: 'Keeping The Crypto Promise',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609471688/guidingLanding/pexels-flo-maderebner-869258_1.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
