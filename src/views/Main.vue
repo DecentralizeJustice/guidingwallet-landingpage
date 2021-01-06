@@ -489,7 +489,7 @@ export default {
     difference: 1000,
     heroSubtext: 'Keeping The Crypto Promise',
     buttonColor: 'rgb(29, 66, 76)',
-    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609471688/guidingLanding/pexels-flo-maderebner-869258_1.jpg',
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
     winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
   })
