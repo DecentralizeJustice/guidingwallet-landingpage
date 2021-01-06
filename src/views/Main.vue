@@ -64,7 +64,7 @@
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
                 <h2 class="font-weight-regular white--text mt-5" style="line-height: 100%;">
-                  What about its core beliefs and principles?
+                  What about its core principles?
                 </h2>
               </div>
             </v-col>
