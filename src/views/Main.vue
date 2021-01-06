@@ -60,7 +60,7 @@
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  Everyone knows about cryptos price;
+                  Everyones buying crypto;
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
                 <h2 class="font-weight-regular white--text mt-5" style="line-height: 100%;">
