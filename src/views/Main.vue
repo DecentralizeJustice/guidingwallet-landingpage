@@ -60,7 +60,7 @@
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h4': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text " style="line-height: 100%;">
-                  Most Cryptos are useless; <br>Explore the useful ones with me</h2>
+                  If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney</h2>
               </div>
             </v-col>
         </v-row>
@@ -83,7 +83,7 @@
                   >
                   <div class="text-center text-h5 pa-3 rounded mx-auto white--text"
                   style="background-color: #424242; width:75%;">
-                  Get Paid To Explore Crypto
+                  Learn About & Win Crypto
                   </div>
                   <div class="text-center text-h5 mt-3">
                   Next Trivia Show:
