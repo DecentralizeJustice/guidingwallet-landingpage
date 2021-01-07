@@ -10,7 +10,7 @@
                 class="heroImg"
                 style="height:85vh;"
               >
-              <v-col cols="12" md='6'>
+              <v-col cols="12" md='8'>
                 <v-card
                   :class="{'textBox pa-1': $vuetify.breakpoint.mdAndUp}"
                   tile
@@ -20,7 +20,7 @@
                 >
                 <div
                 :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
-                class="font-weight-medium text-center white--text ma-8 text-wrap"
+                class="font-weight-medium text-center white--text ma-4 text-wrap"
                 style="overflow-wrap: break-word;">
                  {{heroSubtext}}
                <!-- <p style="" class="display-1 mt-5"></p>-->
@@ -60,11 +60,8 @@
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  Everyones buying crypto;
+                  Everyones buying Crypto;<br>But Their Uesless Without Their Ideas
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
-                </h2>
-                <h2 class="font-weight-regular white--text mt-5" style="line-height: 100%;">
-                  What about its core principles?
                 </h2>
               </div>
             </v-col>
@@ -73,14 +70,14 @@
           <v-col
             cols="12"
             >
-            <v-parallax style="height:85vh;"
-            height="700"
-            src="https://res.cloudinary.com/dylevfpbl/image/upload/c_scale,w_1920/v1607490937/flipped.jpg">
             <v-row
                 align="center"
+                justify='space-around'
+                class="py-4"
               >
+                <miniGame/>
                 <v-col
-                  md='4' offset-md="7"
+                  md='4'
                   cols='12'
                 >
                   <v-card
@@ -88,10 +85,10 @@
                   >
                   <div class="text-center text-h5 pa-3 rounded mx-auto white--text"
                   style="background-color: #424242; width:75%;">
-                  Learn About & Win Crypto
+                  Learn & Win Crypto
                   </div>
                   <div class="text-center text-h5 mt-3">
-                  Next Trivia Show:
+                  Next Game Show:
                   </div>
                   <v-row no-gutters align-content='center' justify='space-around' class=""
                   :class="{'text-h5': $vuetify.breakpoint.mdAndUp,
@@ -162,7 +159,6 @@
                   </v-card>
                 </v-col>
               </v-row>
-            </v-parallax>
           </v-col>
         </v-row>
         <v-row
@@ -418,11 +414,13 @@
 </template>
 
 <script>
+import miniGame from '@/components/pastQuiz.vue'
 import triviaInfo from '@/assets/trivia.js'
 const TIMEOUT = 1
 export default {
   name: 'Main',
   components: {
+    miniGame
   },
   methods: {
     countDownTimer () {
@@ -492,7 +490,7 @@ export default {
   },
   data: () => ({
     difference: 1000,
-    heroSubtext: 'Keeping Crypto Free',
+    heroSubtext: 'Making Crypto Ideals Real',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',

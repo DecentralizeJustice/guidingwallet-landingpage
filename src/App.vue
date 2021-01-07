@@ -136,10 +136,10 @@ export default {
     },
     opts: [
       { title: 'Home', icon: 'home', link: '/' },
-      { title: 'Trivia', icon: 'gamepad-variant', link: '/trivia' },
+      { title: 'Game Show', icon: 'gamepad-variant', link: '/trivia' },
       { title: 'Lessons', icon: 'book', link: '/lessons' },
       { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
-      { title: 'Past Trivia', icon: 'calendar-clock', link: '/pastTrivia' },
+      { title: 'Past Games', icon: 'calendar-clock', link: '/pastTrivia' },
       { title: 'FAQ', icon: 'help-circle', link: '/faq' }
 
       // { title: 'About', icon: 'download', link: '#Download' },
