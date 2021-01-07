@@ -73,7 +73,7 @@
             <v-row
                 align="center"
                 justify='space-around'
-                class="py-4"
+                class="pa-4"
               >
                 <miniGame/>
                 <v-col
@@ -234,7 +234,7 @@
                 promise has been weakened. I made Guiding Wallet as a way for people
                 to use different crypto currencies, but without compromising on fundamental
                 promise of financial freedom and privacy that was at the core of their foundation.
-               <br> - Donely Gunn
+               <br> - Donely Gunn 😎
               </p>
           </div>
           <div class="text-center">

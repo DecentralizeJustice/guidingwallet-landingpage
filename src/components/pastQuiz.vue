@@ -1,6 +1,6 @@
 <template>
     <v-col
-      cols="12" md='6'  lg='6'
+      cols="12" md='6'
     >
     <v-card
       class="pa-2"
@@ -14,41 +14,41 @@
         <p class="display-1 black--text mt-3">
           {{latestShow.questions[randomNumber].questionInfo.question}}
         </p>
-        <v-list >
+        <v-list rounded>
           <v-list-item-group
+          color='primary'
+          v-model="chosen"
           >
             <v-list-item
               v-for="(item, i) in latestShow.questions[randomNumber].questionInfo.options"
               :key="i"
+              color='primary'
+              @click='select(i)'
             >
               <v-list-item-content >
-                <v-list-item-title v-text="item"
+                <v-list-item-title v-text="item" color='primary'
                 class="text-h6"></v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
         </v-list>
-        <div v-if='showAnswer'>
-        Answer:
+        <v-col v-if='correct' cols='12' md="6" class="mx-auto">
+          <v-alert
+            color="success"
+            icon="mdi-check-bold"
+            prominent
+            border="left"
+            class="text-center white--text text-h4"
+          > Correct!!! <br> 😎
+            </v-alert>
+        </v-col>
+        <div v-if='showAnswer' class="text-h4 black--text mt-3">
+        <div class="ma-0 pa-0 text-h6 mb-1">Answer: </div>
         {{answerText}}
         </div>
       </v-card-text>
       <v-card-actions class="justify-center">
       </v-card-actions>
-      <!-- <v-expand-transition>
-        <v-card
-        flat rounded='0'
-          v-if="showAnswerInfo[index] !== undefined"
-          class="transition-fast-in-fast-out v-card--reveal"
-          style="background-color: #546E7A;"
-        >
-          <v-card-text class="">
-            <p class="display-1 white--text">
-              {{latestShow.questions[index].questionInfo.options[latestShow.questions[index].answer]}}
-            </p>
-          </v-card-text>
-        </v-card>
-      </v-expand-transition> -->
     </v-card>
     <div style="width:75%;" class="mx-auto">
       <v-progress-linear
@@ -71,10 +71,11 @@ export default {
     randomNumber: 2,
     startTime: 22222222222222,
     timeToAnswer: 15,
-    timeToPonder: 10,
+    timeToPonder: 5,
     difference: 2,
     showAnswer: false,
-    comp: [100000, 100000]
+    chosen: undefined,
+    correct: false
     // answer: false
   }),
   computed: {
@@ -99,13 +100,24 @@ export default {
     }
   },
   methods: {
+    select (i) {
+      this.chosen = i
+    },
+    checkAnswer () {
+      console.log(this.chosen, this.answerIndex)
+      if (parseInt(this.chosen) === parseInt(this.answerIndex)) {
+        this.correct = true
+      }
+    },
     countDownTimer () {
       const current = Date.now()
       const dif = current - this.startTime
       if (this.showAnswer) {
         if (dif > this.timeToPonder * 1000) {
+          this.chosen = undefined
           this.startTime = Date.now()
           this.showAnswer = false
+          this.correct = false
           this.genRandomNumber()
         }
         this.difference = dif
@@ -114,6 +126,7 @@ export default {
         }, 100)
       } else {
         if (dif > this.timeToAnswer * 1000) {
+          this.checkAnswer()
           this.startTime = Date.now()
           this.showAnswer = true
         }
