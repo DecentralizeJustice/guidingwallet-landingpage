@@ -57,10 +57,10 @@
               class="my-4"
               >
               <div class="text-center"
-              :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
+              :class="{'text-h4 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  Guiding Wallet lets you get the most out of Crypto
+                  Guiding Wallet lets you get the most out of Crypto, by focusing on Cryptos Founding Principles
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
               </div>
@@ -169,13 +169,13 @@
           <div class="text-left pa-4">
             <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
             'text-h3': $vuetify.breakpoint.smAndDown}">
-              Guiding Wallet Offers:</p>
+              Guiding Wallet Offers You:</p>
               <ul class="font-weight-regular mt-5"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <li>Engaging Trivia</li>
-                <li>Secure Ways To Use Crypto</li>
                 <li>Well Researched Courses</li>
+                <li>Secure Ways To Use Crypto</li>
                 <li>Direct Support from the Person Who Built it</li>
               </ul>
           </div>
@@ -487,7 +487,7 @@ export default {
   },
   data: () => ({
     difference: 1000,
-    heroSubtext: 'The Crypto Wallet That Does More',
+    heroSubtext: 'Making Crypto Ideals Real',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
