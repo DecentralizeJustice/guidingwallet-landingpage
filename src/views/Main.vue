@@ -60,27 +60,22 @@
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  A Next-Generation Wallet that helps you with every aspect of Cryptocurrencies.
+                  A Next-Generation Wallet that helps you explore every aspect of Crypto
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
               </div>
             </v-col>
         </v-row>
-        <v-row no-gutters style="">
-          <v-col
-            cols="12"
-            >
-            <v-row
-                align="center"
-                justify='space-around'
-                class="pa-4"
-              >
+        <v-row no-gutters align="center"
+        justify='space-around'
+        class="pa-4"
+        style="">
                 <v-col
                   md='4'
                   cols='12'
                 >
                   <v-card
-                    class="pa-2"
+                    class="pa-2 ma-2"
                   >
                   <div class="text-center text-h5 pa-3 rounded mx-auto white--text"
                   style="background-color: #424242; width:75%;">
@@ -158,8 +153,6 @@
                   </v-card>
                 </v-col>
                 <miniGame/>
-              </v-row>
-          </v-col>
         </v-row>
         <v-row
         no-gutters
