@@ -340,7 +340,8 @@ export default {
         link: 'lessons'
       },
       {
-        summary: `Hardware Wallets are the culmination of years of work focused on crypto security.
+        summary: `Hardware Wallets are the culmination of years of work focused on crypto security
+        and vital for crypto security.
         I adore and love them; I will help you learn to love them also.`,
         title: 'Simple Security',
         cat: 'Learn More',
