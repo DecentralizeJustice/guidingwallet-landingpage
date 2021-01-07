@@ -60,7 +60,7 @@
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  Everyones buying Crypto;<br>But Their Uesless Without Their Ideas
+                  A Next-Generation Wallet that helps you with every aspect of Cryptocurrencies.
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
               </div>
@@ -75,7 +75,6 @@
                 justify='space-around'
                 class="pa-4"
               >
-                <miniGame/>
                 <v-col
                   md='4'
                   cols='12'
@@ -158,6 +157,7 @@
               </div>
                   </v-card>
                 </v-col>
+                <miniGame/>
               </v-row>
           </v-col>
         </v-row>
@@ -213,6 +213,8 @@
           <v-col
             cols="12"
             md="5"
+            order-sm="5"
+            order-md="1"
             >
             <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607632279/test.jpg"/>
           </v-col>
@@ -222,6 +224,8 @@
           md='6'
           class="pa-5 white--text"
           style="height:100%;"
+          order-sm="1"
+          order-md="5"
           >
           <div class="font-weight-medium text-center my-3" :class="{'text-h3': $vuetify.breakpoint.mdAndUp,
             'text-h4': $vuetify.breakpoint.smAndDown}">
