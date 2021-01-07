@@ -60,16 +60,67 @@
               :class="{'text-h4 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  Guiding Wallet lets you get the most out of Crypto, by focusing on Cryptos Founding Principles
+                  How We Help You Explore Crypto
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
               </div>
             </v-col>
+            <v-col
+              cols="10"
+              md='3'
+              class="my-4"
+              v-for="(item, index) in offers"
+              :key='index'
+              >
+              <v-card
+                class="mx-auto"
+                outlined
+              >
+              <div class="text-center mt-2">
+              <v-icon style="font-size: 400%;" class="mx-auto"
+              color="teal lighten-2">{{item.icon}}</v-icon>
+              </div>
+              <v-card-title class="headline text-center justify-center">
+                {{item.title}}
+              </v-card-title>
+              <div class="ma-2 pa-2">
+                {{item.summary}}
+              </div>
+              <v-card-actions class="justify-center">
+                <div class="text-center">
+                <router-link :to="item.link">
+                <v-btn
+                  rounded
+                  color="teal lighten-2"
+                  class="white--text text-button"
+                >
+                  {{item.cat}}
+                </v-btn>
+              </router-link>
+            </div>
+              </v-card-actions>
+              </v-card>
+            </v-col>
         </v-row>
         <v-row no-gutters align="center"
+        style="background-color: #0B5563;"
         justify='space-around'
         class="pa-4"
-        style="">
+        id='Game'
+        >
+        <v-col
+          cols="12"
+          class="my-4"
+          >
+          <div class="text-center"
+          :class="{'text-h4 pa-3': $vuetify.breakpoint.mdAndUp,
+          'text-h5': $vuetify.breakpoint.smAndDown}">
+            <h2 class="font-weight-regular white--text" style="line-height: 100%;">
+              Test Your Crpto Smarts 🤓
+              <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
+            </h2>
+          </div>
+        </v-col>
                 <v-col
                   md='4'
                   cols='12'
@@ -156,48 +207,6 @@
         </v-row>
         <v-row
         no-gutters
-        align="center"
-        justify='space-around'
-        style="background-color: #0B5563;"
-          >
-          <v-col
-          cols="12"
-          md='6'
-          class="white--text"
-          style="height:100%;"
-          >
-          <div class="text-left pa-4">
-            <p class="font-weight-regular" :class="{'text-h2': $vuetify.breakpoint.mdAndUp,
-            'text-h3': $vuetify.breakpoint.smAndDown}">
-              Guiding Wallet Offers You:</p>
-              <ul class="font-weight-regular mt-5"
-              :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
-              'text-h5': $vuetify.breakpoint.smAndDown}">
-                <li>Engaging Trivia</li>
-                <li>Well Researched Courses</li>
-                <li>Secure Ways To Use Crypto</li>
-                <li>Direct Support from the Person Who Built it</li>
-              </ul>
-          </div>
-          </v-col>
-          <v-col
-            cols="12"
-            md="5"
-            class="pa-3"
-            >
-            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607644188/pexels-tima-miroshnichenko-5198239_1.jpg"/>
-          </v-col>
-          <!-- <v-btn
-            href="#Download"
-            color='#0B5563'
-            class="my-5"
-          >
-            <div class="white--text text-button">Explore Crypto</div>
-            <v-icon right class="white--text">mdi-download</v-icon>
-          </v-btn> -->
-        </v-row>
-        <v-row
-        no-gutters
         class="pa-3"
         align="center"
         justify='space-around'
@@ -241,117 +250,10 @@
             class="mt-5"
           >
             <div class="white--text text-button">Explore More</div>
-            <!-- <v-icon right class="white--text">mdi-download</v-icon> -->
           </v-btn>
         </div>
-          <!-- <div class="text-center mt-3">                 Cryptos give me hope that we can have better payment systems, better governments and overall a better society.
-            <v-btn
-              href="#Download"
-              color='#546E7A'
-              class="mb-5"
-            >
-              <div class="white--text">Join Me</div>
-              <v-icon right class="white--text">mdi-download</v-icon>
-            </v-btn>
-          </div> -->
           </v-col>
         </v-row>
-        <!-- <v-row
-        no-gutters
-        class="pa-3"
-        align="center"
-        justify='space-around'
-        style="background-color: #0B5563;"
-          >
-          <v-col
-            cols="12"
-            >
-            <div class="text-center">
-              <h2 class="display-3 font-weight-bold white--text">What I Believe:</h2>
-            </div>
-          </v-col>
-      </v-row> -->
-        <!-- <v-row
-        no-gutters
-        class="pa-3"
-        align="center"
-        justify='space-around'
-        style="background-color: #0B5563;"
-          >
-          <v-col
-            cols="12"
-            md="5"
-            >
-            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607630309/pexels-joslyn-pickens-3833052.jpg"/>
-          </v-col>
-          <v-col
-          cols="12"
-          md='6'
-          class=" white--text"
-          style="height:100%;"
-          color='black'
-          >
-          <div class="text-center mb-4">
-            <h2 class="display-2 font-weight-medium" :class="{
-            'mt-3': $vuetify.breakpoint.smAndDown}">1. Cryptos are About Freedom</h2>
-          </div>
-          <div class="text-left">
-            <p class="text-h5 font-weight-regular">
-              The Crypto revolution isn't taking place on exchanges or waiting for institutional support.
-              It's a revolution that empowers you to take control of your financial freedom and
-              avoid abuse from centralized power. This means that you should control your keys and
-              make the important choices about your money.
-            </p>
-          </div>
-          </v-col>
-          <v-btn
-            href="#Download"
-            color='#546E7A'
-            class="my-5"
-          >
-            <div class="white--text">Pursue Freedom</div>
-            <v-icon right class="white--text">mdi-download</v-icon>
-          </v-btn>
-        </v-row>
-        <v-row
-        no-gutters
-        class="pa-3"
-        align="center"
-        justify='space-around'
-        style="background-color: rgba(39, 39, 39);"
-          >
-          <v-col
-          cols="12"
-          md='6'
-          class="pa-5 white--text"
-          style="height:100%;"
-          >
-          <div class="text-center mb-4">
-            <h2 class="display-2 font-weight-medium">2. Cryptos Should be Exciting</h2>
-          </div>
-          <div class="text-left">
-              <p class="text-h5 font-weight-regular">
-              Cryptos are the most important inventions of the 21st century and you should feel that way.
-              If all you focud on is the price of crypto or what new crypto has an ICO you will miss out
-              on the really exciting parts of crypto. Join me as I explore the real exciting parts of Crypto.
-              </p>
-          </div>
-          </v-col>
-          <v-col
-            cols="12"
-            md="5"
-            >
-            <v-img  src="https://res.cloudinary.com/dylevfpbl/image/upload/v1607630664/pexels-rfstudio-3059748.jpg"/>
-          </v-col>
-          <v-btn
-            href="#Download"
-            color='#0B5563'
-            class="my-5"
-          >
-            <div class="white--text">Start Working</div>
-            <v-icon right class="white--text">mdi-download</v-icon>
-          </v-btn>
-        </v-row> -->
         <v-row
                     no-gutters
         align="center"
@@ -419,6 +321,40 @@ export default {
   components: {
     miniGame
   },
+  data: () => ({
+    offers: [
+      {
+        summary: `My Gameshow helps you learn about crypto and win some.
+        These gameshows keep your crypto smarts sharp and help us spread the crypto gosepel without spammy ads.`,
+        title: 'Informative Gameshows',
+        cat: 'Try Past Quizes',
+        icon: 'mdi-gamepad-variant',
+        link: '#Game'
+      },
+      {
+        summary: `My courses cover the important parts of Crypto. We cover everything from
+        how to own your crypto to who crypto pioneers like Hal Finney are.`,
+        title: 'Engaging Courses',
+        cat: 'View Courses',
+        icon: 'mdi-book',
+        link: 'lessons'
+      },
+      {
+        summary: `Hardware Wallets are the culmination of years of work focused on crypto security.
+        We adore and love them and we will help you learn to love them also.`,
+        title: 'Simple Security',
+        cat: 'Learn More',
+        icon: 'mdi-lock-check',
+        link: 'faq'
+      }
+    ],
+    difference: 1000,
+    heroSubtext: 'A Guided Crypto Journey',
+    buttonColor: 'rgb(29, 66, 76)',
+    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
+    macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
+    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
+  }),
   methods: {
     countDownTimer () {
       if (this.difference > 0) {
@@ -484,15 +420,7 @@ export default {
         setTimeout(() => this.scrollTo(this.$route.hash), TIMEOUT)
       }
     }
-  },
-  data: () => ({
-    difference: 1000,
-    heroSubtext: 'Upgrade How You Use Crypto',
-    buttonColor: 'rgb(29, 66, 76)',
-    mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
-    macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
-    winDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet-Setup.exe'
-  })
+  }
 }
 </script>
 <style scoped>
