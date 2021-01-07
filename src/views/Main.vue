@@ -332,7 +332,7 @@ export default {
         link: '#Game'
       },
       {
-        summary: `My courses cover the important parts of Crypto. We cover everything from
+        summary: `My courses cover the important parts of Crypto. I cover everything from
         how to own your crypto to who crypto pioneers like Hal Finney are.`,
         title: 'Engaging Courses',
         cat: 'View Courses',
@@ -341,7 +341,7 @@ export default {
       },
       {
         summary: `Hardware Wallets are the culmination of years of work focused on crypto security.
-        We adore and love them and we will help you learn to love them also.`,
+        I adore and love them; I will help you learn to love them also.`,
         title: 'Simple Security',
         cat: 'Learn More',
         icon: 'mdi-lock-check',
