@@ -88,7 +88,7 @@
               </div>
               <v-card-actions class="justify-center">
                 <div class="text-center">
-                <router-link :to="item.link">
+                <router-link :to="item.link" style="text-decoration:none">
                 <v-btn
                   rounded
                   color="teal lighten-2"

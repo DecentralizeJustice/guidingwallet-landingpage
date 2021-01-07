@@ -23,7 +23,7 @@
       @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <router-link v-for="(item, index) in opts"
         :key="`${item.title}`"
-      :to="{ path: item.link }">
+      :to="{ path: item.link }" style="text-decoration:none">
       <v-btn
         :color='getNaVColor(item, index)'
         v-bind:class="[buttonObject]"
@@ -58,7 +58,7 @@
         dense
       ><router-link v-for="item in opts"
         :key="`${item.title}`"
-        :to="{ path: item.link }">
+        :to="{ path: item.link }" style="text-decoration:none">
         <v-list-item
         >
           <v-list-item-icon >
