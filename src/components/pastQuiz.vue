@@ -123,7 +123,7 @@ export default {
         this.difference = dif
         setTimeout(() => {
           this.countDownTimer()
-        }, 100)
+        }, 500)
       } else {
         if (dif > this.timeToAnswer * 1000) {
           this.checkAnswer()
@@ -133,7 +133,7 @@ export default {
         this.difference = dif
         setTimeout(() => {
           this.countDownTimer()
-        }, 100)
+        }, 500)
       }
     },
     genRandomNumber: function () {
