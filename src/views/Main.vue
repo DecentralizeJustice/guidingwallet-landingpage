@@ -60,7 +60,7 @@
               :class="{'text-h3 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  A Next-Generation Wallet that helps you explore every aspect of Crypto
+                  Guiding Wallet lets you get the most out of Crypto
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
               </div>
@@ -173,9 +173,9 @@
               <ul class="font-weight-regular mt-5"
               :class="{'text-h4': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
-                <li>Engaging and Informative Trivia</li>
-                <li>Open and Secure Ways To Use Crypto</li>
-                <li>Well Researched and Curated Courses</li>
+                <li>Engaging Trivia</li>
+                <li>Secure Ways To Use Crypto</li>
+                <li>Well Researched Courses</li>
                 <li>Direct Support from the Person Who Built it</li>
               </ul>
           </div>
@@ -487,7 +487,7 @@ export default {
   },
   data: () => ({
     difference: 1000,
-    heroSubtext: 'The Future of Crypto Wallets',
+    heroSubtext: 'The Crypto Wallet That Does More',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
