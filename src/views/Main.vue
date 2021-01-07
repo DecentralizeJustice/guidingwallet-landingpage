@@ -80,7 +80,7 @@
               <v-icon style="font-size: 400%;" class="mx-auto"
               color="teal lighten-2">{{item.icon}}</v-icon>
               </div>
-              <v-card-title class="headline text-center justify-center">
+              <v-card-title class="headline text-center justify-center text-break">
                 {{item.title}}
               </v-card-title>
               <div class="ma-2 pa-2">
