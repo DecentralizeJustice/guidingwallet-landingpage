@@ -104,7 +104,6 @@ export default {
       this.chosen = i
     },
     checkAnswer () {
-      console.log(this.chosen, this.answerIndex)
       if (parseInt(this.chosen) === parseInt(this.answerIndex)) {
         this.correct = true
       }
@@ -119,6 +118,7 @@ export default {
           this.showAnswer = false
           this.correct = false
           this.genRandomNumber()
+          this.countDownTimer()
         }
         this.difference = dif
         setTimeout(() => {
@@ -129,6 +129,7 @@ export default {
           this.checkAnswer()
           this.startTime = Date.now()
           this.showAnswer = true
+          this.countDownTimer()
         }
         this.difference = dif
         setTimeout(() => {
