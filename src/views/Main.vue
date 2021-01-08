@@ -116,7 +116,7 @@
           :class="{'text-h4 pa-3': $vuetify.breakpoint.mdAndUp,
           'text-h5': $vuetify.breakpoint.smAndDown}">
             <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-              Test Your Crpto Smarts 🤓
+              Test Your Crypto Smarts 🤓
               <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
             </h2>
           </div>
@@ -350,7 +350,7 @@ export default {
       }
     ],
     difference: 1000,
-    heroSubtext: 'Guided Crypto Exploration',
+    heroSubtext: 'Simple Crypto Exploration',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
