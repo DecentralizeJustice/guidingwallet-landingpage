@@ -32,7 +32,7 @@
         <v-row justify="center" no-gutters
         class="" style="background-color: #0B5563;height:100%;">
           <v-col cols='10' md='6' class="text-h4 my-5 white--text rounded pa-2 text-center" style="background-color: grey;">
-          The Full Lessons and Courses Are Only In Our Wallet
+          These Full Lessons and Courses Are Only In Our Wallet
           </v-col>
         </v-row>
         <v-row justify="center" no-gutters
