@@ -70,7 +70,7 @@ export default {
   data: () => ({
     randomNumber: 2,
     startTime: 22222222222222,
-    timeToAnswer: 15,
+    timeToAnswer: 12,
     timeToPonder: 5,
     difference: 2,
     showAnswer: false,
