@@ -30,6 +30,12 @@
           </v-row>
         </v-img>
         <v-row justify="center" no-gutters
+        class="" style="background-color: #0B5563;height:100%;">
+          <v-col cols='10' md='6' class="text-h4 my-5 white--text rounded pa-2 text-center" style="background-color: grey;">
+          The Full Lessons and Courses Are Only In Our Wallet
+          </v-col>
+        </v-row>
+        <v-row justify="center" no-gutters
         class="white--text text-h4 pt-3" style="background-color: #0B5563;height:100%;">
           <v-col cols='11' md='9'>
             Courses:
@@ -110,12 +116,6 @@
             <v-card
             ><div class="text-h5 pa-5">{{justLesson}}</div>
             </v-card>
-          </v-col>
-        </v-row>
-        <v-row justify="center" no-gutters
-        class="" style="background-color: #0B5563;height:100%;">
-          <v-col cols='10' md='4' class="text-h5 my-5 white--text rounded pa-2 text-center" style="background-color: grey;">
-          This Content Can be Found In Our Wallet
           </v-col>
         </v-row>
     </v-container>
