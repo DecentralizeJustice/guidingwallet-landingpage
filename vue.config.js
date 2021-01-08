@@ -9,5 +9,8 @@ module.exports = {
         loader: 'raw-loader' // npm install -D raw-loader
       }]
     }
+  },
+  chainWebpack (config) {
+    config.plugins.delete('prefetch')
   }
 }
