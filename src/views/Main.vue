@@ -1,14 +1,14 @@
 <template>
     <v-container fluid class="pa-0 ma-0" style="font-size: 100%;">
-        <v-img  :src="mainImg" height='85vh'>
+        <v-img  :src="mainImg" height='60vh'>
           <v-row class="ma-0">
-            <v-col cols="12" height='85vh'
+            <v-col cols="12" height='60vh'
             :class="{'mobileHero': $vuetify.breakpoint.smAndDown}">
               <v-row
                 align="center"
                 justify="center"
                 class="heroImg"
-                style="height:85vh;"
+                style="height:60vh;"
               >
               <v-col cols="12" md='8'>
                 <v-card
