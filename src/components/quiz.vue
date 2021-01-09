@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" justify='center'>
+  <v-row align="center" justify='center' no-gutters>
     <v-col cols='10' md='8' class="text-center mt-2">
       <v-alert type="error" v-if='wrong'>
         Sorry, your answer is wrong. Try Again.

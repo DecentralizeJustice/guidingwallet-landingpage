@@ -1,5 +1,5 @@
 <template>
-  <v-row justify='center'>
+  <v-row justify='center' no-gutters>
     <v-col cols='10' md='6' style="background-color: white;height:100%;"
     class="ma-8 rounded" v-show='!video'>
       <div class="text-center text-h3">Quiz:</div>

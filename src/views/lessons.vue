@@ -29,7 +29,7 @@
             </v-col>
           </v-row>
         </v-img>
-        <vid style="background-color: #0B5563;height:100%;"/>
+        <vid style="background-color: #0B5563;height:100%;" no-gutters/>
         <v-row justify="center" no-gutters
         class="" style="background-color: #0B5563;height:100%;">
           <v-col cols='10' md='6' class="text-h4 my-5 white--text rounded pa-2 text-center" style="background-color: grey;">
