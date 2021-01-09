@@ -19,7 +19,7 @@
         </template>
       </v-progress-linear>
     </v-col>
-    <v-col class="d-flex" cols="11" md='10' v-if='!done'>
+    <v-col class="mt-3" cols="11" md='10' v-if='!done'>
       <v-card class="mx-auto" color='blue darken-4'
         >
       <v-card-text class="display-1 white--text">
@@ -27,18 +27,25 @@
       </v-card-text>
     </v-card>
     </v-col>
-      <v-row
-      align="center"
-      justify="space-around"
-      v-if='!done'
+    <v-list rounded v-if='!done'>
+      <v-list-item-group
+      color='primary'
+      v-model="chosen"
       >
-      <v-col v-for="(item, i) in choices" cols='10' md='6' :key="i" class="text-center">
-        <v-btn  rounded color='light-blue' v-text="item.value"
-         @click='checkAnswer(i)' class="ma-1 text-body-2">
-        </v-btn>
-      </v-col>
-      </v-row>
-      <v-col cols='12' class="text-center">
+        <v-list-item
+          v-for="(item, i) in choices"
+          :key="i"
+          color='primary'
+          @click='select(i)'
+        >
+          <v-list-item-content >
+            <v-list-item-title v-text="item.value"
+            class="text-h6"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+      <v-col cols='12' class="text-center mb-3">
         <v-btn
           color="red darken-1"
           @click="backToVideo()"
@@ -51,7 +58,7 @@
 
 <script>
 export default {
-  name: 'quiz',
+  name: 'quizVideoPreview',
   components: {
   },
   props: ['questions'],
@@ -59,21 +66,29 @@ export default {
     return {
       questionNum: 0,
       wrong: false,
-      done: false
+      done: false,
+      chosen: null
     }
   },
   methods: {
     backToVideo () {
       this.$emit('backToVideo')
     },
-    checkAnswer (i) {
-      if (i === this.correctAnswer) {
+    checkAnswer () {
+      if (this.chosen === this.correctAnswer) {
         this.correct()
       } else {
         this.wrong = true
       }
     },
+    select (i) {
+      this.chosen = i
+      setTimeout(() => {
+        this.checkAnswer()
+      }, 50)
+    },
     correct () {
+      this.chosen = undefined
       this.wrong = false
       if (this.questionNum !== this.questions.length - 1) {
         this.questionNum += 1
