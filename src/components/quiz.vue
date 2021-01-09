@@ -27,6 +27,7 @@
       </v-card-text>
     </v-card>
     </v-col>
+    <v-col cols='12'>
     <v-list rounded v-if='!done'>
       <v-list-item-group
       color='primary'
@@ -45,6 +46,7 @@
         </v-list-item>
       </v-list-item-group>
     </v-list>
+  </v-col>
       <v-col cols='12' class="text-center mb-3">
         <v-btn
           color="red darken-1"

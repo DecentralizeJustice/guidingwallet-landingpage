@@ -48,7 +48,7 @@
           v-for="(item,i) in lessonInfo.courses" no-gutters
           :key="i">
             <v-card
-            ><v-card-title>{{item.title}}</v-card-title>
+            ><v-card-title class="text-no-wrap">{{item.title}}</v-card-title>
               <v-card-text>
                 <div class="black--text text-left">
                   {{item.goodFor}}
