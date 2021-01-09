@@ -23,7 +23,7 @@
                 :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
                 class="font-weight-medium text-center white--text ma-7 text-wrap"
                 style="overflow-wrap: break-word;">
-                 My Thoughts
+                 Crypto Propaganda
                 </div>
                 </v-card>
               </v-row>

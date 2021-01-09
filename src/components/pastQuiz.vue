@@ -110,28 +110,28 @@ export default {
     },
     countDownTimer () {
       const current = Date.now()
-      const dif = current - this.startTime
+      this.difference = current - this.startTime
       if (this.showAnswer) {
-        if (dif > this.timeToPonder * 1000) {
+        if (this.difference > this.timeToPonder * 1000) {
           this.chosen = undefined
-          this.startTime = Date.now()
+          this.startTime = current
           this.showAnswer = false
           this.correct = false
           this.genRandomNumber()
           this.countDownTimer()
+          return
         }
-        this.difference = dif
         setTimeout(() => {
           this.countDownTimer()
         }, 800)
       } else {
-        if (dif > this.timeToAnswer * 1000) {
+        if (this.difference > this.timeToAnswer * 1000) {
           this.checkAnswer()
-          this.startTime = Date.now()
+          this.startTime = current
           this.showAnswer = true
           this.countDownTimer()
+          return
         }
-        this.difference = dif
         setTimeout(() => {
           this.countDownTimer()
         }, 800)

@@ -29,10 +29,11 @@
             </v-col>
           </v-row>
         </v-img>
+        <vid style="background-color: #0B5563;height:100%;"/>
         <v-row justify="center" no-gutters
         class="" style="background-color: #0B5563;height:100%;">
           <v-col cols='10' md='6' class="text-h4 my-5 white--text rounded pa-2 text-center" style="background-color: grey;">
-          These Full Lessons and Courses Are Only In Our Wallet
+          Browse Lessons Below; <br>Full Lessons In Wallet
           </v-col>
         </v-row>
         <v-row justify="center" no-gutters
@@ -123,6 +124,7 @@
 
 <script>
 import lessonInfo from '@/assets/lessons.js'
+import vid from '@/components/vidController.vue'
 export default {
   name: 'lessons',
   data: () => ({
@@ -131,6 +133,7 @@ export default {
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609649462/guidingLanding/pexels-element-digital-1370295.jpg'
   }),
   components: {
+    vid
   },
   methods: {
     showLessons: function (index) {
