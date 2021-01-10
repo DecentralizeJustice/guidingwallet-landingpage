@@ -10,7 +10,7 @@
                 class="heroImg"
                 style="height:60vh;"
               >
-              <v-col cols="12" md='8'>
+              <v-col cols="12" md='6'>
                 <v-card
                   :class="{'textBox pa-1': $vuetify.breakpoint.mdAndUp}"
                   tile
@@ -60,7 +60,7 @@
               :class="{'text-h4 pa-3': $vuetify.breakpoint.mdAndUp,
               'text-h5': $vuetify.breakpoint.smAndDown}">
                 <h2 class="font-weight-regular white--text" style="line-height: 100%;">
-                  How We Help You Explore Crypto
+                  How We Help You Use Crypto
                   <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
                 </h2>
               </div>
@@ -332,7 +332,7 @@ export default {
         link: '#Game'
       },
       {
-        summary: `My courses cover the important parts of Crypto. I cover everything from
+        summary: `My courses help you learn where you fit into the crypto space. I also cover everything from
         how to own your crypto to who crypto pioneers like Hal Finney are.`,
         title: 'Engaging Courses',
         cat: 'View Courses',
@@ -350,7 +350,7 @@ export default {
       }
     ],
     difference: 1000,
-    heroSubtext: 'Simple Crypto Exploration',
+    heroSubtext: 'Crypto Use Simplified',
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',

@@ -72,6 +72,11 @@ export default {
       chosen: null
     }
   },
+  mounted () {
+    // console.log()
+    // console.log(allLessons.introBTC)
+    // console.log(this.lesson)
+  },
   methods: {
     backToVideo () {
       this.$emit('backToVideo')

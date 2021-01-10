@@ -21,16 +21,14 @@
 </template>
 
 <script>
-import info from '@/assets/lessons/intro.js'
 export default {
   name: 'videoPlayer',
   components: {
   },
-  props: {
-  },
+  props: ['info'],
   data () {
     return {
-      processedUrl: info.audio[0],
+      processedUrl: this.info.audio[0],
       player: '',
       currentSlide: 0
     }
@@ -38,23 +36,19 @@ export default {
   methods: {
     takeQuiz: function () {
       this.$emit('takeQuiz')
-      console.log('yep')
     },
     audioError (e) {
       console.log(e.srcElement.error)
     },
     updateTime () {
-      // console.log('ran')
       const breakpoints = this.addFirstBreakpoint(this.courseInfo.breakpoints)
       const time = this.player.currentTime
-      // console.log(time)
       for (let i = 0; i < breakpoints.length; i++) {
         const lowseconds = this.getSeconds(breakpoints[i])
         const highseconds = this.getSeconds(breakpoints[i + 1])
         const lastSlide = (highseconds === undefined)
         const correctSlide = (time >= lowseconds && time < highseconds)
         if (lastSlide || correctSlide) {
-          console.log(i)
           this.currentSlide = i
           break
         }
@@ -92,10 +86,7 @@ export default {
       return this.courseInfo.slides[this.currentSlide]
     },
     courseInfo: function () {
-      return info
-    },
-    questions: function () {
-      return info.questions
+      return this.info
     }
   },
   updated () {

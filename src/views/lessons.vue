@@ -29,7 +29,8 @@
             </v-col>
           </v-row>
         </v-img>
-        <vid style="background-color: #0B5563;height:100%;" no-gutters/>
+        <vid v-bind:info='info'
+        style="background-color: #0B5563;height:100%;" no-gutters/>
         <v-row justify="center" no-gutters
         class="" style="background-color: #0B5563;height:100%;">
           <v-col cols='10' md='6' class="text-h4 my-5 white--text rounded pa-2 text-center" style="background-color: grey;">
@@ -59,8 +60,17 @@
                   color="#0B5563"
                   @click="showLessons(i)"
                   class="white--text"
+                  v-if="reveal[i] !== true"
                 >
                   View Lessons
+                </v-btn>
+                <v-btn
+                  color="light-blue darken-1"
+                  class="black--text"
+                  @click="hideLesson(i)"
+                  v-if="reveal[i] === true"
+                >
+                  Hide Lessons
                 </v-btn>
               </v-card-actions>
               <v-expand-transition>
@@ -88,15 +98,6 @@
                       </v-list-item-group>
                     </v-list>
                   </v-card-text>
-                  <v-card-actions class="pt-0">
-                    <v-btn
-                      color="#0B5563"
-                      class="white--text"
-                      @click="hideLesson(i)"
-                    >
-                      Hide Lessons
-                    </v-btn>
-                  </v-card-actions>
                 </v-card>
               </v-expand-transition>
             </v-card>
@@ -125,9 +126,12 @@
 <script>
 import lessonInfo from '@/assets/lessons.js'
 import vid from '@/components/vidController.vue'
+import allLessons from '@/assets/allLessons.js'
 export default {
   name: 'lessons',
+  props: ['lesson'],
   data: () => ({
+    currentLesson: allLessons.introBTC,
     buttonColor: 'rgb(29, 66, 76)',
     reveal: {},
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609649462/guidingLanding/pexels-element-digital-1370295.jpg'
@@ -148,6 +152,9 @@ export default {
     }
   },
   computed: {
+    info: function () {
+      return this.currentLesson
+    },
     lessonInfo: function () {
       return lessonInfo.default
     },
@@ -171,6 +178,13 @@ export default {
     }
   },
   mounted () {
+    if (this.lesson !== undefined) {
+      if (allLessons[this.lesson] !== undefined) {
+        this.currentLesson = allLessons[this.lesson]
+      } else {
+        this.$router.push({ name: 'lessons' })
+      }
+    }
   }
 }
 </script>

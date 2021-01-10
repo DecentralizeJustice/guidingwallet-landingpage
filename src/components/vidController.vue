@@ -6,7 +6,7 @@
       <quiz v-bind:questions='questions' v-on:backToVideo='backToVideo'/>
     </v-col>
 <v-col justify='center' cols='12' class="pa-5" no-gutters v-show='video'>
-  <vid v-on:takeQuiz='video = false'/>
+  <vid v-on:takeQuiz='video = false' v-bind:info='info'/>
 </v-col>
   </v-row>
 </template>
@@ -14,15 +14,13 @@
 <script>
 import quiz from '@/components/quiz.vue'
 import vid from '@/components/videoComp.vue'
-import info from '@/assets/lessons/intro.js'
 export default {
   name: 'videoControl',
   components: {
     quiz,
     vid
   },
-  props: {
-  },
+  props: ['info'],
   data () {
     return {
       video: true
@@ -49,12 +47,15 @@ export default {
     //   return info
     // },
     questions: function () {
-      return info.questions
+      return this.info.questions
     }
   },
   updated () {
   },
-  async mounted () {
+  mounted () {
+    // console.log(this.info)
+    // console.log(allLessons.introBTC)
+    // console.log(this.lesson)
   }
 }
 </script>
