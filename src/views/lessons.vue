@@ -80,22 +80,32 @@
                   style="height: 100%;"
                 >
                   <v-card-text class="pb-0">
-                    <p class="text-h5 text--primary">
+                    <p class="text-h5 black--text">
                       Lessons:
                     </p>
-                    <v-col cols='12' v-for="(lesson, index) in item.lessons"
-                    :key="index" class="text-h6 text-left black--text">
-                    {{lesson[0]}}
-                    <v-btn :to="{ path: '/lessons/'+lesson[1], hash: '#vid'}"
-                    v-if='lesson[1]!== undefined' @click='goTo()'
-                    color='green darken-4' class="ml-4 white--text"
-                    > <v-icon left dark
-                      >
-                        mdi-play-circle
-                      </v-icon>
-                      Preview
-                    </v-btn>
+                    <v-row justify="center" no-gutters
+                    class="" style="" :class="{'pb-2': $vuetify.breakpoint.mdAndUp, 'pb-3': $vuetify.breakpoint.smAndDown}">
+                    <v-col cols='12' class="white--text rounded"
+                    :class="{'text-left my-1': $vuetify.breakpoint.mdAndUp, 'text-center my-2': $vuetify.breakpoint.smAndDown}"
+                    v-for="(justLesson,i) in item.lessons" no-gutters
+                    :key="i">
+                      <v-card flat style="background-color: #757575;"  :class="{'pa-2': $vuetify.breakpoint.mdAndUp, 'pa-3': $vuetify.breakpoint.smAndDown}"
+                      class="white--text">
+                      <div class="text-h5">{{justLesson[0]}}
+                        <v-btn :to="{ path: '/lessons/'+justLesson[1], hash: '#vid'}"
+                         v-if='justLesson[1]!== undefined'
+                         :class="{'ml-5': $vuetify.breakpoint.mdAndUp, 'mt-2': $vuetify.breakpoint.smAndDown}"
+                        color='green darken-4' class="white--text" @click='goTo()'
+                        > <v-icon left dark
+                          >
+                            mdi-play-circle
+                          </v-icon>
+                          Preview
+                        </v-btn>
+                      </div>
+                      </v-card>
                     </v-col>
+                  </v-row>
                   </v-card-text>
                 </v-card>
               </v-expand-transition>
@@ -117,8 +127,8 @@
             <v-card
             ><div class="text-h5 pa-5">{{justLesson[0]}}
               <v-btn :to="{ path: '/lessons/'+justLesson[1], hash: '#vid'}"
-               v-if='justLesson[1]!== undefined'
-              color='green darken-4' class="ml-4 white--text" @click='goTo()'
+               v-if='justLesson[1]!== undefined' :class="{'ml-4': $vuetify.breakpoint.mdAndUp, 'mt-2': $vuetify.breakpoint.smAndDown}"
+              color='green darken-4' class="white--text" @click='goTo()'
               > <v-icon left dark
                 >
                   mdi-play-circle
