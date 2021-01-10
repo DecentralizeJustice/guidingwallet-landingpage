@@ -160,7 +160,7 @@ export default {
       setTimeout(() => this.scrollTo(this.$route.hash), TIMEOUT)
     },
     scrollTo: function (hashtag) {
-      setTimeout(() => { location.href = hashtag }, TIMEOUT)
+      setTimeout(() => { location.href = hashtag }, TIMEOUT) // eslint-disable-line
     },
     setRouteLesson: function () {
       if (this.lesson !== undefined) {
