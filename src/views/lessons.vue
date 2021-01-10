@@ -29,7 +29,7 @@
             </v-col>
           </v-row>
         </v-img>
-        <vid v-bind:info='info'
+        <vid v-bind:info='info' id='vid'
         style="background-color: #0B5563;height:100%;" no-gutters/>
         <v-row justify="center" no-gutters
         class="" style="background-color: #0B5563;height:100%;">
@@ -83,20 +83,19 @@
                     <p class="text-h5 text--primary">
                       Lessons:
                     </p>
-                    <v-list disabled style="">
-                      <v-list-item-group
+                    <v-col cols='12' v-for="(lesson, index) in item.lessons"
+                    :key="index" class="text-h6 text-left black--text">
+                    {{lesson[0]}}
+                    <v-btn :to="{ path: '/lessons/'+lesson[1], hash: '#vid'}"
+                    v-if='lesson[1]!== undefined' @click='goTo()'
+                    color='green darken-4' class="ml-4 white--text"
+                    > <v-icon left dark
                       >
-                        <v-list-item
-                          v-for="(lesson, index) in item.lessons"
-                          :key="index"
-                        >
-                          <v-list-item-content >
-                            <v-list-item-title v-text="lesson"
-                            class="text-h6 text-left"></v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list-item-group>
-                    </v-list>
+                        mdi-play-circle
+                      </v-icon>
+                      Preview
+                    </v-btn>
+                    </v-col>
                   </v-card-text>
                 </v-card>
               </v-expand-transition>
@@ -116,7 +115,16 @@
           v-for="(justLesson,i) in lessonInfo.lessons" no-gutters
           :key="i">
             <v-card
-            ><div class="text-h5 pa-5">{{justLesson}}</div>
+            ><div class="text-h5 pa-5">{{justLesson[0]}}
+              <v-btn :to="{ path: '/lessons/'+justLesson[1], hash: '#vid'}"
+               v-if='justLesson[1]!== undefined'
+              color='green darken-4' class="ml-4 white--text" @click='goTo()'
+              > <v-icon left dark
+                >
+                  mdi-play-circle
+                </v-icon>
+                Preview
+              </v-btn></div>
             </v-card>
           </v-col>
         </v-row>
@@ -127,6 +135,7 @@
 import lessonInfo from '@/assets/lessons.js'
 import vid from '@/components/vidController.vue'
 import allLessons from '@/assets/allLessons.js'
+const TIMEOUT = 1
 export default {
   name: 'lessons',
   props: ['lesson'],
@@ -139,7 +148,29 @@ export default {
   components: {
     vid
   },
+  watch: {
+    lesson: function (newVal, oldVal) {
+      if (newVal !== oldVal) {
+        this.setRouteLesson()
+      }
+    }
+  },
   methods: {
+    goTo: function () {
+      setTimeout(() => this.scrollTo(this.$route.hash), TIMEOUT)
+    },
+    scrollTo: function (hashtag) {
+      setTimeout(() => { location.href = hashtag }, TIMEOUT)
+    },
+    setRouteLesson: function () {
+      if (this.lesson !== undefined) {
+        if (allLessons[this.lesson] !== undefined) {
+          this.currentLesson = allLessons[this.lesson]
+        } else {
+          this.$router.push({ name: 'lessons' })
+        }
+      }
+    },
     showLessons: function (index) {
       const clone = Object.assign({}, this.reveal)
       clone[index] = true
@@ -178,13 +209,7 @@ export default {
     }
   },
   mounted () {
-    if (this.lesson !== undefined) {
-      if (allLessons[this.lesson] !== undefined) {
-        this.currentLesson = allLessons[this.lesson]
-      } else {
-        this.$router.push({ name: 'lessons' })
-      }
-    }
+    this.setRouteLesson()
   }
 }
 </script>
