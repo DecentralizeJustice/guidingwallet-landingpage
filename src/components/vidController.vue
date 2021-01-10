@@ -38,8 +38,8 @@ export default {
     // time: function () {
     //   this.player.currentTime = this.time
     // },
-    courseInfo: function () {
-      // this.setup()
+    info: function () {
+      this.video = true
     }
   },
   computed: {
