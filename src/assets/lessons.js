@@ -4,8 +4,8 @@ const info = {
       title: 'Crypto Fundamentals',
       goodFor: 'This course lets you know whats important in the crypto space.',
       lessons: [
-        ['Why Crypto Is Amazing'],
-        ['Which Crypto Is Best', 'whyCrypto'],
+        ['Why Crypto Is Amazing', 'whyCrypto'],
+        ['Which Crypto Is Best'],
         ['How To Store Crypto'],
         ['How To Buy Crypto']
       ]
