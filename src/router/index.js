@@ -31,6 +31,7 @@ const routes = [
   },
   {
     path: '/lessons/:lesson',
+    name: 'specificLesson',
     component: () => import('../views/lessons.vue'),
     props: true
   },

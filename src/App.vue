@@ -130,6 +130,7 @@ export default {
       home: 0,
       trivia: 1,
       lessons: 2,
+      specificLesson: 2,
       blog: 3,
       pastTrivia: 4,
       faq: 5
@@ -174,6 +175,7 @@ export default {
   },
   watch: {
     $route (to, from) {
+      console.log(to)
       this.currentRoute = this.linkObject[to.name]
     }
   }

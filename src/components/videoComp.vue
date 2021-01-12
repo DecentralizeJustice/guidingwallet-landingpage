@@ -5,7 +5,7 @@
     </v-col>
     <v-col cols='12' md='6'>
         <audio controls @timeupdate="updateTime" ref="player" class="mt-5 mr-5"
-        :src="processedUrl" type="audio/mp3" @error='audioError'
+        :src="audio" type="audio/mp3" @error='audioError'
         controlsList="nodownload" style="width: 100%;">
       </audio>
     </v-col>
@@ -28,7 +28,6 @@ export default {
   props: ['info'],
   data () {
     return {
-      processedUrl: this.info.audio[0],
       player: '',
       currentSlide: 0
     }
@@ -82,6 +81,9 @@ export default {
     }
   },
   computed: {
+    audio: function () {
+      return this.info.audio[0]
+    },
     slide: function () {
       return this.courseInfo.slides[this.currentSlide]
     },

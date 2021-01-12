@@ -5,9 +5,9 @@ const info = {
       goodFor: 'This course lets you know whats important in the crypto space.',
       lessons: [
         ['Why Crypto Is Amazing', 'whyCrypto'],
-        ['Which Crypto Is Best'],
-        ['How To Store Crypto'],
-        ['How To Buy Crypto']
+        ['Which Crypto Is Best', 'whichCrypto'],
+        ['How To Store Crypto', 'howtoStore'],
+        ['How To Buy Crypto', 'howToBuy']
       ]
     },
     {
@@ -25,7 +25,7 @@ const info = {
   ],
   lessons: [
     ['Introduction to Bitcoin', 'introBTC'],
-    ['Why You Need A Hardware Wallet']
+    ['Why You Need A Hardware Wallet', 'whyHW']
   ]
 }
 exports.default = info
