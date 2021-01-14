@@ -140,46 +140,12 @@
                   :class="{'text-h5': $vuetify.breakpoint.mdAndUp,
                   'text-h6': $vuetify.breakpoint.smAndDown}">
                     <v-col
-                      cols="3"
+                      cols="10"
                     >
                   <div class="mt-2 text-center" >
-                    {{tillShowTime.days}} <br>
                     <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
                     >
-                      Days
-                    </div>
-                  </div>
-                </v-col>
-                <v-col
-                  cols="3"
-                >
-                  <div class="mt-2 text-center" >
-                    {{tillShowTime.hours}} <br>
-                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
-                    >
-                      Hours
-                    </div>
-                  </div>
-                </v-col>
-                <v-col
-                  cols="3"
-                >
-                  <div class="mt-2 text-center">
-                    {{tillShowTime.minutes}} <br>
-                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
-                    >
-                      Minutes
-                    </div>
-                  </div>
-                </v-col>
-                <v-col
-                  cols="3"
-                >
-                  <div class="mt-2 text-center" style="">
-                    {{tillShowTime.seconds}} <br>
-                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
-                    >
-                      Seconds
+                      {{regularTime}}
                     </div>
                   </div>
                 </v-col>
@@ -380,6 +346,23 @@ export default {
     },
     prizeAmount: function () {
       return triviaInfo.default.prizeAmount
+    },
+    regularTime: function () {
+      const d = new Date(parseInt(this.startTime) * 1000)
+      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+      const month = months[d.getMonth()]
+      const day = d.getDate()
+      let hour = d.getHours()
+      const ampm = hour >= 12 ? 'p.m.' : 'a.m.'
+      hour = hour % 12
+      if (hour === 0) {
+        hour = 12
+      }
+      let minutes = d.getMinutes()
+      if (minutes < 10) {
+        minutes = '0' + minutes
+      }
+      return hour + ':' + minutes + ' ' + ampm + ' ' + day + ', ' + month
     },
     tillShowTime: function () {
       const distance = this.difference
