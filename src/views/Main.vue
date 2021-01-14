@@ -111,6 +111,7 @@
         <v-col
           cols="12"
           class="my-4"
+          id='tryquiz'
           >
           <div class="text-center"
           :class="{'text-h4 pa-3': $vuetify.breakpoint.mdAndUp,

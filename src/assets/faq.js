@@ -16,7 +16,7 @@ const info = [
       {
         q: 'What information do you store about me?',
         a: `I do not store any identifiable information about you beside your username.
-        My wallet uses tor for most operations and we do not ask for your email.
+        My wallet uses tor for most operations and we do not ask for your email. We may log your ip address to stop ddos attacks.
         `
       }
     ]
