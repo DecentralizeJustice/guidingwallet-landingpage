@@ -15,7 +15,7 @@ const info = [
     questions: [
       {
         q: 'What information do you store about me?',
-        a: `I do not store any identifiable information about you beside your username.
+        a: `I do not store any identifiable information about you beside your username, which will bes used for our leaderboard and other features.
         My wallet uses tor for most operations and we do not ask for your email. We may log your ip address to stop ddos attacks.
         `
       }
