@@ -1,6 +1,6 @@
 const info = {
   subject: 'Bitcoin Security',
-  startTime: 1610672400,
+  startTime: 1611882000,
   prizeAmount: 100,
   paymentMethod: 'Bitcoin',
   numberOfQuestions: '10',
