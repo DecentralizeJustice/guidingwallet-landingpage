@@ -103,7 +103,6 @@ export default {
       info.push([this.triviaInfo.timeToAnswer, 'To Answer Each One', 'clock-time-eight'])
       info.push([this.nextShowDate, 'Next Show', 'calendar-month'])
       info.push([this.triviaInfo.paymentMethod, 'Payment Crypto', 'eye-off'])
-      info.push([this.triviaInfo.maxWinsPerPlayer, 'Max Amount You Can Win', 'currency-usd-off'])
       return info
     },
     triviaInfo: function () {

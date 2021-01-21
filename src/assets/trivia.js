@@ -1,10 +1,9 @@
 const info = {
-  subject: 'Monero',
-  startTime: 1611882000,
+  subject: 'Monero Origin Story',
+  startTime: 1612490400,
   prizeAmount: 100,
-  paymentMethod: 'Bitcoin',
+  paymentMethod: 'Monero',
   numberOfQuestions: '10',
-  timeToAnswer: '10 Seconds',
-  maxWinsPerPlayer: 30
+  timeToAnswer: '10 Seconds'
 }
 exports.default = info
