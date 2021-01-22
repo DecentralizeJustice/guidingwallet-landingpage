@@ -69,8 +69,21 @@
       <v-list
         nav
         dense
-      ><router-link v-for="item in opts"
-        :key="`${item.title}`"
+      >
+      <div v-for="item in opts" :key="`${item.title}`">
+      <a
+        v-if='item.external === true'
+        :href='item.link' style="text-decoration:none">
+        <v-list-item
+        >
+          <v-list-item-icon >
+            <v-icon>mdi-{{item.icon}}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{item.title}}</v-list-item-title>
+        </v-list-item>
+      </a>
+      <router-link
+      v-if='item.external !== true'
         :to="{ path: item.link }" style="text-decoration:none">
         <v-list-item
         >
@@ -80,6 +93,7 @@
           <v-list-item-title>{{item.title}}</v-list-item-title>
         </v-list-item>
       </router-link>
+    </div>
       </v-list>
     </v-navigation-drawer>
     <v-main>
