@@ -21,8 +21,20 @@
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon class="hidden-md-and-up"
       @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <router-link v-for="(item, index) in opts"
-        :key="`${item.title}`"
+      <div v-for="(item, index) in opts" :key="`${item.title}`">
+        <a  v-if='item.external === true'
+          :href='item.link'
+         style="text-decoration:none">
+        <v-btn
+          :color='getNaVColor(item, index)'
+          v-bind:class="[buttonObject]"
+          Go to Bar
+        >
+          <span class="">{{item.title}}</span>
+          <v-icon right>mdi-{{item.icon}}</v-icon>
+        </v-btn>
+      </a>
+      <router-link  v-if='item.external !== true'
       :to="{ path: item.link }" style="text-decoration:none">
       <v-btn
         :color='getNaVColor(item, index)'
@@ -33,6 +45,7 @@
         <v-icon right>mdi-{{item.icon}}</v-icon>
       </v-btn>
       </router-link>
+    </div>
     </v-app-bar>
     <v-navigation-drawer
       app
@@ -137,7 +150,7 @@ export default {
     },
     opts: [
       { title: 'Home', icon: 'home', link: '/' },
-      { title: 'Game Show', icon: 'gamepad-variant', link: '/triviaInfo' },
+      { title: 'Game Show', icon: 'gamepad-variant', link: 'https://guidingwallet.app/triviashow', external: true },
       { title: 'Lessons', icon: 'book', link: '/lessons' },
       { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
       { title: 'Past Games', icon: 'calendar-clock', link: '/pastTrivia' },
@@ -159,7 +172,7 @@ export default {
   },
   methods: {
     getNaVColor: function (item, index) {
-      if (index === this.currentRoute) {
+      if (index === this.currentRoute && index !== 1) {
         return 'grey darken-2'
       } else {
         return ''
@@ -175,7 +188,6 @@ export default {
   },
   watch: {
     $route (to, from) {
-      console.log(to)
       this.currentRoute = this.linkObject[to.name]
     }
   }
