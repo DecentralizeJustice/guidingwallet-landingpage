@@ -155,7 +155,7 @@
             class="white--text"
           >
             <v-expansion-panel-header>
-              1st Show - {{getDate(item.time)}}
+              {{i+1}}{{getOrdinal(i+1)}} Show - {{getDate(item.time)}}
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <v-row class="ma-0 pa-0" align="center"
@@ -284,6 +284,15 @@ export default {
   components: {
   },
   methods: {
+    getOrdinal: function (d) {
+      if (d > 3 && d < 21) return 'th'
+      switch (d % 10) {
+        case 1: return 'st'
+        case 2: return 'nd'
+        case 3: return 'rd'
+        default: return 'th'
+      }
+    },
     showAnswer: function (index) {
       console.log(index)
       const clone = Object.assign({}, this.showAnswerInfo)

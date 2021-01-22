@@ -12,7 +12,7 @@
       <v-card-text>
         <div class="white--text text-h4 rounded pa-2" style="background-color: #424242;">Past Gameshow Questions:</div>
         <p class="display-1 black--text mt-3">
-          {{latestShow.questions[randomNumber].questionInfo.question}}
+          {{questionInfo[randomNumber].questionInfo.question}}
         </p>
         <v-list rounded>
           <v-list-item-group
@@ -20,7 +20,7 @@
           v-model="chosen"
           >
             <v-list-item
-              v-for="(item, i) in latestShow.questions[randomNumber].questionInfo.options"
+              v-for="(item, i) in questionInfo[randomNumber].questionInfo.options"
               :key="i"
               color='primary'
               @click='select(i)'
@@ -75,18 +75,15 @@ export default {
     difference: 2,
     showAnswer: false,
     chosen: undefined,
-    correct: false
-    // answer: false
+    correct: false,
+    questionInfo: []
   }),
   computed: {
     answerText: function () {
-      return this.latestShow.questions[this.randomNumber].questionInfo.options[this.answerIndex]
+      return this.questionInfo[this.randomNumber].questionInfo.options[this.answerIndex]
     },
     answerIndex: function () {
-      return this.latestShow.questions[this.randomNumber].answer
-    },
-    latestShow: function () {
-      return gameInfo.default[1609040898]
+      return this.questionInfo[this.randomNumber].answer
     },
     timeLeft: function () {
       const top = this.difference / 1000
@@ -100,6 +97,17 @@ export default {
     }
   },
   methods: {
+    getAllQuestionInfo: function () {
+      const questionInfo = []
+      for (const game in gameInfo.default) {
+        for (const question in gameInfo.default[game].questions) {
+          if (question !== 'hv') {
+            questionInfo.push(gameInfo.default[game].questions[question])
+          }
+        }
+      }
+      return questionInfo
+    },
     select (i) {
       this.chosen = i
     },
@@ -138,14 +146,15 @@ export default {
       }
     },
     genRandomNumber: function () {
-      this.randomNumber = Math.floor(Math.random() * 10) + 1
+      const maxNotInclusive = this.questionInfo.length
+      this.randomNumber = Math.floor(Math.random() * maxNotInclusive)
     }
   },
-  mounted () {
+  beforeMount () {
+    this.questionInfo = this.getAllQuestionInfo()
     this.genRandomNumber()
     this.startTime = Date.now()
     this.countDownTimer()
-    // console.log(this.latestShow.questions[this.randomNumber])
   }
 }
 </script>
