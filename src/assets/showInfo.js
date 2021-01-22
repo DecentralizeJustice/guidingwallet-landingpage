@@ -97,7 +97,8 @@ const info = {
     paymentMethodIcon: 'eye-off',
     notesLink: 'https://docs.google.com/presentation/d/1u418hPBQpO5MCFUpSMfvTFa-2jvsUaBGSnpCKnbWdgc/edit#slide=id.gb31904321e_0_76',
     summary: `This show had some good info about Bitcoin Security in order to help people 
-    keep thier bitcoib gains.`,
+    keep their bitcoin gains. The show worked flawlessly and I was happy to get to mention important poeople like Hal Finney. I did a
+    bunch of research on bitcointalk.org and It payed off for this show.`,
     questions: {
       hv: {
         question: 'What about Bitcoin Security Would you like to learn?'

@@ -37,7 +37,7 @@
           :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
           class="font-weight-medium text-center white--text ma-7 text-wrap"
           style="overflow-wrap: break-word;">
-           Last Show: 12/28<br>
+           Last Show: {{latestDate}}<br>
           </div>
           <div
           :class="{'text-h4': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
@@ -141,6 +141,25 @@
           </v-row>
           </v-col>
         </v-row>
+        <v-row class="ma-0 pa-0" align="center"
+        justify="center" style="background-color: #0B5563;" no-gutters>
+          <v-col cols="12" md='9' style="" no-gutters class="mt-3"
+          >
+        <v-expansion-panels>
+          <v-expansion-panel
+            v-for="(item,i) in oldShows"
+            :key="i"
+          >
+            <v-expansion-panel-header>
+              1st Show - {{getDate(item.time)}}
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              {{item.info}}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+        </v-col>
+      </v-row>
     </v-container>
 </template>
 
@@ -161,9 +180,23 @@ export default {
       const clone = Object.assign({}, this.showAnswerInfo)
       clone[index] = true
       this.showAnswerInfo = clone
+    },
+    getDate: function (date) {
+      const d = new Date(date * 1000)
+      const day = d.getDate()
+      const month = d.getMonth() + 1
+      const year = d.getFullYear()
+      return day + '/' + month + '/' + year
     }
   },
   computed: {
+    latestDate: function () {
+      const d = new Date(this.lateShowTime * 1000)
+      const date = d.getDate()
+      const month = d.getMonth() + 1
+      const year = d.getFullYear()
+      return date + '/' + month + '/' + year
+    },
     showFacts: function () {
       const info = []
       info.push([this.latestShow.potSize + ' USD', 'Potsize', 'cash'])
@@ -174,8 +207,28 @@ export default {
       info.push([this.latestShow.paymentMethod, 'Payment Crypto', this.latestShow.paymentMethodIcon])
       return info
     },
+    sortedKeys: function () {
+      const keys = Object.keys(gameInfo.default)
+      const sortedKeys = keys.sort()
+      return sortedKeys
+    },
+    lateShowTime: function () {
+      const int = parseInt(this.sortedKeys.slice(-1).pop())
+      return int
+    },
+    oldShows: function () {
+      const reversedKeyList = this.sortedKeys.slice(0, -1).reverse()
+      const gameList = []
+      for (let i = 0; i < reversedKeyList.length; i++) {
+        const tempObject = {}
+        tempObject.time = reversedKeyList[i]
+        tempObject.info = gameInfo.default[reversedKeyList[i]]
+        gameList.push(tempObject)
+      }
+      return gameList
+    },
     latestShow: function () {
-      return gameInfo.default[1609040898]
+      return gameInfo.default[this.lateShowTime]
     },
     heroTextSize: function () {
       if (this.$vuetify.breakpoint.mdAndUp) {
