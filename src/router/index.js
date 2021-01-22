@@ -20,7 +20,7 @@ const routes = [
     component: () => import('../views/faq.vue')
   },
   {
-    path: '/trivia',
+    path: '/triviaInfo',
     name: 'trivia',
     component: () => import('../views/trivia.vue')
   },

@@ -137,7 +137,7 @@ export default {
     },
     opts: [
       { title: 'Home', icon: 'home', link: '/' },
-      { title: 'Game Show', icon: 'gamepad-variant', link: '/trivia' },
+      { title: 'Game Show', icon: 'gamepad-variant', link: '/triviaInfo' },
       { title: 'Lessons', icon: 'book', link: '/lessons' },
       { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
       { title: 'Past Games', icon: 'calendar-clock', link: '/pastTrivia' },
