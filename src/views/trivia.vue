@@ -42,7 +42,7 @@
         <v-row justify="center"  no-gutters
          class="" style="background-color: #0B5563;height:100%;">
           <v-col cols='10' md='8' class="text-h4 by-5 white--text rounded pa-5 text-left" style="background-color: #424242;">
-          General Info:
+          Next Quiz Info:
           <v-row justify="center">
             <v-col cols="8" md="3" style="background-color: #424242;" no-gutters
             class="text-center rounded my-3 pa-3 mx-2"
@@ -98,6 +98,7 @@ export default {
     showFacts: function () {
       const info = []
       info.push([this.triviaInfo.prizeAmount + ' USD', 'Potsize', 'cash'])
+      info.push([this.triviaInfo.donatationAmount + ' USD', 'Donation Pot', 'gift'])
       info.push([this.triviaInfo.subject, 'Subject', 'book'])
       info.push([this.triviaInfo.numberOfQuestions, 'Questions', 'help-circle'])
       info.push([this.triviaInfo.timeToAnswer, 'To Answer Each One', 'clock-time-eight'])

@@ -152,7 +152,11 @@
                 </v-row>
                 <div class="text-center mt-3"
                 :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
-                Pot Size: <br> {{prizeAmount}} USD
+                Winner Pot Size: <br> {{prizeAmount}} USD
+                </div>
+                <div class="text-center mt-3"
+                :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
+                Donation Pot Size: <br> {{donationAmount}} USD
                 </div>
                 <div class="text-center mt-3"
                 :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
@@ -346,6 +350,9 @@ export default {
     },
     prizeAmount: function () {
       return triviaInfo.default.prizeAmount
+    },
+    donationAmount: function () {
+      return triviaInfo.default.donatationAmount
     },
     regularTime: function () {
       const d = new Date(parseInt(this.startTime) * 1000)
