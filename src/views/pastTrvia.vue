@@ -141,7 +141,7 @@
           </v-row>
           </v-col>
         </v-row>
-        <v-row class="ma-0 pa-0" align="center" id='triviaHistory'
+        <v-row class="ma-0 pa-0 pb-4" align="center" id='triviaHistory'
         justify="center" style="background-color: #0B5563;" no-gutters>
           <v-col cols="11" md='9' style="" no-gutters class="mt-3 text-center"
           >
