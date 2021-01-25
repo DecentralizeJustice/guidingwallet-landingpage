@@ -133,17 +133,16 @@
                   style="background-color: #424242; width:75%;">
                   Learn & Win Crypto
                   </div>
-                  <div class="text-center text-h5 mt-3">
+                  <div class="text-center mt-3" :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                   Next Game Show:
                   </div>
                   <v-row no-gutters align-content='center' justify='space-around' class=""
-                  :class="{'text-h5': $vuetify.breakpoint.mdAndUp,
-                  'text-h6': $vuetify.breakpoint.smAndDown}">
+                  :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                     <v-col
                       cols="10"
                     >
                   <div class="mt-2 text-center" >
-                    <div :class="{ 'text-subtitle-1': $vuetify.breakpoint.smAndDown}"
+                    <div :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}"
                     >
                       {{regularTime}}
                     </div>

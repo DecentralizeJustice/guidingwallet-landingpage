@@ -1,3 +1,3 @@
 # proxy to router
-/triviashow/*  https://jolly-cori-8a77c1.netlify.app/:splat   200!
+/triviashow/*  https://gwtrivia.netlify.app/:splat   200!
 /*    /index.html   200

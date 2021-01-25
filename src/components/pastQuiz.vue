@@ -3,15 +3,12 @@
       cols="12" md='6'
     >
     <v-card
-      class="pa-2"
-    >
-    <v-card
-      class="my-2 black--text"
+      class="mt-1 black--text pa-1"
       flat
     >
       <v-card-text>
-        <div class="white--text text-h4 rounded pa-2" style="background-color: #424242;">Past Gameshow Questions:</div>
-        <p class="display-1 black--text mt-3">
+        <div class="white--text text-h5 rounded pa-2" style="background-color: #424242;">Past Gameshow Questions:</div>
+        <p class="text-h4 black--text mt-3">
           {{questionInfo[randomNumber].questionInfo.question}}
         </p>
         <v-list rounded>
@@ -42,23 +39,21 @@
           > Correct!!! <br> 😎
             </v-alert>
         </v-col>
-        <div v-if='showAnswer' class="text-h4 black--text mt-3">
-        <div class="ma-0 pa-0 text-h6 mb-1">Answer: </div>
+        <div v-if='showAnswer' class="text-h4 black--text mt-0">
+        <div class="ma-0 pa-0 text-h6">Answer: </div>
         {{answerText}}
         </div>
       </v-card-text>
-      <v-card-actions class="justify-center">
-      </v-card-actions>
-    </v-card>
-    <div style="width:75%;" class="mx-auto">
-      <v-progress-linear
-        color="light-blue"
-        height="15"
-        :value="timeLeft"
-        striped
-        class="ma-3"
-      ></v-progress-linear>
-    </div>
+      <div  class="ma-0 pa-0">
+        <v-progress-linear
+        style="width:75%;"
+          color="light-blue"
+          height="15"
+          :value="timeLeft"
+          striped
+          class="ma-1 mx-auto"
+        ></v-progress-linear>
+      </div>
     </v-card>
     </v-col>
 </template>

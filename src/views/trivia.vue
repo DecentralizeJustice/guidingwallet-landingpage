@@ -97,7 +97,7 @@ export default {
   computed: {
     showFacts: function () {
       const info = []
-      info.push([this.triviaInfo.prizeAmount + ' USD', 'Potsize', 'cash'])
+      info.push([this.triviaInfo.prizeAmount + ' USD', 'Winners Pot', 'cash'])
       info.push([this.triviaInfo.donatationAmount + ' USD', 'Donation Pot', 'gift'])
       info.push([this.triviaInfo.subject, 'Subject', 'book'])
       info.push([this.triviaInfo.numberOfQuestions, 'Questions', 'help-circle'])
