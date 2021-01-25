@@ -212,7 +212,6 @@ export default {
       { title: 'Game Show', icon: 'gamepad-variant', link: 'https://guidingwallet.app/triviashow', external: true },
       { title: 'Lessons', icon: 'book', link: '/lessons' },
       { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
-      { title: 'Past Games', icon: 'calendar-clock', link: '/pastTrivia' },
       { title: 'FAQ', icon: 'help-circle', link: '/faq' }
 
       // { title: 'About', icon: 'download', link: '#Download' },
