@@ -21,8 +21,7 @@
                 <div
                 :class="{'text-h2': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
                 class="font-weight-medium text-center white--text ma-4 text-wrap"
-                style="overflow-wrap: break-word;">
-                 {{heroSubtext}}
+                style="overflow-wrap: break-word;" v-html='heroSubtext'>
                <!-- <p style="" class="display-1 mt-5"></p>-->
                 </div>
                <v-btn
@@ -320,7 +319,7 @@ export default {
       }
     ],
     difference: 1000,
-    heroSubtext: `Security isn't bought, It's Learned`, // eslint-disable-line
+    heroSubtext: `Security isn't bought; <br>It's Learned`, // eslint-disable-line
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
