@@ -320,7 +320,7 @@ export default {
       }
     ],
     difference: 1000,
-    heroSubtext: 'Crypto Use Simplified',
+    heroSubtext: `Security isn't bought, It's Learned`, // eslint-disable-line
     buttonColor: 'rgb(29, 66, 76)',
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609951935/guidingLanding/pexels-mateusz-dach-454507.jpg',
     macDownloadLink: 'https://github.com/DecentralizeJustice/GWDesk/releases/latest/download/GuidingWallet.dmg',
