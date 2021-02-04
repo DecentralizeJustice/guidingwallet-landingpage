@@ -99,11 +99,10 @@ export default {
       const info = []
       info.push([this.triviaInfo.prizeAmount + ' USD', 'Winners Pot', 'cash'])
       info.push([this.triviaInfo.donatationAmount + ' USD', 'Donation Pot', 'gift'])
+      info.push([this.nextShowDate, 'Next Show', 'calendar-month'])
       info.push([this.triviaInfo.subject, 'Subject', 'book'])
       info.push([this.triviaInfo.numberOfQuestions, 'Questions', 'help-circle'])
       info.push([this.triviaInfo.timeToAnswer, 'To Answer Each One', 'clock-time-eight'])
-      info.push([this.nextShowDate, 'Next Show', 'calendar-month'])
-      info.push([this.triviaInfo.paymentMethod, 'Payment Crypto', 'eye-off'])
       return info
     },
     triviaInfo: function () {

@@ -162,7 +162,7 @@
                 </div>
                 <div class="text-center">
                 <v-btn
-                  href="/trivia"
+                  href="/triviaInfo"
                   color='#0B5563'
                   class="mt-5"
                 >
