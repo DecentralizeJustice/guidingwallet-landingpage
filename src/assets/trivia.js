@@ -1,6 +1,6 @@
 const info = {
   subject: 'History of Money',
-  startTime: 1612490400,
+  startTime: 1613785401,
   prizeAmount: 100,
   donatationAmount: 100,
   paymentMethod: 'Monero',
