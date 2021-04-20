@@ -197,8 +197,7 @@ export default {
       lessons: 2,
       specificLesson: 2,
       blog: 3,
-      pastTrivia: 4,
-      faq: 5
+      faq: 4
     },
     footerLinks: {
       triviaShow: [
@@ -230,6 +229,7 @@ export default {
   },
   methods: {
     getNaVColor: function (item, index) {
+      // console.log(index, item)
       if (index === this.currentRoute && index !== 1) {
         return 'grey darken-2'
       } else {
@@ -240,12 +240,13 @@ export default {
       setTimeout(() => { location.href = hashtag }, TIMEOUT) // eslint-disable-line
     },
     goToPage: function (index) {
-      console.log(this.$route)
+      // console.log(this.$route)
       // this.route.push({ path: this.opts[index].link })
     }
   },
   watch: {
     $route (to, from) {
+      // console.log(this.linkObject[to.name])
       this.currentRoute = this.linkObject[to.name]
     }
   }

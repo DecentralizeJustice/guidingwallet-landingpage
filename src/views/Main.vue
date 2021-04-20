@@ -117,7 +117,6 @@
           'text-h5': $vuetify.breakpoint.smAndDown}">
             <h2 class="font-weight-regular white--text" style="line-height: 100%;">
               Test Your Crypto Smarts 🤓
-              <!-- If we want freedom and privacy, we must persuade others that these are worth having. – Hal Finney  -->
             </h2>
           </div>
         </v-col>
@@ -152,10 +151,10 @@
                 :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Winner Pot Size: <br> {{prizeAmount}} USD
                 </div>
-                <div class="text-center mt-3"
+                <!-- <div class="text-center mt-3"
                 :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Donation Pot Size: <br> {{donationAmount}} USD
-                </div>
+                </div> -->
                 <div class="text-center mt-3"
                 :class="{'text-h5': $vuetify.breakpoint.mdAndUp, 'text-h4': $vuetify.breakpoint.smAndDown}">
                 Subject: <br> {{subject}}
@@ -367,7 +366,7 @@ export default {
       if (minutes < 10) {
         minutes = '0' + minutes
       }
-      return hour + ':' + minutes + ' ' + ampm + ' ' + day + ', ' + month
+      return hour + ':' + minutes + ' ' + ampm + ' ' + month + ' ' + day
     },
     tillShowTime: function () {
       const distance = this.difference

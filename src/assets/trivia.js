@@ -1,9 +1,7 @@
 const info = {
-  subject: 'History of Money',
-  startTime: 1613785401,
+  subject: 'Monero Cool Facts',
+  startTime: 1620349200,
   prizeAmount: 100,
-  donatationAmount: 100,
-  paymentMethod: 'Monero',
   numberOfQuestions: '10',
   timeToAnswer: '10 Seconds'
 }

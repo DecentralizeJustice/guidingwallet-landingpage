@@ -82,12 +82,11 @@ export default {
     buttonColor: 'rgb(29, 66, 76)',
     intro: `We have trivia shows where you can win real crypto.
     You can view our past trivia shows to see how you would have fared and I'll catch you at the next one.`,
-    howItWorks: ` The trivia will be held in our wallet. In order to win our trivia show you must answer all questions correctly.
+    howItWorks: ` In order to win our trivia show you must answer all questions correctly.
     The pot will be divided by the number of winners. For example, if 5 people answer all the questions
     correctly and the potsize is 50 USD, each winner
     will receive around 10 USD in crypto. I will send payments as soon as I process all the trivia show data;
-    I am aiming to get them out the next day. We also cap the amount that a player can win by
-    30 usd as a way to cut down on cheating and keep our focus on education. More detailed info can be in wallet.`,
+    I am aiming to get them out the next day.`,
     mainImg: 'https://res.cloudinary.com/dylevfpbl/image/upload/v1609688189/guidingLanding/pexels-katerina-holmes-5905434.jpg'
   }),
   components: {
@@ -98,7 +97,7 @@ export default {
     showFacts: function () {
       const info = []
       info.push([this.triviaInfo.prizeAmount + ' USD', 'Winners Pot', 'cash'])
-      info.push([this.triviaInfo.donatationAmount + ' USD', 'Donation Pot', 'gift'])
+      // info.push([this.triviaInfo.donatationAmount + ' USD', 'Donation Pot', 'gift'])
       info.push([this.nextShowDate, 'Next Show', 'calendar-month'])
       info.push([this.triviaInfo.subject, 'Subject', 'book'])
       info.push([this.triviaInfo.numberOfQuestions, 'Questions', 'help-circle'])
@@ -123,7 +122,7 @@ export default {
       if (minutes < 10) {
         minutes = '0' + minutes
       }
-      return hour + ':' + minutes + ' ' + ampm + ' ' + day + ', ' + month
+      return hour + ':' + minutes + ' ' + ampm + ' ' + month + ' ' + day
     },
     heroTextSize: function () {
       if (this.$vuetify.breakpoint.mdAndUp) {
