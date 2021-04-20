@@ -196,8 +196,8 @@ export default {
       trivia: 1,
       lessons: 2,
       specificLesson: 2,
-      blog: 3,
-      faq: 4
+      // blog: 3,
+      faq: 3
     },
     footerLinks: {
       triviaShow: [
@@ -210,7 +210,7 @@ export default {
       { title: 'Home', icon: 'home', link: '/' },
       { title: 'Game Show', icon: 'gamepad-variant', link: 'https://guidingwallet.app/triviashow', external: true },
       { title: 'Lessons', icon: 'book', link: '/lessons' },
-      { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
+      // { title: 'Blog', icon: 'book-open-outline', link: '/blog' },
       { title: 'FAQ', icon: 'help-circle', link: '/faq' }
 
       // { title: 'About', icon: 'download', link: '#Download' },
