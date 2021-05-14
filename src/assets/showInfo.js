@@ -1,4 +1,87 @@
 const info = {
+  1620349200: {
+    subject: "Monero's History",
+    potSize: '100',
+    totalWinners: '0',
+    killerQuestion: '1',
+    // showLink: 'https://www.reddit.com/',
+    summary: 'This was a really fun quiz to research. Monero is a great crypto!!!',
+    questions: {
+      hv: {
+        question: 'What topics would you want me to cover on youtube?'
+      },
+      1: {
+        questionInfo: {
+          question: 'Monero added ___ to the cryptonote protocol?',
+          options: ['Hidden Amounts', 'Ring Signatures', 'Stealth Addresses', 'Elliptic Curve Cryptography']
+        },
+        answer: '0'
+      },
+      2: {
+        questionInfo: {
+          question: 'Cryptonote tries to be fairer by using ___ mining.',
+          options: ['Sound', 'Hard Drive', 'GPU', 'CPU']
+        },
+        answer: '3'
+      },
+      3: {
+        questionInfo: {
+          question: 'Monero tries to reduce transaction cost with ____ ?',
+          options: ['Federated Transactions', 'Transaction Sharding', 'A Dynamic Block Size', 'Long Tail Transaction Optimization']
+        },
+        answer: '2'
+      },
+      4: {
+        questionInfo: {
+          question: 'A Monero Project That Details Monero Bugs is ____?',
+          options: ['Cracking Monero', 'Exploiting Monero', 'Hacking Monero', 'Breaking Monero']
+        },
+        answer: '3'
+      },
+      5: {
+        questionInfo: {
+          question: "Monero's current ring size is _____.",
+          options: ['3', '5', '7', '11']
+        },
+        answer: '3'
+      },
+      6: {
+        questionInfo: {
+          question: 'The First Major Hardware Wallet to support Monero was _____.',
+          options: ['Coldcard', 'Ledger', 'Keep Key', 'Trezor']
+        },
+        answer: '1'
+      },
+      7: {
+        questionInfo: {
+          question: "Monero's mining algorithuim is ___.",
+          options: ['Sha-256', 'TI', 'RandomX', 'Thread Ripper']
+        },
+        answer: '2'
+      },
+      8: {
+        questionInfo: {
+          question: "Monero's funding mechanism is ____.",
+          options: ['Monero Core', 'ICO', 'Block Tax', 'Community Crowdfunding System']
+        },
+        answer: '3'
+      },
+      9: {
+        questionInfo: {
+          question: 'The Janus attack against Monero is a  ____ attack.',
+          options: ['Miner Pool', 'Subaddress Association', 'Consensus Lag', 'Wallet']
+        },
+        answer: '1'
+      },
+      10: {
+        questionInfo: {
+          question: "Monero's block reward after May 2022 will be __ XMR. ",
+          options: ['.06', '.07', '.09', '1']
+        },
+        answer: '0'
+      }
+    }
+  },
   1609040898: {
     subject: 'Bitcoin',
     potSize: '20',
@@ -7,7 +90,6 @@ const info = {
     potPerWinner: '20',
     paymentMethod: 'Monero',
     paymentMethodIcon: 'eye-off',
-    actualSlideLink: '',
     notesLink: 'https://docs.google.com/presentation/d/1UOjb-m9Gg6We9UNn_RtMWSGi1IWhCNPAMD1mTbB2JDg/edit?usp=sharing',
     summary: `This was my first show and I only had one contestant. The platform worked liked a beauty, but I just have to get more contestants.
     You can view the gameshow info below and see how you would have fared in this show. I will be sweetening the pot to 100 usd and coming with some more great questions.`,
@@ -95,8 +177,9 @@ const info = {
     potPerWinner: '20',
     paymentMethod: 'Bitcoin',
     paymentMethodIcon: 'eye-off',
+    showLink: 'https://www.youtube.com/watch?v=jIk0diCl7KQ',
     notesLink: 'https://docs.google.com/presentation/d/1u418hPBQpO5MCFUpSMfvTFa-2jvsUaBGSnpCKnbWdgc/edit#slide=id.gb31904321e_0_76',
-    summary: `This show had some good info about Bitcoin Security in order to help people 
+    summary: `This show had some good info about Bitcoin Security in order to help people
     keep their bitcoin gains. The show worked flawlessly and I was happy to get to mention important poeople like Hal Finney. I did a
     bunch of research on bitcointalk.org and It payed off for this show.`,
     questions: {
@@ -105,7 +188,7 @@ const info = {
       },
       1: {
         questionInfo: {
-          question: 'A Commong Phrase in Crypto is: Not your ____, not your coin.',
+          question: 'A Common Phrase in Crypto is: Not your ____, not your coin.',
           options: ['Government', 'Exchange', 'Passwords', 'Keys']
         },
         answer: '3'

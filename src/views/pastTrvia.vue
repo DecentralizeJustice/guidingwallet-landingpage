@@ -70,6 +70,15 @@
           </v-row>
           </div>
           <div
+          v-if='this.latestShow.showLink'
+          :class="{'text-h4': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
+          class="font-weight-medium text-left white--text ma-7 text-wrap"
+          style="overflow-wrap: break-word;">
+           Link to Recorded Show: <br> <a :href="this.latestShow.showLink" target="_blank" >
+             <v-btn style="background-color: #546E7A;" class="white--text mt-3">Click To Show</v-btn></a>
+          </div>
+          <div
+          v-if='this.latestShow.notesLink'
           :class="{'text-h4': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
           class="font-weight-medium text-left white--text ma-7 text-wrap"
           style="overflow-wrap: break-word;">
@@ -155,7 +164,7 @@
             class="white--text"
           >
             <v-expansion-panel-header>
-              {{i+1}}{{getOrdinal(i+1)}} Show - {{getDate(item.time)}}
+              {{getFlippedList(i+1)}}{{getOrdinal(getFlippedList(i+1))}} Show - {{getDate(item.time)}}
             </v-expansion-panel-header>
             <v-expansion-panel-content>
               <v-row class="ma-0 pa-0" align="center"
@@ -192,6 +201,15 @@
                 </v-row>
                 </div>
                 <div
+                v-if='item.info.showLink'
+                :class="{'text-h4': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
+                class="font-weight-medium text-left white--text ma-7 text-wrap"
+                style="overflow-wrap: break-word;">
+                 Link to Recorded Show: <br> <a :href="item.info.showLink" target="_blank" >
+                   <v-btn style="background-color: #0B5563;" class="white--text mt-3">Click To Show</v-btn></a>
+                </div>
+                <div
+                v-if='item.info.notesLink'
                 :class="{'text-h4': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown}"
                 class="font-weight-medium text-left white--text ma-7 text-wrap"
                 style="overflow-wrap: break-word;">
@@ -293,6 +311,15 @@ export default {
         default: return 'th'
       }
     },
+    getFlippedList: function (d) {
+      let numbersList = []
+      const totalShows = this.sortedKeys.length - 1
+      for (let i = totalShows; i > 0; i--) {
+        numbersList += i
+      }
+      const flippedOrder = numbersList[d - 1]
+      return flippedOrder
+    },
     showAnswer: function (index) {
       console.log(index)
       const clone = Object.assign({}, this.showAnswerInfo)
@@ -313,7 +340,6 @@ export default {
       info.push(['#' + showInfo.killerQuestion, 'Most Missed Question', 'bullseye-arrow'])
       info.push([showInfo.totalWinners, 'Total Winners', 'emoticon-cool-outline'])
       // info.push([this.latestShow.potPerWinner + ' USD', 'Each Winners Prize', 'account-cash'])
-      info.push([showInfo.paymentMethod, 'Payment Crypto', showInfo.paymentMethodIcon])
       return info
     }
   },
