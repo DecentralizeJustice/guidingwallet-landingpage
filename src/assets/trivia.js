@@ -1,6 +1,6 @@
 const info = {
   subject: 'Paper Wallet History',
-  startTime: 1628208000,
+  startTime: 1628812800,
   prizeAmount: 100,
   numberOfQuestions: '10',
   timeToAnswer: '10 Seconds'
