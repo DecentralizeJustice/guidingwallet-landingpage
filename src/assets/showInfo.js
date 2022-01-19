@@ -1,4 +1,87 @@
 const info = {
+  1642611133: {
+    subject: 'Paper Wallet History',
+    potSize: '100',
+    totalWinners: '0',
+    killerQuestion: '1',
+    // showLink: 'https://www.reddit.com/',
+    summary: 'This was a really fun quiz to research about paper wallets. Hopefully people will stop using them.',
+    questions: {
+      hv: {
+        question: 'What topics would you want me to cover on youtube?'
+      },
+      1: {
+        questionInfo: {
+          question: 'Most paper wallets have a:',
+          options: ['Custodian', 'QR Code', 'Backup Method']
+        },
+        answer: '1'
+      },
+      2: {
+        questionInfo: {
+          question: 'Most paper wallet generators recommend an:',
+          options: ['Metal Backup', 'Wifi', 'GPU', 'Air Gapped Computer']
+        },
+        answer: '3'
+      },
+      3: {
+        questionInfo: {
+          question: 'A cognitive bias stating that people with low ability at a task overestimate their ability:',
+          options: ['Dunning Kruger Effect', 'Agent Detection', 'Loss Aversion', 'Ikea Effect']
+        },
+        answer: '0'
+      },
+      4: {
+        questionInfo: {
+          question: 'The eth wallet devs that found an exploit in a popular paper wallet:',
+          options: ['Meta Mask', 'My Ether Wallet', 'My Crypto', 'Trust Wallet']
+        },
+        answer: '2'
+      },
+      5: {
+        questionInfo: {
+          question: 'An Random Number Generator attack reduces the paper wallets:',
+          options: ['Strength', 'Elasticity', 'Entropy', 'Redundancy']
+        },
+        answer: '2'
+      },
+      6: {
+        questionInfo: {
+          question: "The most trusted and safest 'paper wallet' protocol was:",
+          options: ['Bitcoin Core', 'Armory', 'Yeti', 'Glacier Protocol']
+        },
+        answer: '3'
+      },
+      7: {
+        questionInfo: {
+          question: "Glacier Protocol uses ____ to ensure that one device hack isn't catastrophic.",
+          options: ['Computers', 'Multi-Sig', 'Entropy', 'Sharding']
+        },
+        answer: '1'
+      },
+      8: {
+        questionInfo: {
+          question: 'The first commercially available hardware wallet was:',
+          options: ['Trezor One', 'Trezor T', 'Ledger Nano', 'Coldcard']
+        },
+        answer: '0'
+      },
+      9: {
+        questionInfo: {
+          question: 'The paper wallet website once endorsed by Andreas Antonopoulos was:',
+          options: ['cryptopaperwallet.com', 'bitcoinpaperwallet.com', 'securewallet.com', 'safewallet.com']
+        },
+        answer: '1'
+      },
+      10: {
+        questionInfo: {
+          question: 'A paper wallet website that Andreas Antonopoulos owned:',
+          options: ['securewallet.com', 'cryptopaperwallet.com', 'safepaperwallet.com', 'antwallet.com']
+        },
+        answer: '2'
+      }
+    }
+  },
   1620349200: {
     subject: "Monero's History",
     potSize: '100',
